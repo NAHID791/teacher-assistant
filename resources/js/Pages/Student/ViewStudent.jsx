@@ -5,19 +5,20 @@ import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
 
-const ViewCourse = () => {
-    const { courses } = usePage().props;
-    const dataArray = courses
+const ViewStudent = () => {
+    const { students } = usePage().props;
+    const dataArray = students
     const tablePropsInit = {
         columns: [
-            { key: 'course_title', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'course_code', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
-            { key: 'course_credit', title: 'Course Credit', dataType: DataType.String, style: { width: '15%' } },
+            { key: 'student_id', title: 'Student ID', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'student_name', title: 'Student Name', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'section', title: 'Section', dataType: DataType.String, style: { width: '15%' } },
             { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'batch', title: 'Batch', dataType: DataType.String, style: { width: '20%' } },
 
         ],
         data: dataArray,
-        rowKeyField: "id",
+        rowKeyField: "student_id",
         paging: {
             enabled: true,
         },
@@ -39,7 +40,7 @@ const ViewCourse = () => {
     return (
         <div className="main-div">
             <div className='font-inter-600 text-3xl mb-4 flex gap-4'>
-                <span>Course Details</span>
+                <span>Students Details</span>
             </div>
             <div className="main-card">
                 <Table
@@ -57,5 +58,5 @@ const ViewCourse = () => {
     )
 }
 
-ViewCourse.layout = (page) => <Layout>{page}</Layout>;
-export default ViewCourse;
+ViewStudent.layout = (page) => <Layout>{page}</Layout>;
+export default ViewStudent;

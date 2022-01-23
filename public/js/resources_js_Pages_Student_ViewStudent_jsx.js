@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Course_AddCourse_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Student_ViewStudent_jsx"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
 /*!**********************************************************************!*\
@@ -363,132 +363,6 @@ var ButtonBase = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
       if (onClick) {
         onClick(event);
       }
-<<<<<<< HEAD
-    }
-  });
-  var handleKeyUp = (0,_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_7__["default"])(function (event) {
-    // calling preventDefault in keyUp on a <button> will not dispatch a click event if Space is pressed
-    // https://codesandbox.io/s/button-keyup-preventdefault-dn7f0
-    if (focusRipple && event.key === ' ' && rippleRef.current && focusVisible && !event.defaultPrevented) {
-      keydownRef.current = false;
-      event.persist();
-      rippleRef.current.stop(event, function () {
-        rippleRef.current.pulsate(event);
-      });
-    }
-
-    if (onKeyUp) {
-      onKeyUp(event);
-    } // Keyboard accessibility for non interactive elements
-
-
-    if (onClick && event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
-      onClick(event);
-    }
-  });
-  var ComponentProp = component;
-
-  if (ComponentProp === 'button' && other.href) {
-    ComponentProp = 'a';
-  }
-
-  var buttonProps = {};
-
-  if (ComponentProp === 'button') {
-    buttonProps.type = type;
-    buttonProps.disabled = disabled;
-  } else {
-    if (ComponentProp !== 'a' || !other.href) {
-      buttonProps.role = 'button';
-    }
-
-    buttonProps['aria-disabled'] = disabled;
-  }
-
-  var handleUserRef = (0,_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(buttonRefProp, ref);
-  var handleOwnRef = (0,_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(focusVisibleRef, buttonRef);
-  var handleRef = (0,_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(handleUserRef, handleOwnRef);
-
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_2__.useState(false),
-      mountedState = _React$useState2[0],
-      setMountedState = _React$useState2[1];
-
-  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(function () {
-    setMountedState(true);
-  }, []);
-  var enableTouchRipple = mountedState && !disableRipple && !disabled;
-
-  if (true) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    react__WEBPACK_IMPORTED_MODULE_2__.useEffect(function () {
-      if (enableTouchRipple && !rippleRef.current) {
-        console.error(['Material-UI: The `component` prop provided to ButtonBase is invalid.', 'Please make sure the children prop is rendered in this custom component.'].join('\n'));
-      }
-    }, [enableTouchRipple]);
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(ComponentProp, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, focusVisible && [classes.focusVisible, focusVisibleClassName], disabled && classes.disabled),
-    onBlur: handleBlur,
-    onClick: onClick,
-    onFocus: handleFocus,
-    onKeyDown: handleKeyDown,
-    onKeyUp: handleKeyUp,
-    onMouseDown: handleMouseDown,
-    onMouseLeave: handleMouseLeave,
-    onMouseUp: handleMouseUp,
-    onDragLeave: handleDragLeave,
-    onTouchEnd: handleTouchEnd,
-    onTouchMove: handleTouchMove,
-    onTouchStart: handleTouchStart,
-    ref: handleRef,
-    tabIndex: disabled ? -1 : tabIndex
-  }, buttonProps, other), children, enableTouchRipple ?
-  /*#__PURE__*/
-
-  /* TouchRipple is only needed client-side, x2 boost on the server. */
-  react__WEBPACK_IMPORTED_MODULE_2__.createElement(_TouchRipple__WEBPACK_IMPORTED_MODULE_9__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: rippleRef,
-    center: centerRipple
-  }, TouchRippleProps)) : null);
-});
- true ? ButtonBase.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * A ref for imperative actions.
-   * It currently only supports `focusVisible()` action.
-   */
-  action: _material_ui_utils__WEBPACK_IMPORTED_MODULE_10__["default"],
-
-  /**
-   * @ignore
-   *
-   * Use that prop to pass a ref to the native button component.
-   * @deprecated Use `ref` instead.
-   */
-  buttonRef: (0,_utils_deprecatedPropType__WEBPACK_IMPORTED_MODULE_11__["default"])(_material_ui_utils__WEBPACK_IMPORTED_MODULE_10__["default"], 'Use `ref` instead.'),
-
-  /**
-   * If `true`, the ripples will be centered.
-   * They won't start at the cursor interaction position.
-   */
-  centerRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * The content of the component.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-=======
     }
   });
   var handleKeyUp = (0,_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_7__["default"])(function (event) {
@@ -657,53 +531,10 @@ var ButtonBase = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
    * if needed.
    */
   focusVisibleClassName: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
   /**
    * @ignore
    */
-<<<<<<< HEAD
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: _material_ui_utils__WEBPACK_IMPORTED_MODULE_12__["default"],
-
-  /**
-   * If `true`, the base button will be disabled.
-   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * If `true`, the ripple effect will be disabled.
-   *
-   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
-   * to highlight the element by applying separate styles with the `focusVisibleClassName`.
-   */
-  disableRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * If `true`, the touch ripple effect will be disabled.
-   */
-  disableTouchRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * If `true`, the base button will have a keyboard focus ripple.
-   */
-  focusRipple: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * This prop can help identify which element has keyboard focus.
-   * The class name will be applied when the element gains the focus through keyboard interaction.
-   * It's a polyfill for the [CSS :focus-visible selector](https://drafts.csswg.org/selectors-4/#the-focus-visible-pseudo).
-   * The rationale for using this feature [is explained here](https://github.com/WICG/focus-visible/blob/master/explainer.md).
-   * A [polyfill can be used](https://github.com/WICG/focus-visible) to apply a `focus-visible` class to other components
-   * if needed.
-   */
-  focusVisibleClassName: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-=======
   href: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
 
   /**
@@ -736,77 +567,10 @@ var ButtonBase = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
    * @ignore
    */
   onKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
   /**
    * @ignore
    */
-<<<<<<< HEAD
-  href: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-=======
-  onKeyUp: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
-  onBlur: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-=======
-  onMouseDown: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
-  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-=======
-  onMouseLeave: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
-  onDragLeave: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-=======
-  onMouseUp: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
-  onFocus: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-
-  /**
-   * Callback fired when the component is focused with a keyboard.
-   * We trigger a `onFocus` callback too.
-   */
-  onFocusVisible: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-=======
-  onTouchEnd: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-
-  /**
-   * @ignore
-   */
-  onTouchMove: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
-  onKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
-=======
-  onTouchStart: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  /**
-   * @ignore
-   */
-<<<<<<< HEAD
   onKeyUp: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func),
 
   /**
@@ -866,32 +630,6 @@ var ButtonBase = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-=======
-  tabIndex: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_3___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)]),
-
-  /**
-   * Props applied to the `TouchRipple` element.
-   */
-  TouchRippleProps: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-
-  /**
-   * @ignore
-   */
-  type: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['button', 'reset', 'submit']), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_13__["default"])(styles, {
-  name: 'MuiButtonBase'
-})(ButtonBase));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/ButtonBase/Ripple.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/ButtonBase/Ripple.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1027,11 +765,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
 /* harmony import */ var _Ripple__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Ripple */ "./node_modules/@material-ui/core/esm/ButtonBase/Ripple.js");
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 
 
@@ -1039,7 +772,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-<<<<<<< HEAD
 
 
 var DURATION = 550;
@@ -1077,43 +809,6 @@ var styles = function styles(theme) {
       animationDuration: "".concat(theme.transitions.duration.shorter, "ms")
     },
 
-=======
-var DURATION = 550;
-var DELAY_RIPPLE = 80;
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      overflow: 'hidden',
-      pointerEvents: 'none',
-      position: 'absolute',
-      zIndex: 0,
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-      borderRadius: 'inherit'
-    },
-
-    /* Styles applied to the internal `Ripple` components `ripple` class. */
-    ripple: {
-      opacity: 0,
-      position: 'absolute'
-    },
-
-    /* Styles applied to the internal `Ripple` components `rippleVisible` class. */
-    rippleVisible: {
-      opacity: 0.3,
-      transform: 'scale(1)',
-      animation: "$enter ".concat(DURATION, "ms ").concat(theme.transitions.easing.easeInOut)
-    },
-
-    /* Styles applied to the internal `Ripple` components `ripplePulsate` class. */
-    ripplePulsate: {
-      animationDuration: "".concat(theme.transitions.duration.shorter, "ms")
-    },
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
     /* Styles applied to the internal `Ripple` components `child` class. */
     child: {
       opacity: 1,
@@ -1335,8 +1030,6 @@ var TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(fun
       });
       return;
     }
-<<<<<<< HEAD
-=======
 
     startTimerCommit.current = null;
     setRipples(function (oldRipples) {
@@ -1344,56 +1037,6 @@ var TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(fun
         return oldRipples.slice(1);
       }
 
-      return oldRipples;
-    });
-    rippleCallback.current = cb;
-  }, []);
-  react__WEBPACK_IMPORTED_MODULE_3__.useImperativeHandle(ref, function () {
-    return {
-      pulsate: pulsate,
-      start: start,
-      stop: stop
-    };
-  }, [pulsate, start, stop]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement("span", (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
-    ref: container
-  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    component: null,
-    exit: true
-  }, ripples));
-});
- true ? TouchRipple.propTypes = {
-  /**
-   * If `true`, the ripple starts at the center of the component
-   * rather than at the point of interaction.
-   */
-  center: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object.isRequired),
-
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string)
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_8__["default"])(styles, {
-  flip: false,
-  name: 'MuiTouchRipple'
-})( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.memo(TouchRipple)));
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-    startTimerCommit.current = null;
-    setRipples(function (oldRipples) {
-      if (oldRipples.length > 0) {
-        return oldRipples.slice(1);
-      }
-
-<<<<<<< HEAD
       return oldRipples;
     });
     rippleCallback.current = cb;
@@ -1438,8 +1081,6 @@ var TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(fun
 
 /***/ }),
 
-=======
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ "./node_modules/@material-ui/core/esm/Collapse/Collapse.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/Collapse/Collapse.js ***!
@@ -1642,7 +1283,6 @@ var Collapse = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(functi
     } else {
       node.style.transitionDuration = typeof transitionDuration === 'string' ? transitionDuration : "".concat(transitionDuration, "ms");
     }
-<<<<<<< HEAD
 
     node.style.height = collapsedSize;
 
@@ -1651,16 +1291,6 @@ var Collapse = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(functi
     }
   });
 
-=======
-
-    node.style.height = collapsedSize;
-
-    if (onExiting) {
-      onExiting(node);
-    }
-  });
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   var addEndListener = function addEndListener(nodeOrNext, maybeNext) {
     var next = enableStrictModeCompat ? nodeOrNext : maybeNext;
 
@@ -1829,17 +1459,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
 /* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@material-ui/core/esm/List/ListContext.js");
-<<<<<<< HEAD
-
-=======
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 
 
 
 
 
-<<<<<<< HEAD
+
 var styles = function styles(theme) {
   return {
     /* Styles applied to the root element. */
@@ -1922,189 +1548,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Typography */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
 /* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@material-ui/core/esm/List/ListContext.js");
 
-=======
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      minWidth: 56,
-      color: theme.palette.action.active,
-      flexShrink: 0,
-      display: 'inline-flex'
-    },
-
-    /* Styles applied to the root element when the parent `ListItem` uses `alignItems="flex-start"`. */
-    alignItemsFlexStart: {
-      marginTop: 8
-    }
-  };
-};
-/**
- * A simple wrapper to apply `List` styles to an `Icon` or `SvgIcon`.
- */
-
-var ListItemIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ListItemIcon(props, ref) {
-  var classes = props.classes,
-      className = props.className,
-      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className"]);
-
-  var context = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_5__["default"]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, context.alignItems === 'flex-start' && classes.alignItemsFlexStart),
-    ref: ref
-  }, other));
-});
- true ? ListItemIcon.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * The content of the component, normally `Icon`, `SvgIcon`,
-   * or a `@material-ui/icons` SVG icon element.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
-  name: 'MuiListItemIcon'
-})(ListItemIcon));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/ListItemText/ListItemText.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/ListItemText/ListItemText.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "styles": () => (/* binding */ styles),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
-/* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Typography */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
-/* harmony import */ var _List_ListContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../List/ListContext */ "./node_modules/@material-ui/core/esm/List/ListContext.js");
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 
 
 
 
 
-
-<<<<<<< HEAD
-var styles = {
-  /* Styles applied to the root element. */
-  root: {
-    flex: '1 1 auto',
-    minWidth: 0,
-    marginTop: 4,
-    marginBottom: 4
-  },
-
-  /* Styles applied to the `Typography` components if primary and secondary are set. */
-  multiline: {
-    marginTop: 6,
-    marginBottom: 6
-  },
-
-  /* Styles applied to the `Typography` components if dense. */
-  dense: {},
-
-  /* Styles applied to the root element if `inset={true}`. */
-  inset: {
-    paddingLeft: 56
-  },
-
-  /* Styles applied to the primary `Typography` component. */
-  primary: {},
-
-  /* Styles applied to the secondary `Typography` component. */
-  secondary: {}
-};
-var ListItemText = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ListItemText(props, ref) {
-  var children = props.children,
-      classes = props.classes,
-      className = props.className,
-      _props$disableTypogra = props.disableTypography,
-      disableTypography = _props$disableTypogra === void 0 ? false : _props$disableTypogra,
-      _props$inset = props.inset,
-      inset = _props$inset === void 0 ? false : _props$inset,
-      primaryProp = props.primary,
-      primaryTypographyProps = props.primaryTypographyProps,
-      secondaryProp = props.secondary,
-      secondaryTypographyProps = props.secondaryTypographyProps,
-      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "disableTypography", "inset", "primary", "primaryTypographyProps", "secondary", "secondaryTypographyProps"]);
-
-  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_5__["default"]),
-      dense = _React$useContext.dense;
-
-  var primary = primaryProp != null ? primaryProp : children;
-
-  if (primary != null && primary.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    primary = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      variant: dense ? 'body2' : 'body1',
-      className: classes.primary,
-      component: "span",
-      display: "block"
-    }, primaryTypographyProps), primary);
-  }
-
-  var secondary = secondaryProp;
-
-  if (secondary != null && secondary.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    secondary = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      variant: "body2",
-      className: classes.secondary,
-      color: "textSecondary",
-      display: "block"
-    }, secondaryTypographyProps), secondary);
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, dense && classes.dense, inset && classes.inset, primary && secondary && classes.multiline),
-    ref: ref
-  }, other), primary, secondary);
-});
- true ? ListItemText.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * Alias for the `primary` prop.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node),
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-
-=======
 
 var styles = {
   /* Styles applied to the root element. */
@@ -2196,7 +1645,6 @@ var ListItemText = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(fu
    */
   classes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
 
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   /**
    * @ignore
    */
@@ -2709,15 +2157,9 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * @ignore - internal component.
  */
-<<<<<<< HEAD
 
 var ListContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
 
-=======
-
-var ListContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 if (true) {
   ListContext.displayName = 'ListContext';
 }
@@ -3142,7 +2584,6 @@ var Typography = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
 
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
-<<<<<<< HEAD
    */
   color: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['initial', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary', 'error']),
 
@@ -3187,52 +2628,6 @@ var Typography = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(func
    * If you wish to change that mapping, you can provide your own.
    * Alternatively, you can use the `component` prop.
    */
-=======
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['initial', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary', 'error']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   * Overrides the behavior of the `variantMapping` prop.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().elementType),
-
-  /**
-   * Controls the display type
-   */
-  display: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['initial', 'block', 'inline']),
-
-  /**
-   * If `true`, the text will have a bottom margin.
-   */
-  gutterBottom: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * If `true`, the text will not wrap, but instead will truncate with a text overflow ellipsis.
-   *
-   * Note that text overflow can only happen with block or inline-block level elements
-   * (the element needs to have a width in order to overflow).
-   */
-  noWrap: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * If `true`, the text will have a bottom margin.
-   */
-  paragraph: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
-
-  /**
-   * Applies the theme typography styles.
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit']),
-
-  /**
-   * The component maps the variant prop to a range of different HTML element types.
-   * For instance, subtitle1 to `<h6>`.
-   * If you wish to change that mapping, you can provide your own.
-   * Alternatively, you can use the `component` prop.
-   */
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   variantMapping: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)
 } : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
@@ -3587,7 +2982,6 @@ function hslToRgb(color) {
   var s = values[1] / 100;
   var l = values[2] / 100;
   var a = s * Math.min(l, 1 - l);
-<<<<<<< HEAD
 
   var f = function f(n) {
     var k = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (n + h / 30) % 12;
@@ -3712,132 +3106,6 @@ function getLuminance(color) {
  * @returns {string} A CSS color string. Hex input values are returned as rgb
  */
 
-=======
-
-  var f = function f(n) {
-    var k = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (n + h / 30) % 12;
-    return l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-  };
-
-  var type = 'rgb';
-  var rgb = [Math.round(f(0) * 255), Math.round(f(8) * 255), Math.round(f(4) * 255)];
-
-  if (color.type === 'hsla') {
-    type += 'a';
-    rgb.push(values[3]);
-  }
-
-  return recomposeColor({
-    type: type,
-    values: rgb
-  });
-}
-/**
- * Returns an object with the type and values of a color.
- *
- * Note: Does not support rgb % values.
- *
- * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @returns {object} - A MUI color object: {type: string, values: number[]}
- */
-
-function decomposeColor(color) {
-  // Idempotent
-  if (color.type) {
-    return color;
-  }
-
-  if (color.charAt(0) === '#') {
-    return decomposeColor(hexToRgb(color));
-  }
-
-  var marker = color.indexOf('(');
-  var type = color.substring(0, marker);
-
-  if (['rgb', 'rgba', 'hsl', 'hsla'].indexOf(type) === -1) {
-    throw new Error( true ? "Material-UI: Unsupported `".concat(color, "` color.\nWe support the following formats: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla().") : 0);
-  }
-
-  var values = color.substring(marker + 1, color.length - 1).split(',');
-  values = values.map(function (value) {
-    return parseFloat(value);
-  });
-  return {
-    type: type,
-    values: values
-  };
-}
-/**
- * Converts a color object with type and values to a string.
- *
- * @param {object} color - Decomposed color
- * @param {string} color.type - One of: 'rgb', 'rgba', 'hsl', 'hsla'
- * @param {array} color.values - [n,n,n] or [n,n,n,n]
- * @returns {string} A CSS color string
- */
-
-function recomposeColor(color) {
-  var type = color.type;
-  var values = color.values;
-
-  if (type.indexOf('rgb') !== -1) {
-    // Only convert the first 3 values to int (i.e. not alpha)
-    values = values.map(function (n, i) {
-      return i < 3 ? parseInt(n, 10) : n;
-    });
-  } else if (type.indexOf('hsl') !== -1) {
-    values[1] = "".concat(values[1], "%");
-    values[2] = "".concat(values[2], "%");
-  }
-
-  return "".concat(type, "(").concat(values.join(', '), ")");
-}
-/**
- * Calculates the contrast ratio between two colors.
- *
- * Formula: https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- *
- * @param {string} foreground - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @param {string} background - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @returns {number} A contrast ratio value in the range 0 - 21.
- */
-
-function getContrastRatio(foreground, background) {
-  var lumA = getLuminance(foreground);
-  var lumB = getLuminance(background);
-  return (Math.max(lumA, lumB) + 0.05) / (Math.min(lumA, lumB) + 0.05);
-}
-/**
- * The relative brightness of any point in a color space,
- * normalized to 0 for darkest black and 1 for lightest white.
- *
- * Formula: https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- *
- * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @returns {number} The relative brightness of the color in the range 0 - 1
- */
-
-function getLuminance(color) {
-  color = decomposeColor(color);
-  var rgb = color.type === 'hsl' ? decomposeColor(hslToRgb(color)).values : color.values;
-  rgb = rgb.map(function (val) {
-    val /= 255; // normalized
-
-    return val <= 0.03928 ? val / 12.92 : Math.pow((val + 0.055) / 1.055, 2.4);
-  }); // Truncate at 3 digits
-
-  return Number((0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]).toFixed(3));
-}
-/**
- * Darken or lighten a color, depending on its luminance.
- * Light colors are darkened, dark colors are lightened.
- *
- * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
- * @param {number} coefficient=0.15 - multiplier in the range 0 - 1
- * @returns {string} A CSS color string. Hex input values are returned as rgb
- */
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 function emphasize(color) {
   var coefficient = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0.15;
   return getLuminance(color) > 0.5 ? darken(color, coefficient) : lighten(color, coefficient);
@@ -4172,7 +3440,6 @@ var dark = {
     activatedOpacity: 0.24
   }
 };
-<<<<<<< HEAD
 
 function addLightOrDark(intent, direction, shade, tonalOffset) {
   var tonalOffsetLight = tonalOffset.light || tonalOffset;
@@ -4289,166 +3556,6 @@ function createPalette(palette) {
       console.error("Material-UI: The palette type `".concat(type, "` is not supported."));
     }
   }
-
-  var paletteOutput = (0,_material_ui_utils__WEBPACK_IMPORTED_MODULE_11__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    // A collection of common colors.
-    common: _colors_common__WEBPACK_IMPORTED_MODULE_2__["default"],
-    // The palette type, can be light or dark.
-    type: type,
-    // The colors used to represent primary interface elements for a user.
-    primary: augmentColor(primary),
-    // The colors used to represent secondary interface elements for a user.
-    secondary: augmentColor(secondary, 'A400', 'A200', 'A700'),
-    // The colors used to represent interface elements that the user should be made aware of.
-    error: augmentColor(error),
-    // The colors used to represent potentially dangerous actions or important messages.
-    warning: augmentColor(warning),
-    // The colors used to present information to the user that is neutral and not necessarily important.
-    info: augmentColor(info),
-    // The colors used to indicate the successful completion of an action that user triggered.
-    success: augmentColor(success),
-    // The grey colors.
-    grey: _colors_grey__WEBPACK_IMPORTED_MODULE_3__["default"],
-    // Used by `getContrastText()` to maximize the contrast between
-    // the background and the text.
-    contrastThreshold: contrastThreshold,
-    // Takes a background color and returns the text color that maximizes the contrast.
-    getContrastText: getContrastText,
-    // Generate a rich color object.
-    augmentColor: augmentColor,
-    // Used by the functions below to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
-    tonalOffset: tonalOffset
-  }, types[type]), other);
-  return paletteOutput;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/createSpacing.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/createSpacing.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-=======
-
-function addLightOrDark(intent, direction, shade, tonalOffset) {
-  var tonalOffsetLight = tonalOffset.light || tonalOffset;
-  var tonalOffsetDark = tonalOffset.dark || tonalOffset * 1.5;
-
-  if (!intent[direction]) {
-    if (intent.hasOwnProperty(shade)) {
-      intent[direction] = intent[shade];
-    } else if (direction === 'light') {
-      intent.light = (0,_colorManipulator__WEBPACK_IMPORTED_MODULE_4__.lighten)(intent.main, tonalOffsetLight);
-    } else if (direction === 'dark') {
-      intent.dark = (0,_colorManipulator__WEBPACK_IMPORTED_MODULE_4__.darken)(intent.main, tonalOffsetDark);
-    }
-  }
-}
-
-function createPalette(palette) {
-  var _palette$primary = palette.primary,
-      primary = _palette$primary === void 0 ? {
-    light: _colors_indigo__WEBPACK_IMPORTED_MODULE_5__["default"][300],
-    main: _colors_indigo__WEBPACK_IMPORTED_MODULE_5__["default"][500],
-    dark: _colors_indigo__WEBPACK_IMPORTED_MODULE_5__["default"][700]
-  } : _palette$primary,
-      _palette$secondary = palette.secondary,
-      secondary = _palette$secondary === void 0 ? {
-    light: _colors_pink__WEBPACK_IMPORTED_MODULE_6__["default"].A200,
-    main: _colors_pink__WEBPACK_IMPORTED_MODULE_6__["default"].A400,
-    dark: _colors_pink__WEBPACK_IMPORTED_MODULE_6__["default"].A700
-  } : _palette$secondary,
-      _palette$error = palette.error,
-      error = _palette$error === void 0 ? {
-    light: _colors_red__WEBPACK_IMPORTED_MODULE_7__["default"][300],
-    main: _colors_red__WEBPACK_IMPORTED_MODULE_7__["default"][500],
-    dark: _colors_red__WEBPACK_IMPORTED_MODULE_7__["default"][700]
-  } : _palette$error,
-      _palette$warning = palette.warning,
-      warning = _palette$warning === void 0 ? {
-    light: _colors_orange__WEBPACK_IMPORTED_MODULE_8__["default"][300],
-    main: _colors_orange__WEBPACK_IMPORTED_MODULE_8__["default"][500],
-    dark: _colors_orange__WEBPACK_IMPORTED_MODULE_8__["default"][700]
-  } : _palette$warning,
-      _palette$info = palette.info,
-      info = _palette$info === void 0 ? {
-    light: _colors_blue__WEBPACK_IMPORTED_MODULE_9__["default"][300],
-    main: _colors_blue__WEBPACK_IMPORTED_MODULE_9__["default"][500],
-    dark: _colors_blue__WEBPACK_IMPORTED_MODULE_9__["default"][700]
-  } : _palette$info,
-      _palette$success = palette.success,
-      success = _palette$success === void 0 ? {
-    light: _colors_green__WEBPACK_IMPORTED_MODULE_10__["default"][300],
-    main: _colors_green__WEBPACK_IMPORTED_MODULE_10__["default"][500],
-    dark: _colors_green__WEBPACK_IMPORTED_MODULE_10__["default"][700]
-  } : _palette$success,
-      _palette$type = palette.type,
-      type = _palette$type === void 0 ? 'light' : _palette$type,
-      _palette$contrastThre = palette.contrastThreshold,
-      contrastThreshold = _palette$contrastThre === void 0 ? 3 : _palette$contrastThre,
-      _palette$tonalOffset = palette.tonalOffset,
-      tonalOffset = _palette$tonalOffset === void 0 ? 0.2 : _palette$tonalOffset,
-      other = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(palette, ["primary", "secondary", "error", "warning", "info", "success", "type", "contrastThreshold", "tonalOffset"]); // Use the same logic as
-  // Bootstrap: https://github.com/twbs/bootstrap/blob/1d6e3710dd447de1a200f29e8fa521f8a0908f70/scss/_functions.scss#L59
-  // and material-components-web https://github.com/material-components/material-components-web/blob/ac46b8863c4dab9fc22c4c662dc6bd1b65dd652f/packages/mdc-theme/_functions.scss#L54
-
-
-  function getContrastText(background) {
-    var contrastText = (0,_colorManipulator__WEBPACK_IMPORTED_MODULE_4__.getContrastRatio)(background, dark.text.primary) >= contrastThreshold ? dark.text.primary : light.text.primary;
-
-    if (true) {
-      var contrast = (0,_colorManipulator__WEBPACK_IMPORTED_MODULE_4__.getContrastRatio)(background, contrastText);
-
-      if (contrast < 3) {
-        console.error(["Material-UI: The contrast ratio of ".concat(contrast, ":1 for ").concat(contrastText, " on ").concat(background), 'falls below the WCAG recommended absolute minimum contrast ratio of 3:1.', 'https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast'].join('\n'));
-      }
-    }
-
-    return contrastText;
-  }
-
-  var augmentColor = function augmentColor(color) {
-    var mainShade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
-    var lightShade = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 300;
-    var darkShade = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 700;
-    color = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, color);
-
-    if (!color.main && color[mainShade]) {
-      color.main = color[mainShade];
-    }
-
-    if (!color.main) {
-      throw new Error( true ? "Material-UI: The color provided to augmentColor(color) is invalid.\nThe color object needs to have a `main` property or a `".concat(mainShade, "` property.") : 0);
-    }
-
-    if (typeof color.main !== 'string') {
-      throw new Error( true ? "Material-UI: The color provided to augmentColor(color) is invalid.\n`color.main` should be a string, but `".concat(JSON.stringify(color.main), "` was provided instead.\n\nDid you intend to use one of the following approaches?\n\nimport {\xA0green } from \"@material-ui/core/colors\";\n\nconst theme1 = createTheme({ palette: {\n  primary: green,\n} });\n\nconst theme2 = createTheme({ palette: {\n  primary: { main: green[500] },\n} });") : 0);
-    }
-
-    addLightOrDark(color, 'light', lightShade, tonalOffset);
-    addLightOrDark(color, 'dark', darkShade, tonalOffset);
-
-    if (!color.contrastText) {
-      color.contrastText = getContrastText(color.main);
-    }
-
-    return color;
-  };
-
-  var types = {
-    dark: dark,
-    light: light
-  };
-
-  if (true) {
-    if (!types[type]) {
-      console.error("Material-UI: The palette type `".concat(type, "` is not supported."));
-    }
-  }
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
   var paletteOutput = (0,_material_ui_utils__WEBPACK_IMPORTED_MODULE_11__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     // A collection of common colors.
@@ -4811,7 +3918,6 @@ function createTypography(palette, typography) {
     fontWeightBold: fontWeightBold
   }, variants), other, {
     clone: false // No need to clone deep
-<<<<<<< HEAD
 
   });
 }
@@ -4908,104 +4014,6 @@ var shape = {
 
 /***/ }),
 
-=======
-
-  });
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/defaultTheme.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _createTheme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createTheme */ "./node_modules/@material-ui/core/esm/styles/createTheme.js");
-
-var defaultTheme = (0,_createTheme__WEBPACK_IMPORTED_MODULE_0__["default"])();
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (defaultTheme);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/makeStyles.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/makeStyles.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/makeStyles/makeStyles.js");
-/* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js");
-
-
-
-
-function makeStyles(stylesOrCreator) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  return (0,_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__["default"])(stylesOrCreator, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    defaultTheme: _defaultTheme__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }, options));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeStyles);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/shadows.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/shadows.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var shadowKeyUmbraOpacity = 0.2;
-var shadowKeyPenumbraOpacity = 0.14;
-var shadowAmbientShadowOpacity = 0.12;
-
-function createShadow() {
-  return ["".concat(arguments.length <= 0 ? undefined : arguments[0], "px ").concat(arguments.length <= 1 ? undefined : arguments[1], "px ").concat(arguments.length <= 2 ? undefined : arguments[2], "px ").concat(arguments.length <= 3 ? undefined : arguments[3], "px rgba(0,0,0,").concat(shadowKeyUmbraOpacity, ")"), "".concat(arguments.length <= 4 ? undefined : arguments[4], "px ").concat(arguments.length <= 5 ? undefined : arguments[5], "px ").concat(arguments.length <= 6 ? undefined : arguments[6], "px ").concat(arguments.length <= 7 ? undefined : arguments[7], "px rgba(0,0,0,").concat(shadowKeyPenumbraOpacity, ")"), "".concat(arguments.length <= 8 ? undefined : arguments[8], "px ").concat(arguments.length <= 9 ? undefined : arguments[9], "px ").concat(arguments.length <= 10 ? undefined : arguments[10], "px ").concat(arguments.length <= 11 ? undefined : arguments[11], "px rgba(0,0,0,").concat(shadowAmbientShadowOpacity, ")")].join(',');
-} // Values from https://github.com/material-components/material-components-web/blob/be8747f94574669cb5e7add1a7c54fa41a89cec7/packages/mdc-elevation/_variables.scss
-
-
-var shadows = ['none', createShadow(0, 2, 1, -1, 0, 1, 1, 0, 0, 1, 3, 0), createShadow(0, 3, 1, -2, 0, 2, 2, 0, 0, 1, 5, 0), createShadow(0, 3, 3, -2, 0, 3, 4, 0, 0, 1, 8, 0), createShadow(0, 2, 4, -1, 0, 4, 5, 0, 0, 1, 10, 0), createShadow(0, 3, 5, -1, 0, 5, 8, 0, 0, 1, 14, 0), createShadow(0, 3, 5, -1, 0, 6, 10, 0, 0, 1, 18, 0), createShadow(0, 4, 5, -2, 0, 7, 10, 1, 0, 2, 16, 1), createShadow(0, 5, 5, -3, 0, 8, 10, 1, 0, 3, 14, 2), createShadow(0, 5, 6, -3, 0, 9, 12, 1, 0, 3, 16, 2), createShadow(0, 6, 6, -3, 0, 10, 14, 1, 0, 4, 18, 3), createShadow(0, 6, 7, -4, 0, 11, 15, 1, 0, 4, 20, 3), createShadow(0, 7, 8, -4, 0, 12, 17, 2, 0, 5, 22, 4), createShadow(0, 7, 8, -4, 0, 13, 19, 2, 0, 5, 24, 4), createShadow(0, 7, 9, -4, 0, 14, 21, 2, 0, 5, 26, 4), createShadow(0, 8, 9, -5, 0, 15, 22, 2, 0, 6, 28, 5), createShadow(0, 8, 10, -5, 0, 16, 24, 2, 0, 6, 30, 5), createShadow(0, 8, 11, -5, 0, 17, 26, 2, 0, 6, 32, 5), createShadow(0, 9, 11, -5, 0, 18, 28, 2, 0, 7, 34, 6), createShadow(0, 9, 12, -6, 0, 19, 29, 2, 0, 7, 36, 6), createShadow(0, 10, 13, -6, 0, 20, 31, 3, 0, 8, 38, 7), createShadow(0, 10, 13, -6, 0, 21, 33, 3, 0, 8, 40, 7), createShadow(0, 10, 14, -6, 0, 22, 35, 3, 0, 8, 42, 7), createShadow(0, 11, 14, -7, 0, 23, 36, 3, 0, 9, 44, 8), createShadow(0, 11, 15, -7, 0, 24, 38, 3, 0, 9, 46, 8)];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (shadows);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/shape.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/shape.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var shape = {
-  borderRadius: 4
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (shape);
-
-/***/ }),
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ "./node_modules/@material-ui/core/esm/styles/transitions.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/transitions.js ***!
@@ -5140,12 +4148,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js");
 
-<<<<<<< HEAD
-
-
-function useTheme() {
-  var theme = (0,_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__["default"])() || _defaultTheme__WEBPACK_IMPORTED_MODULE_2__["default"];
-=======
 
 
 function useTheme() {
@@ -5156,23 +4158,11 @@ function useTheme() {
     react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue(theme);
   }
 
-  return theme;
-}
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  if (true) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue(theme);
-  }
-
-<<<<<<< HEAD
   return theme;
 }
 
 /***/ }),
 
-=======
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ "./node_modules/@material-ui/core/esm/styles/withStyles.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/withStyles.js ***!
@@ -5187,12 +4177,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/styles/esm/withStyles/withStyles.js");
 /* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js");
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 function withStyles(stylesOrCreator, options) {
   return (0,_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__["default"])(stylesOrCreator, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -5204,7 +4191,6 @@ function withStyles(stylesOrCreator, options) {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./node_modules/@material-ui/core/esm/styles/zIndex.js":
 /*!*************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/zIndex.js ***!
@@ -5235,163 +4221,11 @@ var zIndex = {
 /*!*****************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/transitions/utils.js ***!
   \*****************************************************************/
-=======
-function withStyles(stylesOrCreator, options) {
-  return (0,_material_ui_styles__WEBPACK_IMPORTED_MODULE_1__["default"])(stylesOrCreator, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    defaultTheme: _defaultTheme__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }, options));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (withStyles);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/styles/zIndex.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/styles/zIndex.js ***!
-  \*************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "reflow": () => (/* binding */ reflow),
-/* harmony export */   "getTransitionProps": () => (/* binding */ getTransitionProps)
-/* harmony export */ });
-var reflow = function reflow(node) {
-  return node.scrollTop;
-};
-function getTransitionProps(props, options) {
-  var timeout = props.timeout,
-      _props$style = props.style,
-      style = _props$style === void 0 ? {} : _props$style;
-  return {
-    duration: style.transitionDuration || typeof timeout === 'number' ? timeout : timeout[options.mode] || 0,
-    delay: style.transitionDelay
-  };
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/capitalize.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/capitalize.js ***!
-  \****************************************************************/
-=======
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-// We need to centralize the zIndex definitions as they work
-// like global values in the browser.
-var zIndex = {
-  mobileStepper: 1000,
-  speedDial: 1050,
-  appBar: 1100,
-  drawer: 1200,
-  modal: 1300,
-  snackbar: 1400,
-  tooltip: 1500
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (zIndex);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/transitions/utils.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/transitions/utils.js ***!
-  \*****************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "default": () => (/* binding */ capitalize)
-/* harmony export */ });
-
-// It should to be noted that this function isn't equivalent to `text-transform: capitalize`.
-//
-// A strict capitalization should uppercase the first letter of each word a the sentence.
-// We only handle the first word.
-function capitalize(string) {
-  if (typeof string !== 'string') {
-    throw new Error( true ? "Material-UI: capitalize(string) expects a string argument." : 0);
-  }
-
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/createChainedFunction.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/createChainedFunction.js ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ createChainedFunction)
-/* harmony export */ });
-/**
- * Safe chained function
- *
- * Will only create a new function if needed,
- * otherwise will pass back existing functions or null.
- *
- * @param {function} functions to chain
- * @returns {function|null}
- */
-function createChainedFunction() {
-  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
-    funcs[_key] = arguments[_key];
-  }
-
-  return funcs.reduce(function (acc, func) {
-    if (func == null) {
-      return acc;
-    }
-
-    if (true) {
-      if (typeof func !== 'function') {
-        console.error('Material-UI: Invalid Argument Type, must only provide functions, undefined, or null.');
-      }
-    }
-
-    return function chainedFunction() {
-      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-        args[_key2] = arguments[_key2];
-      }
-
-      acc.apply(this, args);
-      func.apply(this, args);
-    };
-  }, function () {});
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/createSvgIcon.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/createSvgIcon.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ createSvgIcon)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SvgIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SvgIcon */ "./node_modules/@material-ui/core/esm/SvgIcon/SvgIcon.js");
-
-
-
-=======
 /* harmony export */   "reflow": () => (/* binding */ reflow),
 /* harmony export */   "getTransitionProps": () => (/* binding */ getTransitionProps)
 /* harmony export */ });
@@ -5502,7 +4336,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /**
  * Private module reserved for @material-ui/x packages.
  */
@@ -5942,7 +4775,6 @@ function useForkRef(refA, refB) {
     if (refA == null && refB == null) {
       return null;
     }
-<<<<<<< HEAD
 
     return function (refValue) {
       (0,_setRef__WEBPACK_IMPORTED_MODULE_1__["default"])(refA, refValue);
@@ -5953,18 +4785,6 @@ function useForkRef(refA, refB) {
 
 /***/ }),
 
-=======
-
-    return function (refValue) {
-      (0,_setRef__WEBPACK_IMPORTED_MODULE_1__["default"])(refA, refValue);
-      (0,_setRef__WEBPACK_IMPORTED_MODULE_1__["default"])(refB, refValue);
-    };
-  }, [refA, refB]);
-}
-
-/***/ }),
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ "./node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js ***!
@@ -6235,7 +5055,6 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-<<<<<<< HEAD
 
 
 Object.defineProperty(exports, "__esModule", ({
@@ -6248,20 +5067,6 @@ Object.defineProperty(exports, "default", ({
   }
 }));
 
-=======
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-Object.defineProperty(exports, "default", ({
-  enumerable: true,
-  get: function get() {
-    return _utils.createSvgIcon;
-  }
-}));
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 var _utils = __webpack_require__(/*! @material-ui/core/utils */ "./node_modules/@material-ui/core/esm/utils/index.js");
 
 /***/ }),
@@ -7330,7 +6135,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./merge */ "./node_modules/@material-ui/system/esm/merge.js");
 
-<<<<<<< HEAD
 
 
 
@@ -7432,70 +6236,10 @@ function memoize(fn) {
 
     return cache[arg];
   };
-=======
-
-
-
- // The breakpoint **start** at this value.
-// For instance with the first breakpoint xs: [xs, sm[.
-
-var values = {
-  xs: 0,
-  sm: 600,
-  md: 960,
-  lg: 1280,
-  xl: 1920
-};
-var defaultBreakpoints = {
-  // Sorted ASC by size. That's important.
-  // It can't be configured as it's used statically for propTypes.
-  keys: ['xs', 'sm', 'md', 'lg', 'xl'],
-  up: function up(key) {
-    return "@media (min-width:".concat(values[key], "px)");
-  }
-};
-function handleBreakpoints(props, propValue, styleFromPropValue) {
-  if (true) {
-    if (!props.theme) {
-      console.error('Material-UI: You are calling a style function without a theme value.');
-    }
-  }
-
-  if (Array.isArray(propValue)) {
-    var themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
-    return propValue.reduce(function (acc, item, index) {
-      acc[themeBreakpoints.up(themeBreakpoints.keys[index])] = styleFromPropValue(propValue[index]);
-      return acc;
-    }, {});
-  }
-
-  if ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__["default"])(propValue) === 'object') {
-    var _themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
-
-    return Object.keys(propValue).reduce(function (acc, breakpoint) {
-      acc[_themeBreakpoints.up(breakpoint)] = styleFromPropValue(propValue[breakpoint]);
-      return acc;
-    }, {});
-  }
-
-  var output = styleFromPropValue(propValue);
-  return output;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
 
-function breakpoints(styleFunction) {
-  var newStyleFunction = function newStyleFunction(props) {
-    var base = styleFunction(props);
-    var themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
-    var extended = themeBreakpoints.keys.reduce(function (acc, key) {
-      if (props[key]) {
-        acc = acc || {};
-        acc[themeBreakpoints.up(key)] = styleFunction((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-          theme: props.theme
-        }, props[key]));
-      }
+/***/ }),
 
-<<<<<<< HEAD
 /***/ "./node_modules/@material-ui/system/esm/merge.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/merge.js ***!
@@ -7529,118 +6273,11 @@ function merge(acc, item) {
 /*!********************************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/responsivePropType.js ***!
   \********************************************************************/
-=======
-      return acc;
-    }, null);
-    return (0,_merge__WEBPACK_IMPORTED_MODULE_4__["default"])(base, extended);
-  };
-
-  newStyleFunction.propTypes =  true ? (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, styleFunction.propTypes, {
-    xs: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    sm: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    md: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    lg: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    xl: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)
-  }) : 0;
-  newStyleFunction.filterProps = ['xs', 'sm', 'md', 'lg', 'xl'].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(styleFunction.filterProps));
-  return newStyleFunction;
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (breakpoints);
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/system/esm/memoize.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/system/esm/memoize.js ***!
-  \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ memoize)
-/* harmony export */ });
-function memoize(fn) {
-  var cache = {};
-  return function (arg) {
-    if (cache[arg] === undefined) {
-      cache[arg] = fn(arg);
-    }
-
-    return cache[arg];
-  };
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/system/esm/merge.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/@material-ui/system/esm/merge.js ***!
-  \*******************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-<<<<<<< HEAD
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-
-var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().array)]) : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (responsivePropType);
-=======
-/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/deepmerge.js");
-
-
-function merge(acc, item) {
-  if (!item) {
-    return acc;
-  }
-
-  return (0,_material_ui_utils__WEBPACK_IMPORTED_MODULE_0__["default"])(acc, item, {
-    clone: false // No need to clone deep, it's way faster.
-
-  });
-}
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (merge);
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ "./node_modules/@material-ui/system/esm/spacing.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/system/esm/spacing.js ***!
-  \*********************************************************/
-=======
-/***/ "./node_modules/@material-ui/system/esm/responsivePropType.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@material-ui/system/esm/responsivePropType.js ***!
-  \********************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "createUnarySpacing": () => (/* binding */ createUnarySpacing),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var _responsivePropType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./responsivePropType */ "./node_modules/@material-ui/system/esm/responsivePropType.js");
-/* harmony import */ var _breakpoints__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./breakpoints */ "./node_modules/@material-ui/system/esm/breakpoints.js");
-/* harmony import */ var _merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./merge */ "./node_modules/@material-ui/system/esm/merge.js");
-/* harmony import */ var _memoize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./memoize */ "./node_modules/@material-ui/system/esm/memoize.js");
-
-
-
-=======
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -7648,85 +6285,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var responsivePropType =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().number), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().array)]) : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (responsivePropType);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
+/***/ }),
 
-<<<<<<< HEAD
-var properties = {
-  m: 'margin',
-  p: 'padding'
-};
-var directions = {
-  t: 'Top',
-  r: 'Right',
-  b: 'Bottom',
-  l: 'Left',
-  x: ['Left', 'Right'],
-  y: ['Top', 'Bottom']
-};
-var aliases = {
-  marginX: 'mx',
-  marginY: 'my',
-  paddingX: 'px',
-  paddingY: 'py'
-}; // memoize() impact:
-// From 300,000 ops/sec
-// To 350,000 ops/sec
-
-var getCssProperties = (0,_memoize__WEBPACK_IMPORTED_MODULE_1__["default"])(function (prop) {
-  // It's not a shorthand notation.
-  if (prop.length > 2) {
-    if (aliases[prop]) {
-      prop = aliases[prop];
-    } else {
-      return [prop];
-    }
-  }
-
-  var _prop$split = prop.split(''),
-      _prop$split2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_prop$split, 2),
-      a = _prop$split2[0],
-      b = _prop$split2[1];
-
-  var property = properties[a];
-  var direction = directions[b] || '';
-  return Array.isArray(direction) ? direction.map(function (dir) {
-    return property + dir;
-  }) : [property + direction];
-});
-var spacingKeys = ['m', 'mt', 'mr', 'mb', 'ml', 'mx', 'my', 'p', 'pt', 'pr', 'pb', 'pl', 'px', 'py', 'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginX', 'marginY', 'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'paddingX', 'paddingY'];
-function createUnarySpacing(theme) {
-  var themeSpacing = theme.spacing || 8;
-
-  if (typeof themeSpacing === 'number') {
-    return function (abs) {
-      if (true) {
-        if (typeof abs !== 'number') {
-          console.error("Material-UI: Expected spacing argument to be a number, got ".concat(abs, "."));
-        }
-      }
-
-      return themeSpacing * abs;
-    };
-  }
-
-  if (Array.isArray(themeSpacing)) {
-    return function (abs) {
-      if (true) {
-        if (abs > themeSpacing.length - 1) {
-          console.error(["Material-UI: The value provided (".concat(abs, ") overflows."), "The supported values are: ".concat(JSON.stringify(themeSpacing), "."), "".concat(abs, " > ").concat(themeSpacing.length - 1, ", you need to add the missing values.")].join('\n'));
-        }
-      }
-
-      return themeSpacing[abs];
-    };
-  }
-
-  if (typeof themeSpacing === 'function') {
-    return themeSpacing;
-  }
-
-=======
 /***/ "./node_modules/@material-ui/system/esm/spacing.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/spacing.js ***!
@@ -7823,7 +6384,6 @@ function createUnarySpacing(theme) {
     return themeSpacing;
   }
 
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   if (true) {
     console.error(["Material-UI: The `theme.spacing` value (".concat(themeSpacing, ") is invalid."), 'It should be a number, an array or a function.'].join('\n'));
   }
@@ -7848,36 +6408,6 @@ function getValue(transformer, propValue) {
   if (typeof transformed === 'number') {
     return -transformed;
   }
-<<<<<<< HEAD
-
-  return "-".concat(transformed);
-}
-
-function getStyleFromPropValue(cssProperties, transformer) {
-  return function (propValue) {
-    return cssProperties.reduce(function (acc, cssProperty) {
-      acc[cssProperty] = getValue(transformer, propValue);
-      return acc;
-    }, {});
-  };
-}
-
-function spacing(props) {
-  var theme = props.theme;
-  var transformer = createUnarySpacing(theme);
-  return Object.keys(props).map(function (prop) {
-    // Using a hash computation over an array iteration could be faster, but with only 28 items,
-    // it's doesn't worth the bundle size.
-    if (spacingKeys.indexOf(prop) === -1) {
-      return null;
-    }
-
-    var cssProperties = getCssProperties(prop);
-    var styleFromPropValue = getStyleFromPropValue(cssProperties, transformer);
-    var propValue = props[prop];
-    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_2__.handleBreakpoints)(props, propValue, styleFromPropValue);
-  }).reduce(_merge__WEBPACK_IMPORTED_MODULE_3__["default"], {});
-=======
 
   return "-".concat(transformed);
 }
@@ -7934,98 +6464,19 @@ function chainPropTypes(propType1, propType2) {
   return function validate() {
     return propType1.apply(void 0, arguments) || propType2.apply(void 0, arguments);
   };
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
-
-spacing.propTypes =  true ? spacingKeys.reduce(function (obj, key) {
-  obj[key] = _responsivePropType__WEBPACK_IMPORTED_MODULE_4__["default"];
-  return obj;
-}, {}) : 0;
-spacing.filterProps = spacingKeys;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (spacing);
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./node_modules/@material-ui/utils/esm/chainPropTypes.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/chainPropTypes.js ***!
-  \***************************************************************/
-=======
 /***/ "./node_modules/@material-ui/utils/esm/deepmerge.js":
 /*!**********************************************************!*\
   !*** ./node_modules/@material-ui/utils/esm/deepmerge.js ***!
   \**********************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "default": () => (/* binding */ chainPropTypes)
-/* harmony export */ });
-function chainPropTypes(propType1, propType2) {
-  if (false) {}
-
-  return function validate() {
-    return propType1.apply(void 0, arguments) || propType2.apply(void 0, arguments);
-  };
-=======
-/* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
-/* harmony export */   "default": () => (/* binding */ deepmerge)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-
-
-function isPlainObject(item) {
-  return item && (0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__["default"])(item) === 'object' && item.constructor === Object;
-}
-function deepmerge(target, source) {
-  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
-    clone: true
-  };
-  var output = options.clone ? (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, target) : target;
-
-  if (isPlainObject(target) && isPlainObject(source)) {
-    Object.keys(source).forEach(function (key) {
-      // Avoid prototype pollution
-      if (key === '__proto__') {
-        return;
-      }
-
-      if (isPlainObject(source[key]) && key in target) {
-        output[key] = deepmerge(target[key], source[key], options);
-      } else {
-        output[key] = source[key];
-      }
-    });
-  }
-
-  return output;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-}
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ "./node_modules/@material-ui/utils/esm/deepmerge.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/deepmerge.js ***!
-  \**********************************************************/
-=======
-/***/ "./node_modules/@material-ui/utils/esm/elementTypeAcceptingRef.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/elementTypeAcceptingRef.js ***!
-  \************************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
 /* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
 /* harmony export */   "default": () => (/* binding */ deepmerge)
 /* harmony export */ });
@@ -8076,56 +6527,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _chainPropTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chainPropTypes */ "./node_modules/@material-ui/utils/esm/chainPropTypes.js");
-=======
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _chainPropTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chainPropTypes */ "./node_modules/@material-ui/utils/esm/chainPropTypes.js");
 
 
-
-function isClassComponent(elementType) {
-  // elementType.prototype?.isReactComponent
-  var _elementType$prototyp = elementType.prototype,
-      prototype = _elementType$prototyp === void 0 ? {} : _elementType$prototyp;
-  return Boolean(prototype.isReactComponent);
-}
-
-function elementTypeAcceptingRef(props, propName, componentName, location, propFullName) {
-  var propValue = props[propName];
-  var safePropName = propFullName || propName;
-
-  if (propValue == null) {
-    return null;
-  }
-
-  var warningHint;
-  /**
-   * Blacklisting instead of whitelisting
-   *
-   * Blacklisting will miss some components, such as React.Fragment. Those will at least
-   * trigger a warning in React.
-   * We can't whitelist because there is no safe way to detect React.forwardRef
-   * or class components. "Safe" means there's no public API.
-   *
-   */
-
-  if (typeof propValue === 'function' && !isClassComponent(propValue)) {
-    warningHint = 'Did you accidentally provide a plain function component instead?';
-  }
-
-  if (warningHint !== undefined) {
-    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName, "`. ") + "Expected an element type that can hold a ref. ".concat(warningHint, " ") + 'For more information see https://material-ui.com/r/caveat-with-refs-guide');
-  }
-
-  return null;
-}
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_chainPropTypes__WEBPACK_IMPORTED_MODULE_1__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_0__.elementType, elementTypeAcceptingRef));
-
-<<<<<<< HEAD
 
 function isClassComponent(elementType) {
   // elementType.prototype?.isReactComponent
@@ -8223,103 +6626,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-=======
-/***/ }),
-
-/***/ "./node_modules/@material-ui/utils/esm/exactProp.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/exactProp.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "specialProperty": () => (/* binding */ specialProperty),
-/* harmony export */   "default": () => (/* binding */ exactProp)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-
-
-// This module is based on https://github.com/airbnb/prop-types-exact repository.
-// However, in order to reduce the number of dependencies and to remove some extra safe checks
-// the module was forked.
-// Only exported for test purposes.
-var specialProperty = "exact-prop: \u200B";
-function exactProp(propTypes) {
-  if (false) {}
-
-  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, propTypes, (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, specialProperty, function (props) {
-    var unsupportedProps = Object.keys(props).filter(function (prop) {
-      return !propTypes.hasOwnProperty(prop);
-    });
-
-    if (unsupportedProps.length > 0) {
-      return new Error("The following props are not supported: ".concat(unsupportedProps.map(function (prop) {
-        return "`".concat(prop, "`");
-      }).join(', '), ". Please remove them."));
-    }
-
-    return null;
-  }));
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/utils/esm/getDisplayName.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/getDisplayName.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getFunctionName": () => (/* binding */ getFunctionName),
-/* harmony export */   "default": () => (/* binding */ getDisplayName)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
  // Simplified polyfill for IE 11 support
 // https://github.com/JamesMGreene/Function.name/blob/58b314d4a983110c3682f1228f845d39ccca1817/Function.name.js#L3
 
-var fnNameMatchRegex = /^\s*function(?:\s|\s*\/\*.*\*\/\s*)+([^(\s/]*)\s*/;
-function getFunctionName(fn) {
-  var match = "".concat(fn).match(fnNameMatchRegex);
-  var name = match && match[1];
-  return name || '';
-}
-/**
- * @param {function} Component
- * @param {string} fallback
- * @returns {string | undefined}
- */
-
-function getFunctionComponentName(Component) {
-  var fallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  return Component.displayName || Component.name || getFunctionName(Component) || fallback;
-}
-
-function getWrappedName(outerType, innerType, wrapperName) {
-  var functionName = getFunctionComponentName(innerType);
-  return outerType.displayName || (functionName !== '' ? "".concat(wrapperName, "(").concat(functionName, ")") : wrapperName);
-}
-/**
- * cherry-pick from
- * https://github.com/facebook/react/blob/769b1f270e1251d9dbdce0fcbd9e92e502d059b8/packages/shared/getComponentName.js
- * originally forked from recompose/getDisplayName with added IE 11 support
- *
- * @param {React.ReactType} Component
- * @returns {string | undefined}
- */
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
- // Simplified polyfill for IE 11 support
-// https://github.com/JamesMGreene/Function.name/blob/58b314d4a983110c3682f1228f845d39ccca1817/Function.name.js#L3
-
-<<<<<<< HEAD
 var fnNameMatchRegex = /^\s*function(?:\s|\s*\/\*.*\*\/\s*)+([^(\s/]*)\s*/;
 function getFunctionName(fn) {
   var match = "".concat(fn).match(fnNameMatchRegex);
@@ -8387,43 +6697,6 @@ function getDisplayName(Component) {
   !*** ./node_modules/@material-ui/utils/esm/refType.js ***!
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-=======
-function getDisplayName(Component) {
-  if (Component == null) {
-    return undefined;
-  }
-
-  if (typeof Component === 'string') {
-    return Component;
-  }
-
-  if (typeof Component === 'function') {
-    return getFunctionComponentName(Component, 'Component');
-  }
-
-  if ((0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(Component) === 'object') {
-    switch (Component.$$typeof) {
-      case react_is__WEBPACK_IMPORTED_MODULE_1__.ForwardRef:
-        return getWrappedName(Component, Component.render, 'ForwardRef');
-
-      case react_is__WEBPACK_IMPORTED_MODULE_1__.Memo:
-        return getWrappedName(Component, Component.type, 'memo');
-
-      default:
-        return undefined;
-    }
-  }
-
-  return undefined;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/utils/esm/refType.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@material-ui/utils/esm/refType.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -8438,74 +6711,6 @@ var refType = prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop
 
 /***/ }),
 
-/***/ "./node_modules/attr-accept/dist/es/index.js":
-/*!***************************************************!*\
-  !*** ./node_modules/attr-accept/dist/es/index.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, exports) => {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-
-var refType = prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_0___default().object)]);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (refType);
-
-<<<<<<< HEAD
-/***/ }),
-
-/***/ "./node_modules/attr-accept/dist/es/index.js":
-/*!***************************************************!*\
-  !*** ./node_modules/attr-accept/dist/es/index.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-=======
-exports.__esModule = true;
-
-exports["default"] = function (file, acceptedFiles) {
-  if (file && acceptedFiles) {
-    var acceptedFilesArray = Array.isArray(acceptedFiles) ? acceptedFiles : acceptedFiles.split(',');
-    var fileName = file.name || '';
-    var mimeType = (file.type || '').toLowerCase();
-    var baseMimeType = mimeType.replace(/\/.*$/, '');
-    return acceptedFilesArray.some(function (type) {
-      var validType = type.trim().toLowerCase();
-
-      if (validType.charAt(0) === '.') {
-        return fileName.toLowerCase().endsWith(validType);
-      } else if (validType.endsWith('/*')) {
-        // This is something like a image/* mime type
-        return baseMimeType === validType.replace(/\/.*$/, '');
-      }
-
-      return mimeType === validType;
-    });
-  }
-
-  return true;
-};
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-
-<<<<<<< HEAD
-exports.__esModule = true;
-
-exports["default"] = function (file, acceptedFiles) {
-  if (file && acceptedFiles) {
-    var acceptedFilesArray = Array.isArray(acceptedFiles) ? acceptedFiles : acceptedFiles.split(',');
-    var fileName = file.name || '';
-    var mimeType = (file.type || '').toLowerCase();
-    var baseMimeType = mimeType.replace(/\/.*$/, '');
-    return acceptedFilesArray.some(function (type) {
-      var validType = type.trim().toLowerCase();
-=======
 /***/ "./resources/js/Icons/Profile.jsx":
 /*!****************************************!*\
   !*** ./resources/js/Icons/Profile.jsx ***!
@@ -8515,83 +6720,6 @@ exports["default"] = function (file, acceptedFiles) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Profile)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-      if (validType.charAt(0) === '.') {
-        return fileName.toLowerCase().endsWith(validType);
-      } else if (validType.endsWith('/*')) {
-        // This is something like a image/* mime type
-        return baseMimeType === validType.replace(/\/.*$/, '');
-      }
-
-<<<<<<< HEAD
-      return mimeType === validType;
-    });
-  }
-
-  return true;
-};
-
-/***/ }),
-
-/***/ "./resources/js/Icons/Profile.jsx":
-/*!****************************************!*\
-  !*** ./resources/js/Icons/Profile.jsx ***!
-  \****************************************/
-=======
-function Profile(_ref) {
-  var className = _ref.className;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-    className: className,
-    width: "19",
-    height: "19",
-    viewBox: "0 0 19 19",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("g", {
-      clipPath: "url(#clip0)",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M11.7417 3.48275C12.1528 2.57522 11.9899 1.46601 11.2414 0.721372C10.2796 -0.240457 8.71659 -0.240457 7.75476 0.721372C6.79293 1.6832 6.79293 3.24617 7.75476 4.208C8.50328 4.95652 9.6086 5.11941 10.5161 4.70831L13.3977 7.58992C13.549 7.3417 13.7274 7.109 13.9368 6.89957C14.1463 6.69014 14.379 6.51174 14.6233 6.36436L11.7417 3.48275ZM10.1942 3.15309C9.81028 3.53705 9.18974 3.53705 8.80579 3.15309C8.42183 2.76914 8.42183 2.1486 8.80579 1.76465C9.18974 1.38069 9.81028 1.38069 10.1942 1.76465C10.5782 2.1486 10.5782 2.76914 10.1942 3.15309Z",
-        fill: "currentColor"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M11.2414 14.7921C10.4929 14.0436 9.38753 13.8807 8.48 14.2918L5.59839 11.4102C5.45101 11.6545 5.27261 11.8872 5.06318 12.0966C4.85375 12.3061 4.62104 12.4845 4.37671 12.6318L7.25832 15.5134C6.84333 16.4249 7.0101 17.5302 7.75475 18.2787C8.71657 19.2405 10.2795 19.2405 11.2414 18.2787C12.2032 17.3169 12.2032 15.7539 11.2414 14.7921ZM10.1942 17.2315C9.81027 17.6155 9.18973 17.6155 8.80578 17.2315C8.42182 16.8476 8.42182 16.2271 8.80578 15.8431C9.18973 15.4591 9.81027 15.4591 10.1942 15.8431C10.5782 16.2271 10.5782 16.8476 10.1942 17.2315Z",
-        fill: "currentColor"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M18.2767 7.74898C17.3187 6.79103 15.7557 6.79103 14.7939 7.75286C14.0454 8.50138 13.8825 9.60671 14.2936 10.5142L11.412 13.3959C11.6563 13.5432 11.889 13.7216 12.0985 13.9311C12.3079 14.1405 12.4863 14.3732 12.6337 14.6175L15.5153 11.7359C16.4228 12.147 17.532 11.9841 18.2767 11.2356C19.2385 10.2738 19.2385 8.71081 18.2767 7.74898ZM17.2295 10.1923C16.8455 10.5763 16.225 10.5763 15.8411 10.1923C15.4571 9.80838 15.4571 9.18785 15.8411 8.80389C16.225 8.41994 16.8455 8.41994 17.2295 8.80389C17.6135 9.18785 17.6135 9.80838 17.2295 10.1923Z",
-        fill: "currentColor"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        d: "M7.58799 5.60034C7.34366 5.45296 7.11096 5.27456 6.90152 5.06513C6.69209 4.8557 6.51369 4.623 6.36631 4.37866L3.4847 7.26027C2.57717 6.84917 1.46797 7.01206 0.723325 7.76058C-0.238504 8.72241 -0.238504 10.2854 0.723325 11.2472C1.68128 12.2052 3.24425 12.2052 4.20608 11.2433C4.9546 10.4948 5.11749 9.38948 4.70638 8.48195L7.58799 5.60034ZM3.15892 10.1923C2.77497 10.5763 2.15443 10.5763 1.77048 10.1923C1.38652 9.80834 1.38652 9.18781 1.77048 8.80385C2.15443 8.4199 2.77497 8.4199 3.15892 8.80385C3.54288 9.18781 3.54288 9.80834 3.15892 10.1923Z",
-        fill: "currentColor"
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("defs", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("clipPath", {
-        id: "clip0",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
-          width: "19",
-          height: "19",
-          fill: "white"
-        })
-      })
-    })]
-  });
-}
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Course/AddCourse.jsx":
-/*!*************************************************!*\
-  !*** ./resources/js/Pages/Course/AddCourse.jsx ***!
-  \*************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
 /* harmony export */   "default": () => (/* binding */ Profile)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -8633,289 +6761,6 @@ function Profile(_ref) {
     })]
   });
 }
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Course/AddCourse.jsx":
-/*!*************************************************!*\
-  !*** ./resources/js/Pages/Course/AddCourse.jsx ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
-/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
-/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils */ "./resources/js/utils.js");
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
-/* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-=======
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
-/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
-/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils */ "./resources/js/utils.js");
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
-/* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-var AddCourse = function AddCourse() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    course_title: '',
-    course_code: '',
-    department: '',
-    course_credit: '',
-    course_outline: ''
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      values = _useState2[0],
-      setValues = _useState2[1];
-
-  var handleChange = function handleChange(e) {
-    var key = e.target.name;
-    var value = e.target.value;
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, value));
-    });
-  };
-
-  var handleFileChange = function handleFileChange(file, name) {
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, name, file));
-    });
-  };
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault();
-    console.log(_typeof(values.course_outline), values.course_outline.preview);
-    var mapping = Object.values(values).filter(function (item) {
-      var _values$course_outlin;
-
-      return !(values !== null && values !== void 0 && (_values$course_outlin = values.course_outline) !== null && _values$course_outlin !== void 0 && _values$course_outlin.preview) && !item.length;
-    });
-
-    if (!mapping.length) {
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__.Inertia.post(route('add_course'), values, {
-        onFinish: function onFinish() {
-          setValues({
-            course_title: '',
-            course_code: '',
-            course_credit: '',
-            course_outline: ''
-          }), react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].success("Save Successfuly!");
-        }
-      });
-    } else {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field Can't be empty!");
-    }
-  };
-
-=======
-var AddCourse = function AddCourse() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    course_title: '',
-    course_code: '',
-    department: '',
-    course_credit: '',
-    course_outline: ''
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      values = _useState2[0],
-      setValues = _useState2[1];
-
-  var handleChange = function handleChange(e) {
-    var key = e.target.name;
-    var value = e.target.value;
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, value));
-    });
-  };
-
-  var handleFileChange = function handleFileChange(file, name) {
-    setValues(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, name, file));
-    });
-  };
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault();
-    console.log(_typeof(values.course_outline), values.course_outline.preview);
-    var mapping = Object.values(values).filter(function (item) {
-      var _values$course_outlin;
-
-      return !(values !== null && values !== void 0 && (_values$course_outlin = values.course_outline) !== null && _values$course_outlin !== void 0 && _values$course_outlin.preview) && !item.length;
-    });
-
-    if (!mapping.length) {
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_6__.Inertia.post(route('add_course'), values, {
-        onFinish: function onFinish() {
-          setValues({
-            course_title: '',
-            course_code: '',
-            course_credit: '',
-            course_outline: ''
-          }), react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].success("Save Successfuly!");
-        }
-      });
-    } else {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field Can't be empty!");
-    }
-  };
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-    className: "main-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-      className: "font-inter-600 text-3xl mb-4 flex gap-4",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
-        children: "Add Course"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("form", {
-      onSubmit: handleSubmit,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-        className: "main-card flex",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-          className: "main-card__left",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "course_title",
-            name: "course_title",
-            label: "Course Name",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.name}
-            ,
-            placeholder: "Course Name"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "course_code",
-            name: "course_code",
-            label: "Course Code",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md" // value={values?.email}
-            ,
-            placeholder: "Course Code"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "course_credit",
-            name: "course_credit",
-            label: "Course Cradit",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Course Cradit" // value={values?.phone}
-
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            id: "department",
-            name: "department",
-            label: "Department",
-            type: "text",
-            onChange: handleChange,
-            inputClass: "profile-textinput-input",
-            inputLabelClass: "font-inter-600 text-md",
-            placeholder: "Department" // value={values?.studentId}
-
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-          className: "main-card__right font-inter-600 text-md",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_7__["default"], {
-            label: "Outline",
-            name: "course_outline",
-            className: "w-full pb-8 pr-6 lg:w-1/2" //errors={errors?.image}
-            // value={values?.photo}
-            ,
-            accept: "image/*, *.pdf",
-            onChange: handleFileChange,
-            multiple: false
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-            className: "pt-3",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("button", {
-              className: "btn-signup",
-              type: "submit",
-              children: "Submit"
-            })
-          })]
-        })]
-      })
-    })]
-  });
-};
-
-AddCourse.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    children: page
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddCourse);
 
 /***/ }),
 
@@ -8990,49 +6835,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-<<<<<<< HEAD
-
-
-
-
-
-var Navbar = function Navbar() {
-  var userInfo = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.userInfo;
-  console.log({
-    userInfo: userInfo
-  });
-  var photoSrc = (userInfo === null || userInfo === void 0 ? void 0 : userInfo.photo_path) || "";
-  var userName = (userInfo === null || userInfo === void 0 ? void 0 : userInfo.name) || "";
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "flex justify-between nav-main items-center",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "font-montserrat-600 text-lg",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-        className: "ml-6",
-        href: "/dashboard",
-        children: "Teaching Assist"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "font-montserrat-600 text-lg flex flex-row",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-        className: "mr-6",
-        method: "post",
-        as: "button",
-        href: "/logout",
-        children: "Logout"
-      }), photoSrc ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-        className: " w-40 h-40 rounded-3xl mr-5 pro-pic",
-        src: photoSrc,
-        alt: "user"
-      }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
-        children: userName
-      })]
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
-=======
 
 
 
@@ -9110,61 +6912,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-<<<<<<< HEAD
-/***/ "./resources/js/Pages/Layout/Sidebar.jsx":
-/*!***********************************************!*\
-  !*** ./resources/js/Pages/Layout/Sidebar.jsx ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Sidebar)
-/* harmony export */ });
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Icons_Profile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Icons/Profile */ "./resources/js/Icons/Profile.jsx");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/makeStyles.js");
-/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/List.js");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/ListItem.js");
-/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "./node_modules/@material-ui/core/esm/ListItemIcon/ListItemIcon.js");
-/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/ListItemText.js");
-/* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Collapse */ "./node_modules/@material-ui/core/esm/Collapse/Collapse.js");
-/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
-/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
-/* harmony import */ var _material_ui_icons_StarBorder__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/StarBorder */ "./node_modules/@material-ui/icons/StarBorder.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-=======
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-<<<<<<< HEAD
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
@@ -9221,50 +6973,6 @@ function Sidebar() {
     setOpenSecondLevel(!openSecondLevel);
   };
 
-=======
-
-
-
-
-var useStyles = (0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["default"])(function (theme) {
-  return {
-    root: {
-      width: "100%",
-      maxWidth: 360,
-      backgroundColor: theme.palette.background.paper
-    },
-    nested: {
-      paddingLeft: theme.spacing(4)
-    },
-    nestedSecondLevel: {
-      paddingLeft: theme.spacing(8)
-    }
-  };
-});
-function Sidebar() {
-  var classes = useStyles();
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
-      _useState2 = _slicedToArray(_useState, 2),
-      open = _useState2[0],
-      setOpen = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true),
-      _useState4 = _slicedToArray(_useState3, 2),
-      openSecondLevel = _useState4[0],
-      setOpenSecondLevel = _useState4[1];
-
-  var handleOpen = function handleOpen(item) {
-    setOpen(function (oldValues) {
-      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, item, !open[item]));
-    });
-  };
-
-  var handleClickSecondLevel = function handleClickSecondLevel() {
-    setOpenSecondLevel(!openSecondLevel);
-  };
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "sidebar-main",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -9479,8 +7187,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
-<<<<<<< HEAD
-=======
               return handleOpen("manage_student");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -9536,7 +7242,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
               return handleOpen("manage_routine");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -9708,254 +7413,10 @@ function Sidebar() {
 
 /***/ }),
 
-/***/ "./resources/js/Shared/Dropzone.js":
-/*!*****************************************!*\
-  !*** ./resources/js/Shared/Dropzone.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dropzone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dropzone */ "./node_modules/react-dropzone/dist/es/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-/* eslint-disable no-shadow */
-
-/* eslint-disable import/no-unresolved */
-
-/* eslint-disable react/jsx-props-no-spreading */
-
-/* eslint-disable jsx-a11y/alt-text */
-
-
-
-
-/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(props) {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      files = _useState2[0],
-      setFiles = _useState2[1];
-
-  var className = props.className,
-      name = props.name,
-      label = props.label,
-      accept = props.accept,
-      _props$errors = props.errors,
-      errors = _props$errors === void 0 ? [] : _props$errors,
-      onChange = props.onChange,
-      multiple = props.multiple,
-      value = props.value;
-
-  var _useDropzone = (0,react_dropzone__WEBPACK_IMPORTED_MODULE_1__.useDropzone)({
-    // Disable click and keydown behavior
-    noClick: true,
-    noKeyboard: true,
-    onDrop: function onDrop(acceptedFiles) {
-      setFiles(acceptedFiles.map(function (file) {
-        return Object.assign(file, {
-          preview: URL.createObjectURL(file)
-        });
-      }));
-      onChange(acceptedFiles[0], name);
-    }
-  }),
-      getRootProps = _useDropzone.getRootProps,
-      getInputProps = _useDropzone.getInputProps,
-      open = _useDropzone.open;
-
-  var remove = function remove(file) {
-    var newFiles = _toConsumableArray(files); // make a var for the new array
-
-
-    newFiles.splice(file, 1); // remove the file from the array
-
-    setFiles(newFiles); // update the state
-
-    onChange(null);
-  };
-
-  function handleFileChange(e) {
-    var inputFiles = multiple ? e.target.files : e.target.files[0];
-
-    var newFiles = _toConsumableArray(files);
-
-    newFiles.push(inputFiles);
-    setFiles(newFiles.map(function (file) {
-      return Object.assign(file, {
-        preview: URL.createObjectURL(file)
-      });
-    }));
-    onChange(inputFiles, e.target.name);
-  }
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    console.log(value);
-    if (value === '' || typeof value !== 'string') return;
-    var ext = value.split('?')[0].split('#')[0].split('.').pop();
-    fetch(value).then(function (res) {
-      return res.blob();
-    }) // Gets the response and returns it as a blob
-    .then(function (blob) {
-      // Here's where you get access to the blob
-      // And you can use it for whatever you want
-      // Like calling ref().put(blob)
-      // Here, I use it to make an image appear on the page
-      var objectURL = URL.createObjectURL(blob);
-      var nfile = new File([blob], "image.".concat(ext), {
-        type: blob.type
-      });
-      var newFiles = [];
-      newFiles.push(nfile);
-      setFiles(newFiles.map(function (file) {
-        return Object.assign(file, {
-          preview: objectURL
-        });
-      })); // console.log(file)
-    });
-  }, [value]);
-  var thumbs = files.map(function (file, i) {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "dropzone-thumbnail",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "dropzone-thumbnail-inner",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-          className: "dropzone-thumbnail-image",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-            src: file.preview,
-            alt: file.name
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("svg", {
-            onClick: function onClick() {
-              return remove(i);
-            },
-            className: "dropzone-thumbnail-close",
-            width: "15",
-            height: "15",
-            viewBox: "0 0 12 12",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("circle", {
-              cx: "6",
-              cy: "6",
-              r: "6",
-              fill: "#DBDBDB"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-              d: "M8 4L4 8",
-              stroke: "black",
-              strokeWidth: "0.666667",
-              strokeLinecap: "round",
-              strokeLinejoin: "round"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-              d: "M4 4L8 8",
-              stroke: "black",
-              strokeWidth: "0.666667",
-              strokeLinecap: "round",
-              strokeLinejoin: "round"
-            })]
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          children: file.name
-        })]
-      })
-    }, file.name);
-  });
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    return function () {
-      // Make sure to revoke the data uris to avoid memory leaks
-      // console.log(files);
-      files.forEach(function (file) {
-        return URL.revokeObjectURL(file.preview);
-      });
-    };
-  }, [files]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: className,
-    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("label", {
-      className: "form-label",
-      htmlFor: name,
-      children: [label, ":"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", _objectSpread(_objectSpread({}, getRootProps()), {}, {
-      className: "dropzone ".concat(errors.length && 'error'),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", _objectSpread(_objectSpread({}, getInputProps()), {}, {
-        id: name,
-        name: name,
-        accept: accept,
-        type: "file" // value={values}
-        // className=""
-        ,
-        onChange: handleFileChange,
-        multiple: multiple
-      })), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("svg", {
-          width: "20",
-          height: "21",
-          viewBox: "0 0 20 21",
-          fill: "none",
-          xmlns: "http://www.w3.org/2000/svg",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-            d: "M15.8333 3H4.16667C3.24619 3 2.5 3.74619 2.5 4.66667V16.3333C2.5 17.2538 3.24619 18 4.16667 18H15.8333C16.7538 18 17.5 17.2538 17.5 16.3333V4.66667C17.5 3.74619 16.7538 3 15.8333 3Z",
-            stroke: "#919191",
-            strokeWidth: "1.5",
-            strokeLinecap: "round",
-            strokeLinejoin: "round"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-            d: "M7.08325 8.83331C7.77361 8.83331 8.33325 8.27367 8.33325 7.58331C8.33325 6.89296 7.77361 6.33331 7.08325 6.33331C6.3929 6.33331 5.83325 6.89296 5.83325 7.58331C5.83325 8.27367 6.3929 8.83331 7.08325 8.83331Z",
-            stroke: "#919191",
-            strokeWidth: "1.5",
-            strokeLinecap: "round",
-            strokeLinejoin: "round"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("path", {
-            d: "M17.5001 13L13.3334 8.83331L4.16675 18",
-            stroke: "#919191",
-            strokeWidth: "1.5",
-            strokeLinecap: "round",
-            strokeLinejoin: "round"
-          })]
-        }), "Drag & drop or", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-          type: "button",
-          onClick: open,
-          className: "browse-image",
-          children: "Browse"
-        })]
-      }), thumbs]
-    }))]
-  });
-}
-
-/***/ }),
-
-/***/ "./resources/js/Shared/SingleSelect.jsx":
-/*!**********************************************!*\
-  !*** ./resources/js/Shared/SingleSelect.jsx ***!
-  \**********************************************/
+/***/ "./resources/js/Pages/Student/ViewStudent.jsx":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Student/ViewStudent.jsx ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -9964,148 +7425,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ka-table */ "./node_modules/ka-table/index.js");
+/* harmony import */ var ka_table__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ka_table__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var ka_table_enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ka-table/enums */ "./node_modules/ka-table/enums.js");
+/* harmony import */ var _Layout_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Layout/Layout */ "./resources/js/Pages/Layout/Layout.jsx");
+/* harmony import */ var ka_table_style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ka-table/style.scss */ "./node_modules/ka-table/style.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-var SingleSelect = function SingleSelect(_ref) {
-  var id = _ref.id,
-      name = _ref.name,
-      label = _ref.label,
-      labelClass = _ref.labelClass,
-      inputClass = _ref.inputClass,
-      optionValues = _ref.optionValues,
-      onChange = _ref.onChange,
-      value = _ref.value;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("label", {
-      htmlFor: name,
-      className: labelClass,
-      children: [label, ":"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("select", {
-        name: name,
-        id: id,
-        className: inputClass,
-        value: value,
-        onChange: onChange,
-        children: optionValues.map(function (_ref2) {
-          var key = _ref2.key,
-              value = _ref2.value;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-            value: key,
-            children: value
-          }, key);
-        })
+
+
+
+
+var ViewStudent = function ViewStudent() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+    className: "main-div",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "font-inter-600 text-3xl mb-4 flex gap-4",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+        children: "Course Details"
       })
-    })]
+    })
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SingleSelect);
-
-/***/ }),
-
-/***/ "./resources/js/Shared/TextInput.jsx":
-/*!*******************************************!*\
-  !*** ./resources/js/Shared/TextInput.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var TextInput = function TextInput(_ref) {
-  var label = _ref.label,
-      name = _ref.name,
-      inputLabelClass = _ref.inputLabelClass,
-      inputClass = _ref.inputClass,
-      type = _ref.type,
-      value = _ref.value,
-      _ref$errors = _ref.errors,
-      errors = _ref$errors === void 0 ? [] : _ref$errors,
-      onChange = _ref.onChange,
-      placeholder = _ref.placeholder;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("label", {
-      htmlFor: name,
-      className: inputLabelClass,
-      children: [label, ":"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-        id: name,
-        name: name,
-        type: type,
-        value: value,
-        onChange: onChange,
-        placeholder: placeholder,
-        className: inputClass
-      })
-    }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "form-error",
-      children: errors
-    })]
+ViewStudent.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    children: page
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextInput);
-
-/***/ }),
-
-/***/ "./resources/js/utils.js":
-/*!*******************************!*\
-  !*** ./resources/js/utils.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "filesize": () => (/* binding */ filesize),
-/* harmony export */   "toFormData": () => (/* binding */ toFormData),
-/* harmony export */   "uniqId": () => (/* binding */ uniqId),
-/* harmony export */   "capitalize": () => (/* binding */ capitalize)
-/* harmony export */ });
-function filesize(size) {
-  var i = Math.floor(Math.log(size) / Math.log(1024));
-  return "".concat((size / Math.pow(1024, i)).toFixed(2) * 1, " ").concat(['B', 'kB', 'MB', 'GB', 'TB'][i]);
-} // Transforms key/value pairs to FormData() object
-
-function toFormData() {
-  var values = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'POST';
-  var formData = new FormData();
-  Object.keys(values).forEach(function (field) {
-    return formData.append(field, values[field]);
-  }); // NOTE: When working with Laravel PUT/PATCH requests and FormData
-  // you SHOULD send POST request and fake the PUT request like this.
-  // More info: http://stackoverflow.com/q/50691938
-
-  if (method.toUpperCase() === 'PUT') {
-    formData.append('_method', 'PUT');
-  }
-
-  return formData;
-}
-var uniqId = function uniqId() {
-  var a = new Uint32Array(3);
-  window.crypto.getRandomValues(a);
-  return (performance.now().toString(36) + Array.from(a).map(function (A) {
-    return A.toString(36);
-  }).join('')).replace(/\./g, '');
-};
-var capitalize = function capitalize(s) {
-  return s && s[0].toUpperCase() + s.slice(1) || '';
-};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ViewStudent);
 
 /***/ }),
 
@@ -10161,6 +7514,106 @@ function toVal(mix) {
 	return str;
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"icons\";\n  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOYAA0AAAAACIwAAANEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCXhEICoVkhBELGAABNgIkAyAEIAWDGwd3G7wGIB6FccN9E8MSQ5TJpF8+Kh6+t+Pr3H79IWQDyGtnGznKjFTOdqrnf1z+g5yUiMkVTqLPrm6X95YUF/revX4rMPI/7p3+9bhAwsmLIKM/dpMmheGeGFCXBhJmYyycIKFmXZZqg+4GoD75LAR8vcb1B99t3n90zw5UoxWZECqFHBlSLp4CJWQvQz/wJGgnfjEmKgRLUe91Z4ofS9L+YtLLacLLCAD0CyQkdAuwURLolpuKSuUymdD/Y0lxvyigSHgnxXaEJFQCCIkoJRIQGTLwnwly4RNDFIU6UAVaUYn38D8gBwSCurIEzdoGMEUiMSG6XNmbvBmcPh4yOeEnZG4Hjdtcbr7UvDqZOW5R3gwcI6EreQSlMZhji1XdJtomxyXVxz0xOqA0iV2poyEGvkUrb+JXErcttqPmckjrhP24zVE3pQd1nKm6TSndsCV60yq9k46E8sVaxjuLbzjQizxKDhBMB2rtAYm4yWaJQlNtzuaxN2cL9Lms6+3NivaelBNhybVa61y+Dui65A50TRLHAWDkX8MLpTlWTY+l++ycXbLW0qOxNhWKr7xRS3zDZdOO1+cmLU2lVT2/AspTZdIy1RHOLQL+4EuSLTA+03urCoW1lm7tCMkgz8VBbbHw5ito81fAqJGVuiF/FEOqE4wTUnzVgPN6Y3XI/x+x3vffdzB/W0UOauDX9/phBrRQ/ND5izv5sMi2JevqHCEQa5Zt7mJv8WwDvbj3ytdtaz5R+U2Vryb7U/043rZdKf/YcnwyJgcvliuvf0HdByAQuP/D+ztI1v/Kq3Lzhv0UcpAOoFwGgum5AznI+ZeAkhwQ64AcvgXPesZ8gSqjZSAT/LXexXkIZeqLaAYD0QQz0Rw2qktUuaguVea55ZU6fSyJvEKoBaAZtKMJRqI5LFSXaLVTXarW3R0rjfWaQ/Y44ZgTTjjOoZWcYxYXgNX2OeCco3Y5zb3i6gGD1NhkuN4+p51xKL/fKMONZPuySZVcObh1flX2Wf0O2Of4yPR3OWufvdG7XdJvEYJl/uHsSC/b+PB3jC7+n8QWgEy4RhWRySJJkUdJlEZZlEdF6YGj20tTKtS549PKwGRVLUalElSgBg1oZR0=) format(\"woff2\"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAcYAAsAAAAABswAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgD2oEfGNtYXAAAAFoAAAAVAAAAFQYVtCMZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAAvAAAALwNeDULGhlYWQAAAS0AAAANgAAADYdwj7iaGhlYQAABOwAAAAkAAAAJAdWA3JobXR4AAAFEAAAACgAAAAoIAACqmxvY2EAAAU4AAAAFgAAABYDHgI6bWF4cAAABVAAAAAgAAAAIAANADRuYW1lAAAFcAAAAYYAAAGGmUoJ+3Bvc3QAAAb4AAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA6AUDZv9nAJkDZgCZAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADgAAAAKAAgAAgACAAEAIOgF//3//wAAAAAAIOgA//3//wAB/+MYBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQDy/3QDJANMABYAAAkBBiInJjQ3CQEmNDc2MhcBHgEVFAYHAw/+SBU8FBYWAYX+exYWFDwVAbgKCwsKAS7+RhQUFjsVAYYBhhU7FhQU/kcLGg4OGgoAAAEAEv9gA+4DTgAmAAAJATY0JyYiBwkBJiIHBhQXCQEGFBceATMyNjcJAR4BMzI2NzY0JwECWgGUEhIUNBT+bv5uFDQUEhIBlP5sEhIKGA0MFwoBkgGSChgNDBcKEhL+bAFgAZIUNBQSEv5sAZQSEhQ0FP5u/m4UNBQJCQkJAZT+bAkJCQkUNBQBkgAAAQAWADwD7AJvABUAACUBJjQ3NjIXCQE2MhcWFAcBDgEjIiYBzv5IFhYUOxYBhQGGFTsWFBT+RwsaDg4aUgG4FTsVFRX+egGGFRUVOxX+SAsLCwAAAQCj/2ADXgNgAB4AACU2MhcWFAcBDgEjIiYnASY0NzYyHwERNDYzMhYVETcDExErDxAQ/sgHEwwLEwj+yRAQDysQ3x4WFh7f8hAQECsP/scHCAgHATkPKxAQEN8DGRYeHhb8598AAAABAKL/YANeA2AAHgAAEwYiJyY0NwE+ATMyFhcBFhQHBiIvAREUBiMiJjURB+0RKw8QEAE4BxMMCxMIATgQEBArEN8eFhYe3wHOEBAQKw8BOQcICAf+xw8rEBAQ4PzmFh4eFgMZ3wAAAAIAS/9nA6kDZwAkADEAAAkBLgE3PgEzITIWFxYGBwEOARcRDgEHDgEjIiYvAS4BNxEuASc3HgEXERcRJjY3ASEBAXH+4AgDBQUWDQMODRUGBQII/uQGBgEBCwoGDgcECQSeDA4BAQoIMA0PAoMBDA0BC/0pARMBigGWCRkMCw4OCwwZCf5qChcM/jYLFAYEAwECPgUWDQGNDRYKIxEpFv5/NAG1FSkRAX/+ggABAAAAAQAAv9IV/18PPPUACwQAAAAAAN1afY8AAAAA3Vp9jwAA/2AD7gNnAAAACAACAAAAAAAAAAEAAANm/2cAAAQAAAAAAAPuAAEAAAAAAAAAAAAAAAAAAAAKBAAAAAAAAAAAAAAABAAAAAQAAPIEAAASBAAAFgQAAKMEAACiBAAASwAAAAAACgAUAB4ASgCQALoA7gEiAXgAAAABAAAACgAyAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEABwAAAAEAAAAAAAIABwBgAAEAAAAAAAMABwA2AAEAAAAAAAQABwB1AAEAAAAAAAUACwAVAAEAAAAAAAYABwBLAAEAAAAAAAoAGgCKAAMAAQQJAAEADgAHAAMAAQQJAAIADgBnAAMAAQQJAAMADgA9AAMAAQQJAAQADgB8AAMAAQQJAAUAFgAgAAMAAQQJAAYADgBSAAMAAQQJAAoANACkaWNvbW9vbgBpAGMAbwBtAG8AbwBuVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwaWNvbW9vbgBpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuUmVndWxhcgBSAGUAZwB1AGwAYQByaWNvbW9vbgBpAGMAbwBtAG8AbwBuRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format(\"woff\");\n  font-weight: normal;\n  font-style: normal;\n}\n.ka-icon-tree-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-group-arrow-collapsed:before {\n  content: \"\\e800\";\n}\n\n.ka-icon-close:before {\n  content: \"\\e801\";\n}\n\n.ka-icon-tree-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-group-arrow-expanded:before {\n  content: \"\\e802\";\n}\n\n.ka-icon-sort-arrow-down:before {\n  content: \"\\e803\";\n}\n\n.ka-icon-sort-arrow-up:before {\n  content: \"\\e804\";\n}\n\n.ka-icon-filter:before {\n  content: \"\\e805\";\n}\n\n.ka {\n  overflow: hidden;\n  background-color: white;\n  font-size: 14px;\n  display: flex;\n  flex-direction: column;\n}\n\n.ka-table-wrapper {\n  height: 100%;\n  width: 100%;\n  overflow-y: auto;\n}\n\n.ka-table {\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n\n.ka-thead-background {\n  background-color: #F1F5F7;\n}\n\n.ka-thead-cell-height {\n  box-sizing: border-box;\n  height: 47px;\n}\n\n.ka-thead-fixed {\n  position: -webkit-sticky;\n  position: sticky;\n}\n\n.ka-thead-row:nth-child(1) .ka-thead-fixed {\n  top: 0px;\n}\n\n.ka-thead-row:nth-child(2) .ka-thead-fixed {\n  top: 47px;\n}\n\n.ka-thead-row:nth-child(3) .ka-thead-fixed {\n  top: 94px;\n}\n\n.ka-thead-row:nth-child(4) .ka-thead-fixed {\n  top: 141px;\n}\n\n.ka-thead-row:nth-child(5) .ka-thead-fixed {\n  top: 188px;\n}\n\n.ka-thead-row:nth-child(6) .ka-thead-fixed {\n  top: 235px;\n}\n\n.ka-thead-cell {\n  padding: 15px 20px;\n  color: #747D86;\n}\n\n.ka-thead-cell-wrapper {\n  display: flex;\n}\n\n.ka-thead-cell-content-wrapper {\n  width: 100%;\n}\n\n.ka-thead-cell-content {\n  width: 100%;\n}\n\n.ka-tbody {\n  height: 100%;\n}\n\n.ka-thead-cell, .ka-cell {\n  text-align: left;\n}\n\n.ka-cell {\n  padding: 8px 20px;\n  line-height: 29px;\n  color: #353C44;\n}\n\n.ka-tree-cell {\n  display: flex;\n}\n\n.ka-icon {\n  font-weight: 100;\n  font-size: 10px;\n  font-family: \"icons\";\n}\n\n.ka-input {\n  max-width: 100%;\n  border: 1px solid;\n}\n\n.ka-cell-editor-validation-error .ka-input {\n  background: #FFE7E7;\n  border: 1px solid #FF0C0C;\n}\n\n.ka-validation-message-container {\n  position: absolute;\n}\n\n.ka-validation-message {\n  font-size: 12px;\n  color: white;\n  background-color: #FF0C0C;\n  padding: 0 10px;\n  max-width: 200px;\n}\n\n.ka-empty-cell {\n  width: 40px;\n  min-width: 40px;\n}\n\n.ka-tree-empty-space {\n  width: 20px;\n}\n\n.ka-tr {\n  width: 100%;\n}\n\n.ka-no-data-row {\n  height: 100px;\n  text-align: center;\n}\n\n.ka-row {\n  box-sizing: border-box;\n  border-bottom: 2px solid #F9FBFC;\n  border-top: 2px solid #F9FBFC;\n}\n\n.ka-dragged-row {\n  opacity: 0.5;\n}\n\n.ka-drag-over-row {\n  box-shadow: inset 0 7px 0px -4px #e1ebf0;\n}\n\n.ka-dragged-row ~ .ka-drag-over-row {\n  box-shadow: inset 0 -7px 0px -4px #e1ebf0;\n}\n\n.ka-drag-over-column {\n  box-shadow: inset 7px 0 0px -4px #e1ebf0;\n}\n\n.ka-dragged-column ~ .ka-drag-over-column {\n  box-shadow: inset -7px 0 0px -4px #e1ebf0;\n}\n\n.ka-row-selected {\n  background-color: #F7FcFd;\n}\n\n.ka-group-row {\n  background-color: #F9FBFC;\n  box-sizing: border-box;\n  border-bottom: 1px solid white;\n  border-top: 1px solid white;\n}\n\n.ka-group-cell {\n  padding: 8px 10px;\n}\n\n.ka-group-cell-content {\n  display: flex;\n  align-items: center;\n}\n\n.ka-icon-group-arrow {\n  padding: 10px 5px 10px 10px;\n  margin-right: 5px;\n  cursor: pointer;\n}\n\n.ka-icon-tree-arrow {\n  padding: 0 10px 0 10px;\n  margin-left: -10px;\n  cursor: pointer;\n}\n\n.ka-icon-sort {\n  margin-left: 3px;\n}\n\n.ka-pointer {\n  cursor: pointer;\n}\n\n.ka-filter-row-cell {\n  padding: 0 20px 15px 20px;\n}\n\n.ka-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-color: #ffffff88;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\n.ka-loading-active {\n  position: relative;\n}\n\n.ka-loading-icon {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  -webkit-animation: typing 1s linear infinite alternate;\n          animation: typing 1s linear infinite alternate;\n  position: relative;\n  left: -20px;\n}\n\n.ka-thead-cell-resize {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 2px;\n  cursor: col-resize;\n  background-color: #d7e4eb;\n  position: relative;\n  left: 19px;\n}\n\n.ka-thead-cell-resize:active:after {\n  content: \"\";\n  display: block;\n  position: fixed;\n  cursor: col-resize;\n  z-index: 2;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.ka-thead-background:active {\n  z-index: 1;\n}\n\n.ka-summary-cell {\n  padding: 12px 20px;\n}\n\n@-webkit-keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n\n@keyframes typing {\n  0% {\n    background-color: #747d86;\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  25% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px #747d86, 40px 0px 0px 0px rgba(116, 125, 134, 0.2);\n  }\n  75% {\n    background-color: rgba(116, 125, 134, 0.4);\n    box-shadow: 20px 0px 0px 0px rgba(116, 125, 134, 0.2), 40px 0px 0px 0px #747d86;\n  }\n  100% {\n    box-shadow: none;\n  }\n}\n.ka-loading-text {\n  margin-top: 15px;\n  color: #353C44;\n}\n\n.ka-paging-sizes-active {\n  display: flex;\n  justify-content: space-between;\n}\n\n.ka-paging-pages, .ka-paging-sizes {\n  list-style: none;\n  display: flex;\n  flex-direction: row;\n  padding: 0 10px;\n  margin: 0;\n}\n\n.ka-paging-pages {\n  justify-content: flex-end;\n}\n\n.ka-paging-page-index, .ka-paging-size {\n  cursor: pointer;\n  padding: 5px;\n  margin: 10px 5px;\n  min-width: 18px;\n  border-radius: 50%;\n  text-align: center;\n  color: #747D86;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.ka-paging-page-index-active, .ka-paging-size-active {\n  background-color: #F1F5F7;\n  font-weight: bold;\n  color: #747D86;\n}\n\n.ka-popup {\n  background-color: white;\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  box-sizing: border-box;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);\n  color: #747D86;\n  padding: 15px 20px;\n  position: absolute;\n  text-align: center;\n  width: 245px;\n  max-height: 325px;\n  overflow-y: auto;\n  z-index: 1000;\n}\n\n.ka-popup-content-item {\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #F9FBFC;\n}\n\n.ka-popup-content-item-value {\n  padding: 8px 20px;\n}\n\n.ka-header-filter-button {\n  font-size: 16px;\n  margin-left: 3px;\n}\n\n.ka-header-filter-button-has-value {\n  font-weight: bold;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === "string") {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, ""]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
 
 /***/ }),
 
@@ -10754,277 +8207,6 @@ function supportedValue(property, value) {
 
 
 
-
-/***/ }),
-
-/***/ "./node_modules/file-selector/dist/es5/file-selector.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/file-selector/dist/es5/file-selector.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "fromEvent": () => (/* binding */ fromEvent)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./file */ "./node_modules/file-selector/dist/es5/file.js");
-
-
-var FILES_TO_IGNORE = [
-    // Thumbnail cache files for macOS and Windows
-    '.DS_Store',
-    'Thumbs.db' // Windows
-];
-/**
- * Convert a DragEvent's DataTrasfer object to a list of File objects
- * NOTE: If some of the items are folders,
- * everything will be flattened and placed in the same list but the paths will be kept as a {path} property.
- * @param evt
- */
-function fromEvent(evt) {
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(this, void 0, void 0, function () {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__generator)(this, function (_a) {
-            return [2 /*return*/, isDragEvt(evt) && evt.dataTransfer
-                    ? getDataTransferFiles(evt.dataTransfer, evt.type)
-                    : getInputFiles(evt)];
-        });
-    });
-}
-function isDragEvt(value) {
-    return !!value.dataTransfer;
-}
-function getInputFiles(evt) {
-    var files = isInput(evt.target)
-        ? evt.target.files
-            ? fromList(evt.target.files)
-            : []
-        : [];
-    return files.map(function (file) { return (0,_file__WEBPACK_IMPORTED_MODULE_0__.toFileWithPath)(file); });
-}
-function isInput(value) {
-    return value !== null;
-}
-function getDataTransferFiles(dt, type) {
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(this, void 0, void 0, function () {
-        var items, files;
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__generator)(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    if (!dt.items) return [3 /*break*/, 2];
-                    items = fromList(dt.items)
-                        .filter(function (item) { return item.kind === 'file'; });
-                    // According to https://html.spec.whatwg.org/multipage/dnd.html#dndevents,
-                    // only 'dragstart' and 'drop' has access to the data (source node)
-                    if (type !== 'drop') {
-                        return [2 /*return*/, items];
-                    }
-                    return [4 /*yield*/, Promise.all(items.map(toFilePromises))];
-                case 1:
-                    files = _a.sent();
-                    return [2 /*return*/, noIgnoredFiles(flatten(files))];
-                case 2: return [2 /*return*/, noIgnoredFiles(fromList(dt.files)
-                        .map(function (file) { return (0,_file__WEBPACK_IMPORTED_MODULE_0__.toFileWithPath)(file); }))];
-            }
-        });
-    });
-}
-function noIgnoredFiles(files) {
-    return files.filter(function (file) { return FILES_TO_IGNORE.indexOf(file.name) === -1; });
-}
-// IE11 does not support Array.from()
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Browser_compatibility
-// https://developer.mozilla.org/en-US/docs/Web/API/FileList
-// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItemList
-function fromList(items) {
-    var files = [];
-    // tslint:disable: prefer-for-of
-    for (var i = 0; i < items.length; i++) {
-        var file = items[i];
-        files.push(file);
-    }
-    return files;
-}
-// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem
-function toFilePromises(item) {
-    if (typeof item.webkitGetAsEntry !== 'function') {
-        return fromDataTransferItem(item);
-    }
-    var entry = item.webkitGetAsEntry();
-    // Safari supports dropping an image node from a different window and can be retrieved using
-    // the DataTransferItem.getAsFile() API
-    // NOTE: FileSystemEntry.file() throws if trying to get the file
-    if (entry && entry.isDirectory) {
-        return fromDirEntry(entry);
-    }
-    return fromDataTransferItem(item);
-}
-function flatten(items) {
-    return items.reduce(function (acc, files) { return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__spread)(acc, (Array.isArray(files) ? flatten(files) : [files])); }, []);
-}
-function fromDataTransferItem(item) {
-    var file = item.getAsFile();
-    if (!file) {
-        return Promise.reject(item + " is not a File");
-    }
-    var fwp = (0,_file__WEBPACK_IMPORTED_MODULE_0__.toFileWithPath)(file);
-    return Promise.resolve(fwp);
-}
-// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry
-function fromEntry(entry) {
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(this, void 0, void 0, function () {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__generator)(this, function (_a) {
-            return [2 /*return*/, entry.isDirectory ? fromDirEntry(entry) : fromFileEntry(entry)];
-        });
-    });
-}
-// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry
-function fromDirEntry(entry) {
-    var reader = entry.createReader();
-    return new Promise(function (resolve, reject) {
-        var entries = [];
-        function readEntries() {
-            var _this = this;
-            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader
-            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries
-            reader.readEntries(function (batch) { return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(_this, void 0, void 0, function () {
-                var files, err_1, items;
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__generator)(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            if (!!batch.length) return [3 /*break*/, 5];
-                            _a.label = 1;
-                        case 1:
-                            _a.trys.push([1, 3, , 4]);
-                            return [4 /*yield*/, Promise.all(entries)];
-                        case 2:
-                            files = _a.sent();
-                            resolve(files);
-                            return [3 /*break*/, 4];
-                        case 3:
-                            err_1 = _a.sent();
-                            reject(err_1);
-                            return [3 /*break*/, 4];
-                        case 4: return [3 /*break*/, 6];
-                        case 5:
-                            items = Promise.all(batch.map(fromEntry));
-                            entries.push(items);
-                            // Continue reading
-                            readEntries();
-                            _a.label = 6;
-                        case 6: return [2 /*return*/];
-                    }
-                });
-            }); }, function (err) {
-                reject(err);
-            });
-        }
-        readEntries();
-    });
-}
-// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry
-function fromFileEntry(entry) {
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(this, void 0, void 0, function () {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__generator)(this, function (_a) {
-            return [2 /*return*/, new Promise(function (resolve, reject) {
-                    entry.file(function (file) {
-                        var fwp = (0,_file__WEBPACK_IMPORTED_MODULE_0__.toFileWithPath)(file, entry.fullPath);
-                        resolve(fwp);
-                    }, function (err) {
-                        reject(err);
-                    });
-                })];
-        });
-    });
-}
-//# sourceMappingURL=file-selector.js.map
-
-/***/ }),
-
-/***/ "./node_modules/file-selector/dist/es5/file.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/file-selector/dist/es5/file.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "COMMON_MIME_TYPES": () => (/* binding */ COMMON_MIME_TYPES),
-/* harmony export */   "toFileWithPath": () => (/* binding */ toFileWithPath)
-/* harmony export */ });
-var COMMON_MIME_TYPES = new Map([
-    ['avi', 'video/avi'],
-    ['gif', 'image/gif'],
-    ['ico', 'image/x-icon'],
-    ['jpeg', 'image/jpeg'],
-    ['jpg', 'image/jpeg'],
-    ['mkv', 'video/x-matroska'],
-    ['mov', 'video/quicktime'],
-    ['mp4', 'video/mp4'],
-    ['pdf', 'application/pdf'],
-    ['png', 'image/png'],
-    ['zip', 'application/zip'],
-    ['doc', 'application/msword'],
-    ['docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']
-]);
-function toFileWithPath(file, path) {
-    var f = withMimeType(file);
-    if (typeof f.path !== 'string') { // on electron, path is already set to the absolute path
-        var webkitRelativePath = file.webkitRelativePath;
-        Object.defineProperty(f, 'path', {
-            value: typeof path === 'string'
-                ? path
-                // If <input webkitdirectory> is set,
-                // the File will have a {webkitRelativePath} property
-                // https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory
-                : typeof webkitRelativePath === 'string' && webkitRelativePath.length > 0
-                    ? webkitRelativePath
-                    : file.name,
-            writable: false,
-            configurable: false,
-            enumerable: true
-        });
-    }
-    return f;
-}
-function withMimeType(file) {
-    var name = file.name;
-    var hasExtension = name && name.lastIndexOf('.') !== -1;
-    if (hasExtension && !file.type) {
-        var ext = name.split('.')
-            .pop().toLowerCase();
-        var type = COMMON_MIME_TYPES.get(ext);
-        if (type) {
-            Object.defineProperty(file, 'type', {
-                value: type,
-                writable: false,
-                configurable: false,
-                enumerable: true
-            });
-        }
-    }
-    return file;
-}
-//# sourceMappingURL=file.js.map
-
-/***/ }),
-
-/***/ "./node_modules/file-selector/dist/es5/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/file-selector/dist/es5/index.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "fromEvent": () => (/* reexport safe */ _file_selector__WEBPACK_IMPORTED_MODULE_0__.fromEvent)
-/* harmony export */ });
-/* harmony import */ var _file_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./file-selector */ "./node_modules/file-selector/dist/es5/file-selector.js");
-
-//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -13426,7 +10608,6 @@ function () {
   _proto.onProcessSheet = function onProcessSheet(sheet) {
     for (var i = 0; i < this.registry.onProcessSheet.length; i++) {
       this.registry.onProcessSheet[i](sheet);
-<<<<<<< HEAD
     }
   }
   /**
@@ -13492,80 +10673,12 @@ function () {
     });
   };
 
-=======
-    }
-  }
-  /**
-   * Call `onUpdate` hooks.
-   */
-  ;
-
-  _proto.onUpdate = function onUpdate(data, rule, sheet, options) {
-    for (var i = 0; i < this.registry.onUpdate.length; i++) {
-      this.registry.onUpdate[i](data, rule, sheet, options);
-    }
-  }
-  /**
-   * Call `onChangeValue` hooks.
-   */
-  ;
-
-  _proto.onChangeValue = function onChangeValue(value, prop, rule) {
-    var processedValue = value;
-
-    for (var i = 0; i < this.registry.onChangeValue.length; i++) {
-      processedValue = this.registry.onChangeValue[i](processedValue, prop, rule);
-    }
-
-    return processedValue;
-  }
-  /**
-   * Register a plugin.
-   */
-  ;
-
-  _proto.use = function use(newPlugin, options) {
-    if (options === void 0) {
-      options = {
-        queue: 'external'
-      };
-    }
-
-    var plugins = this.plugins[options.queue]; // Avoids applying same plugin twice, at least based on ref.
-
-    if (plugins.indexOf(newPlugin) !== -1) {
-      return;
-    }
-
-    plugins.push(newPlugin);
-    this.registry = [].concat(this.plugins.external, this.plugins.internal).reduce(function (registry, plugin) {
-      for (var name in plugin) {
-        if (name in registry) {
-          registry[name].push(plugin[name]);
-        } else {
-           true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] Unknown hook \"" + name + "\".") : 0;
-        }
-      }
-
-      return registry;
-    }, {
-      onCreateRule: [],
-      onProcessRule: [],
-      onProcessStyle: [],
-      onProcessSheet: [],
-      onChangeValue: [],
-      onUpdate: []
-    });
-  };
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   return PluginsRegistry;
 }();
 
 /**
  * Sheets registry to access all instances in one place.
  */
-<<<<<<< HEAD
 
 var SheetsRegistry =
 /*#__PURE__*/
@@ -13590,136 +10703,6 @@ function () {
     } // Find a position.
 
 
-    for (var i = 0; i < registry.length; i++) {
-      if (registry[i].options.index > index) {
-        registry.splice(i, 0, sheet);
-        return;
-      }
-    }
-=======
-
-var SheetsRegistry =
-/*#__PURE__*/
-function () {
-  function SheetsRegistry() {
-    this.registry = [];
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-  }
-  /**
-   * Reset the registry.
-   */
-  ;
-
-<<<<<<< HEAD
-  _proto.reset = function reset() {
-    this.registry = [];
-  }
-  /**
-   * Remove a Style Sheet.
-   */
-  ;
-=======
-  var _proto = SheetsRegistry.prototype;
-
-  /**
-   * Register a Style Sheet.
-   */
-  _proto.add = function add(sheet) {
-    var registry = this.registry;
-    var index = sheet.options.index;
-    if (registry.indexOf(sheet) !== -1) return;
-
-    if (registry.length === 0 || index >= this.index) {
-      registry.push(sheet);
-      return;
-    } // Find a position.
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  _proto.remove = function remove(sheet) {
-    var index = this.registry.indexOf(sheet);
-    this.registry.splice(index, 1);
-  }
-  /**
-   * Convert all attached sheets to a CSS string.
-   */
-  ;
-
-<<<<<<< HEAD
-  _proto.toString = function toString(_temp) {
-    var _ref = _temp === void 0 ? {} : _temp,
-        attached = _ref.attached,
-        options = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_5__["default"])(_ref, ["attached"]);
-
-    var _getWhitespaceSymbols = getWhitespaceSymbols(options),
-        linebreak = _getWhitespaceSymbols.linebreak;
-
-    var css = '';
-
-    for (var i = 0; i < this.registry.length; i++) {
-      var sheet = this.registry[i];
-
-      if (attached != null && sheet.attached !== attached) {
-        continue;
-      }
-
-      if (css) css += linebreak;
-      css += sheet.toString(options);
-    }
-
-    return css;
-  };
-
-  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(SheetsRegistry, [{
-    key: "index",
-
-    /**
-     * Current highest index number.
-     */
-    get: function get() {
-      return this.registry.length === 0 ? 0 : this.registry[this.registry.length - 1].options.index;
-    }
-  }]);
-
-  return SheetsRegistry;
-}();
-
-/**
- * This is a global sheets registry. Only DomRenderer will add sheets to it.
- * On the server one should use an own SheetsRegistry instance and add the
- * sheets to it, because you need to make sure to create a new registry for
- * each request in order to not leak sheets across requests.
- */
-
-var sheets = new SheetsRegistry();
-
-/* eslint-disable */
-
-/**
- * Now that `globalThis` is available on most platforms
- * (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
- * we check for `globalThis` first. `globalThis` is necessary for jss
- * to run in Agoric's secure version of JavaScript (SES). Under SES,
- * `globalThis` exists, but `window`, `self`, and `Function('return
- * this')()` are all undefined for security reasons.
- *
- * https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
- */
-var globalThis$1 = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' && window.Math === Math ? window : typeof self !== 'undefined' && self.Math === Math ? self : Function('return this')();
-
-var ns = '2f1acc6c3a606b082e5eef5e54414ffb';
-if (globalThis$1[ns] == null) globalThis$1[ns] = 0; // Bundle may contain multiple JSS versions at the same time. In order to identify
-// the current version with just one short number and use it for classes generation
-// we use a counter. Also it is more accurate, because user can manually reevaluate
-// the module.
-
-var moduleId = globalThis$1[ns]++;
-
-var maxRules = 1e10;
-/**
- * Returns a function which generates unique class names based on counters.
- * When new generator function is created, rule counter is reseted.
- * We need to reset the rule counter for SSR for each request.
-=======
     for (var i = 0; i < registry.length; i++) {
       if (registry[i].options.index > index) {
         registry.splice(i, 0, sheet);
@@ -13807,22 +10790,9 @@ var sheets = new SheetsRegistry();
  * this')()` are all undefined for security reasons.
  *
  * https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
  */
 var globalThis$1 = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' && window.Math === Math ? window : typeof self !== 'undefined' && self.Math === Math ? self : Function('return this')();
 
-<<<<<<< HEAD
-var createGenerateId = function createGenerateId(options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  var ruleCounter = 0;
-
-  var generateId = function generateId(rule, sheet) {
-    ruleCounter += 1;
-
-=======
 var ns = '2f1acc6c3a606b082e5eef5e54414ffb';
 if (globalThis$1[ns] == null) globalThis$1[ns] = 0; // Bundle may contain multiple JSS versions at the same time. In order to identify
 // the current version with just one short number and use it for classes generation
@@ -13848,7 +10818,6 @@ var createGenerateId = function createGenerateId(options) {
   var generateId = function generateId(rule, sheet) {
     ruleCounter += 1;
 
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
     if (ruleCounter > maxRules) {
        true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] You might have a memory leak. Rule counter is at " + ruleCounter + ".") : 0;
     }
@@ -13865,7 +10834,6 @@ var createGenerateId = function createGenerateId(options) {
         jssId = String(sheet.options.jss.id);
       }
     }
-<<<<<<< HEAD
 
     if (options.minify) {
       // Using "c" because a number can't be the first char in a class name.
@@ -13953,83 +10921,12 @@ var removeProperty = function removeProperty(cssRule, prop) {
     }
   } catch (err) {
      true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] DOMException \"" + err.message + "\" was thrown. Tried to remove property \"" + prop + "\".") : 0;
-=======
-
-    if (options.minify) {
-      // Using "c" because a number can't be the first char in a class name.
-      return "" + (prefix || 'c') + moduleId + jssId + ruleCounter;
-    }
-
-    return prefix + rule.key + "-" + moduleId + (jssId ? "-" + jssId : '') + "-" + ruleCounter;
-  };
-
-  return generateId;
-};
-
-/**
- * Cache the value from the first time a function is called.
- */
-
-var memoize = function memoize(fn) {
-  var value;
-  return function () {
-    if (!value) value = fn();
-    return value;
-  };
-};
-/**
- * Get a style property value.
- */
-
-
-var getPropertyValue = function getPropertyValue(cssRule, prop) {
-  try {
-    // Support CSSTOM.
-    if (cssRule.attributeStyleMap) {
-      return cssRule.attributeStyleMap.get(prop);
-    }
-
-    return cssRule.style.getPropertyValue(prop);
-  } catch (err) {
-    // IE may throw if property is unknown.
-    return '';
-  }
-};
-/**
- * Set a style property.
- */
-
-
-var setProperty = function setProperty(cssRule, prop, value) {
-  try {
-    var cssValue = value;
-
-    if (Array.isArray(value)) {
-      cssValue = toCssValue(value, true);
-
-      if (value[value.length - 1] === '!important') {
-        cssRule.style.setProperty(prop, cssValue, 'important');
-        return true;
-      }
-    } // Support CSSTOM.
-
-
-    if (cssRule.attributeStyleMap) {
-      cssRule.attributeStyleMap.set(prop, cssValue);
-    } else {
-      cssRule.style.setProperty(prop, cssValue);
-    }
-  } catch (err) {
-    // IE may throw if property is unknown.
-    return false;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   }
 };
 /**
  * Set the selector.
  */
 
-<<<<<<< HEAD
 
 var setSelector = function setSelector(cssRule, selectorText) {
   cssRule.selectorText = selectorText; // Return false if setter was not successful.
@@ -14057,32 +10954,8 @@ function findHigherSheet(registry, options) {
     if (sheet.attached && sheet.options.index > options.index && sheet.options.insertionPoint === options.insertionPoint) {
       return sheet;
     }
-=======
-  return true;
-};
-/**
- * Remove a style property.
- */
-
-
-var removeProperty = function removeProperty(cssRule, prop) {
-  try {
-    // Support CSSTOM.
-    if (cssRule.attributeStyleMap) {
-      cssRule.attributeStyleMap.delete(prop);
-    } else {
-      cssRule.style.removeProperty(prop);
-    }
-  } catch (err) {
-     true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] DOMException \"" + err.message + "\" was thrown. Tried to remove property \"" + prop + "\".") : 0;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   }
-};
-/**
- * Set the selector.
- */
 
-<<<<<<< HEAD
   return null;
 }
 /**
@@ -14095,33 +10968,6 @@ function findHighestSheet(registry, options) {
     var sheet = registry[i];
 
     if (sheet.attached && sheet.options.insertionPoint === options.insertionPoint) {
-=======
-
-var setSelector = function setSelector(cssRule, selectorText) {
-  cssRule.selectorText = selectorText; // Return false if setter was not successful.
-  // Currently works in chrome only.
-
-  return cssRule.selectorText === selectorText;
-};
-/**
- * Gets the `head` element upon the first call and caches it.
- * We assume it can't be null.
- */
-
-
-var getHead = memoize(function () {
-  return document.querySelector('head');
-});
-/**
- * Find attached sheet with an index higher than the passed one.
- */
-
-function findHigherSheet(registry, options) {
-  for (var i = 0; i < registry.length; i++) {
-    var sheet = registry[i];
-
-    if (sheet.attached && sheet.options.index > options.index && sheet.options.insertionPoint === options.insertionPoint) {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
       return sheet;
     }
   }
@@ -14129,7 +10975,6 @@ function findHigherSheet(registry, options) {
   return null;
 }
 /**
-<<<<<<< HEAD
  * Find a comment with "jss" inside.
  */
 
@@ -14142,25 +10987,12 @@ function findCommentNode(text) {
 
     if (node.nodeType === 8 && node.nodeValue.trim() === text) {
       return node;
-=======
- * Find attached sheet with the highest index.
- */
-
-
-function findHighestSheet(registry, options) {
-  for (var i = registry.length - 1; i >= 0; i--) {
-    var sheet = registry[i];
-
-    if (sheet.attached && sheet.options.insertionPoint === options.insertionPoint) {
-      return sheet;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
     }
   }
 
   return null;
 }
 /**
-<<<<<<< HEAD
  * Find a node before which we can insert the sheet.
  */
 
@@ -14327,627 +11159,12 @@ function () {
       this.hasInsertedRules = false;
       this.deploy();
     }
-=======
- * Find a comment with "jss" inside.
- */
-
-
-function findCommentNode(text) {
-  var head = getHead();
-
-  for (var i = 0; i < head.childNodes.length; i++) {
-    var node = head.childNodes[i];
-
-    if (node.nodeType === 8 && node.nodeValue.trim() === text) {
-      return node;
-    }
-  }
-
-  return null;
-}
-/**
- * Find a node before which we can insert the sheet.
- */
-
-
-function findPrevNode(options) {
-  var registry = sheets.registry;
-
-  if (registry.length > 0) {
-    // Try to insert before the next higher sheet.
-    var sheet = findHigherSheet(registry, options);
-
-    if (sheet && sheet.renderer) {
-      return {
-        parent: sheet.renderer.element.parentNode,
-        node: sheet.renderer.element
-      };
-    } // Otherwise insert after the last attached.
-
-
-    sheet = findHighestSheet(registry, options);
-
-    if (sheet && sheet.renderer) {
-      return {
-        parent: sheet.renderer.element.parentNode,
-        node: sheet.renderer.element.nextSibling
-      };
-    }
-  } // Try to find a comment placeholder if registry is empty.
-
-
-  var insertionPoint = options.insertionPoint;
-
-  if (insertionPoint && typeof insertionPoint === 'string') {
-    var comment = findCommentNode(insertionPoint);
-
-    if (comment) {
-      return {
-        parent: comment.parentNode,
-        node: comment.nextSibling
-      };
-    } // If user specifies an insertion point and it can't be found in the document -
-    // bad specificity issues may appear.
-
-
-     true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] Insertion point \"" + insertionPoint + "\" not found.") : 0;
-  }
-
-  return false;
-}
-/**
- * Insert style element into the DOM.
- */
-
-
-function insertStyle(style, options) {
-  var insertionPoint = options.insertionPoint;
-  var nextNode = findPrevNode(options);
-
-  if (nextNode !== false && nextNode.parent) {
-    nextNode.parent.insertBefore(style, nextNode.node);
-    return;
-  } // Works with iframes and any node types.
-
-
-  if (insertionPoint && typeof insertionPoint.nodeType === 'number') {
-    var insertionPointElement = insertionPoint;
-    var parentNode = insertionPointElement.parentNode;
-    if (parentNode) parentNode.insertBefore(style, insertionPointElement.nextSibling);else  true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, '[JSS] Insertion point is not in the DOM.') : 0;
-    return;
-  }
-
-  getHead().appendChild(style);
-}
-/**
- * Read jss nonce setting from the page if the user has set it.
- */
-
-
-var getNonce = memoize(function () {
-  var node = document.querySelector('meta[property="csp-nonce"]');
-  return node ? node.getAttribute('content') : null;
-});
-
-var _insertRule = function insertRule(container, rule, index) {
-  try {
-    if ('insertRule' in container) {
-      container.insertRule(rule, index);
-    } // Keyframes rule.
-    else if ('appendRule' in container) {
-        container.appendRule(rule);
-      }
-  } catch (err) {
-     true ? (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] " + err.message) : 0;
-    return false;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   }
   /**
    * Remove style element from render tree.
    */
   ;
 
-<<<<<<< HEAD
-  _proto.detach = function detach() {
-    if (!this.sheet) return;
-    var parentNode = this.element.parentNode;
-    if (parentNode) parentNode.removeChild(this.element); // In the most browsers, rules inserted using insertRule() API will be lost when style element is removed.
-    // Though IE will keep them and we need a consistent behavior.
-
-    if (this.sheet.options.link) {
-      this.cssRules = [];
-      this.element.textContent = '\n';
-    }
-=======
-  return container.cssRules[index];
-};
-
-var getValidRuleInsertionIndex = function getValidRuleInsertionIndex(container, index) {
-  var maxIndex = container.cssRules.length; // In case previous insertion fails, passed index might be wrong
-
-  if (index === undefined || index > maxIndex) {
-    // eslint-disable-next-line no-param-reassign
-    return maxIndex;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-  }
-  /**
-   * Inject CSS string into element.
-   */
-  ;
-
-<<<<<<< HEAD
-  _proto.deploy = function deploy() {
-    var sheet = this.sheet;
-    if (!sheet) return;
-
-    if (sheet.options.link) {
-      this.insertRules(sheet.rules);
-      return;
-    }
-
-    this.element.textContent = "\n" + sheet.toString() + "\n";
-  }
-  /**
-   * Insert RuleList into an element.
-   */
-  ;
-
-  _proto.insertRules = function insertRules(rules, nativeParent) {
-    for (var i = 0; i < rules.index.length; i++) {
-      this.insertRule(rules.index[i], i, nativeParent);
-    }
-  }
-  /**
-   * Insert a rule into element.
-   */
-  ;
-
-  _proto.insertRule = function insertRule(rule, index, nativeParent) {
-    if (nativeParent === void 0) {
-      nativeParent = this.element.sheet;
-    }
-
-    if (rule.rules) {
-      var parent = rule;
-      var latestNativeParent = nativeParent;
-
-      if (rule.type === 'conditional' || rule.type === 'keyframes') {
-        var _insertionIndex = getValidRuleInsertionIndex(nativeParent, index); // We need to render the container without children first.
-=======
-  return index;
-};
-
-var createStyle = function createStyle() {
-  var el = document.createElement('style'); // Without it, IE will have a broken source order specificity if we
-  // insert rules after we insert the style tag.
-  // It seems to kick-off the source order specificity algorithm.
-
-  el.textContent = '\n';
-  return el;
-};
-
-var DomRenderer =
-/*#__PURE__*/
-function () {
-  // Will be empty if link: true option is not set, because
-  // it is only for use together with insertRule API.
-  function DomRenderer(sheet) {
-    this.getPropertyValue = getPropertyValue;
-    this.setProperty = setProperty;
-    this.removeProperty = removeProperty;
-    this.setSelector = setSelector;
-    this.hasInsertedRules = false;
-    this.cssRules = [];
-    // There is no sheet when the renderer is used from a standalone StyleRule.
-    if (sheet) sheets.add(sheet);
-    this.sheet = sheet;
-
-    var _ref = this.sheet ? this.sheet.options : {},
-        media = _ref.media,
-        meta = _ref.meta,
-        element = _ref.element;
-
-    this.element = element || createStyle();
-    this.element.setAttribute('data-jss', '');
-    if (media) this.element.setAttribute('media', media);
-    if (meta) this.element.setAttribute('data-meta', meta);
-    var nonce = getNonce();
-    if (nonce) this.element.setAttribute('nonce', nonce);
-  }
-  /**
-   * Insert style element into render tree.
-   */
-
-
-  var _proto = DomRenderer.prototype;
-
-  _proto.attach = function attach() {
-    // In the case the element node is external and it is already in the DOM.
-    if (this.element.parentNode || !this.sheet) return;
-    insertStyle(this.element, this.sheet.options); // When rules are inserted using `insertRule` API, after `sheet.detach().attach()`
-    // most browsers create a new CSSStyleSheet, except of all IEs.
-
-    var deployed = Boolean(this.sheet && this.sheet.deployed);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-    if (this.hasInsertedRules && deployed) {
-      this.hasInsertedRules = false;
-      this.deploy();
-    }
-  }
-  /**
-   * Remove style element from render tree.
-   */
-  ;
-
-<<<<<<< HEAD
-        latestNativeParent = _insertRule(nativeParent, parent.toString({
-          children: false
-        }), _insertionIndex);
-
-        if (latestNativeParent === false) {
-          return false;
-        }
-
-        this.refCssRule(rule, _insertionIndex, latestNativeParent);
-      }
-
-      this.insertRules(parent.rules, latestNativeParent);
-      return latestNativeParent;
-    }
-
-    var ruleStr = rule.toString();
-    if (!ruleStr) return false;
-    var insertionIndex = getValidRuleInsertionIndex(nativeParent, index);
-
-    var nativeRule = _insertRule(nativeParent, ruleStr, insertionIndex);
-
-    if (nativeRule === false) {
-      return false;
-    }
-
-    this.hasInsertedRules = true;
-    this.refCssRule(rule, insertionIndex, nativeRule);
-    return nativeRule;
-  };
-
-  _proto.refCssRule = function refCssRule(rule, index, cssRule) {
-    rule.renderable = cssRule; // We only want to reference the top level rules, deleteRule API doesn't support removing nested rules
-    // like rules inside media queries or keyframes
-
-    if (rule.options.parent instanceof StyleSheet) {
-      this.cssRules.splice(index, 0, cssRule);
-    }
-  }
-  /**
-   * Delete a rule.
-   */
-  ;
-
-  _proto.deleteRule = function deleteRule(cssRule) {
-    var sheet = this.element.sheet;
-    var index = this.indexOf(cssRule);
-    if (index === -1) return false;
-    sheet.deleteRule(index);
-    this.cssRules.splice(index, 1);
-    return true;
-  }
-  /**
-   * Get index of a CSS Rule.
-   */
-  ;
-
-  _proto.indexOf = function indexOf(cssRule) {
-    return this.cssRules.indexOf(cssRule);
-  }
-  /**
-   * Generate a new CSS rule and replace the existing one.
-   */
-  ;
-
-  _proto.replaceRule = function replaceRule(cssRule, rule) {
-    var index = this.indexOf(cssRule);
-    if (index === -1) return false;
-    this.element.sheet.deleteRule(index);
-    this.cssRules.splice(index, 1);
-    return this.insertRule(rule, index);
-  }
-  /**
-   * Get all rules elements.
-   */
-  ;
-
-  _proto.getRules = function getRules() {
-    return this.element.sheet.cssRules;
-  };
-
-  return DomRenderer;
-}();
-
-var instanceCounter = 0;
-
-var Jss =
-/*#__PURE__*/
-function () {
-  function Jss(options) {
-    this.id = instanceCounter++;
-    this.version = "10.9.0";
-    this.plugins = new PluginsRegistry();
-    this.options = {
-      id: {
-        minify: false
-      },
-      createGenerateId: createGenerateId,
-      Renderer: is_in_browser__WEBPACK_IMPORTED_MODULE_1__["default"] ? DomRenderer : null,
-      plugins: []
-    };
-    this.generateId = createGenerateId({
-      minify: false
-    });
-
-    for (var i = 0; i < plugins.length; i++) {
-      this.plugins.use(plugins[i], {
-        queue: 'internal'
-      });
-    }
-
-    this.setup(options);
-  }
-  /**
-   * Prepares various options, applies plugins.
-   * Should not be used twice on the same instance, because there is no plugins
-   * deduplication logic.
-   */
-
-
-  var _proto = Jss.prototype;
-
-  _proto.setup = function setup(options) {
-    if (options === void 0) {
-      options = {};
-    }
-
-    if (options.createGenerateId) {
-      this.options.createGenerateId = options.createGenerateId;
-    }
-
-    if (options.id) {
-      this.options.id = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.options.id, options.id);
-    }
-
-    if (options.createGenerateId || options.id) {
-      this.generateId = this.options.createGenerateId(this.options.id);
-    }
-
-    if (options.insertionPoint != null) this.options.insertionPoint = options.insertionPoint;
-
-    if ('Renderer' in options) {
-      this.options.Renderer = options.Renderer;
-    } // eslint-disable-next-line prefer-spread
-
-
-    if (options.plugins) this.use.apply(this, options.plugins);
-    return this;
-  }
-  /**
-   * Create a Style Sheet.
-   */
-  ;
-
-  _proto.createStyleSheet = function createStyleSheet(styles, options) {
-    if (options === void 0) {
-      options = {};
-    }
-
-    var _options = options,
-        index = _options.index;
-
-    if (typeof index !== 'number') {
-      index = sheets.index === 0 ? 0 : sheets.index + 1;
-    }
-
-    var sheet = new StyleSheet(styles, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, options, {
-      jss: this,
-      generateId: options.generateId || this.generateId,
-      insertionPoint: this.options.insertionPoint,
-      Renderer: this.options.Renderer,
-      index: index
-    }));
-    this.plugins.onProcessSheet(sheet);
-    return sheet;
-  }
-  /**
-   * Detach the Style Sheet and remove it from the registry.
-   */
-  ;
-
-  _proto.removeStyleSheet = function removeStyleSheet(sheet) {
-    sheet.detach();
-    sheets.remove(sheet);
-    return this;
-  }
-  /**
-   * Create a rule without a Style Sheet.
-   * [Deprecated] will be removed in the next major version.
-   */
-  ;
-
-  _proto.createRule = function createRule$1(name, style, options) {
-    if (style === void 0) {
-      style = {};
-    }
-
-    if (options === void 0) {
-      options = {};
-    }
-
-    // Enable rule without name for inline styles.
-    if (typeof name === 'object') {
-      return this.createRule(undefined, name, style);
-    }
-
-    var ruleOptions = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, options, {
-      name: name,
-      jss: this,
-      Renderer: this.options.Renderer
-    });
-
-    if (!ruleOptions.generateId) ruleOptions.generateId = this.generateId;
-    if (!ruleOptions.classes) ruleOptions.classes = {};
-    if (!ruleOptions.keyframes) ruleOptions.keyframes = {};
-
-    var rule = createRule(name, style, ruleOptions);
-
-    if (rule) this.plugins.onProcessRule(rule);
-    return rule;
-  }
-  /**
-   * Register plugin. Passed function will be invoked with a rule instance.
-   */
-  ;
-
-  _proto.use = function use() {
-    var _this = this;
-
-    for (var _len = arguments.length, plugins = new Array(_len), _key = 0; _key < _len; _key++) {
-      plugins[_key] = arguments[_key];
-    }
-
-    plugins.forEach(function (plugin) {
-      _this.plugins.use(plugin);
-    });
-    return this;
-  };
-
-  return Jss;
-}();
-
-var createJss = function createJss(options) {
-  return new Jss(options);
-};
-
-/**
- * SheetsManager is like a WeakMap which is designed to count StyleSheet
- * instances and attach/detach automatically.
- * Used in react-jss.
- */
-
-var SheetsManager =
-/*#__PURE__*/
-function () {
-  function SheetsManager() {
-    this.length = 0;
-    this.sheets = new WeakMap();
-  }
-
-  var _proto = SheetsManager.prototype;
-
-  _proto.get = function get(key) {
-    var entry = this.sheets.get(key);
-    return entry && entry.sheet;
-  };
-
-  _proto.add = function add(key, sheet) {
-    if (this.sheets.has(key)) return;
-    this.length++;
-    this.sheets.set(key, {
-      sheet: sheet,
-      refs: 0
-    });
-  };
-
-  _proto.manage = function manage(key) {
-    var entry = this.sheets.get(key);
-
-    if (entry) {
-      if (entry.refs === 0) {
-        entry.sheet.attach();
-      }
-
-      entry.refs++;
-      return entry.sheet;
-    }
-
-    (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "[JSS] SheetsManager: can't find sheet to manage");
-    return undefined;
-  };
-
-  _proto.unmanage = function unmanage(key) {
-    var entry = this.sheets.get(key);
-
-    if (entry) {
-      if (entry.refs > 0) {
-        entry.refs--;
-        if (entry.refs === 0) entry.sheet.detach();
-      }
-    } else {
-      (0,tiny_warning__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "SheetsManager: can't find sheet to unmanage");
-    }
-  };
-
-  (0,_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(SheetsManager, [{
-    key: "size",
-    get: function get() {
-      return this.length;
-    }
-  }]);
-
-  return SheetsManager;
-}();
-
-/**
-* Export a constant indicating if this browser has CSSTOM support.
-* https://developers.google.com/web/updates/2018/03/cssom
-*/
-var hasCSSTOMSupport = typeof CSS === 'object' && CSS != null && 'number' in CSS;
-
-/**
- * Extracts a styles object with only props that contain function values.
- */
-function getDynamicStyles(styles) {
-  var to = null;
-
-  for (var key in styles) {
-    var value = styles[key];
-    var type = typeof value;
-
-    if (type === 'function') {
-      if (!to) to = {};
-      to[key] = value;
-    } else if (type === 'object' && value !== null && !Array.isArray(value)) {
-      var extracted = getDynamicStyles(value);
-
-      if (extracted) {
-        if (!to) to = {};
-        to[key] = extracted;
-      }
-    }
-  }
-
-  return to;
-}
-
-/**
- * A better abstraction over CSS.
- *
- * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
- * @website https://github.com/cssinjs/jss
- * @license MIT
- */
-var index = createJss();
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/checkPropTypes.js":
-/*!***************************************************!*\
-  !*** ./node_modules/prop-types/checkPropTypes.js ***!
-  \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-=======
   _proto.detach = function detach() {
     if (!this.sheet) return;
     var parentNode = this.element.parentNode;
@@ -15322,18 +11539,9 @@ function () {
 * https://developers.google.com/web/updates/2018/03/cssom
 */
 var hasCSSTOMSupport = typeof CSS === 'object' && CSS != null && 'number' in CSS;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
-"use strict";
 /**
-<<<<<<< HEAD
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
-=======
  * Extracts a styles object with only props that contain function values.
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
  */
 function getDynamicStyles(styles) {
   var to = null;
@@ -15358,90 +11566,7 @@ function getDynamicStyles(styles) {
   return to;
 }
 
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-  var loggedTypeFailures = {};
-  var has = Function.call.bind(Object.prototype.hasOwnProperty);
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
 /**
-<<<<<<< HEAD
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          );
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-=======
  * A better abstraction over CSS.
  *
  * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
@@ -15456,51 +11581,5206 @@ var index = createJss();
 
 /***/ }),
 
+/***/ "./node_modules/ka-table/Components/CellComponent/CellComponent.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellComponent/CellComponent.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditor_1 = __importDefault(__webpack_require__(/*! ../CellEditor/CellEditor */ "./node_modules/ka-table/Components/CellEditor/CellEditor.js"));
+var CellText_1 = __importDefault(__webpack_require__(/*! ../CellText/CellText */ "./node_modules/ka-table/Components/CellText/CellText.js"));
+var CellComponent = function (props) {
+    var treeDeep = props.treeDeep, treeArrowElement = props.treeArrowElement, childComponents = props.childComponents, style = props.column.style, isEditableCell = props.isEditableCell;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.cell + " " + (treeDeep != null ? defaultOptions_1.default.css.treeCell : ''),
+        style: style
+    }, props, childComponents.cell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("td", __assign({}, elementAttributes),
+        treeDeep ? Array(treeDeep).fill(undefined).map(function (_, index) { return React.createElement("div", { key: index, className: defaultOptions_1.default.css.treeCellEmptySpace }); }) : null,
+        content ||
+            (React.createElement(React.Fragment, null,
+                treeArrowElement,
+                isEditableCell ?
+                    (React.createElement(CellEditor_1.default, __assign({}, props)))
+                    :
+                        (React.createElement(CellText_1.default, __assign({}, props)))))));
+};
+exports["default"] = CellComponent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CommonUtils_1 = __webpack_require__(/*! ../../Utils/CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorBoolean = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.checkbox,
+        autoFocus: autoFocus,
+        type: 'checkbox',
+        checked: value || false,
+        onChange: function (event) { return dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, event.currentTarget.checked)); },
+        onBlur: function () { return dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key)); }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({ ref: function (elem) { return elem && (elem.indeterminate = CommonUtils_1.isEmpty(value)); } }, elementAttributes))));
+};
+exports["default"] = CellEditorBoolean;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellEditorBoolean_1 = __importDefault(__webpack_require__(/*! ../CellEditorBoolean/CellEditorBoolean */ "./node_modules/ka-table/Components/CellEditorBoolean/CellEditorBoolean.js"));
+var CellEditorDate_1 = __importDefault(__webpack_require__(/*! ../CellEditorDate/CellEditorDate */ "./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js"));
+var CellEditorNumber_1 = __importDefault(__webpack_require__(/*! ../CellEditorNumber/CellEditorNumber */ "./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js"));
+var CellEditorString_1 = __importDefault(__webpack_require__(/*! ../CellEditorString/CellEditorString */ "./node_modules/ka-table/Components/CellEditorString/CellEditorString.js"));
+var CellEditorDataType = function (props) {
+    switch (props.column.dataType) {
+        case enums_1.DataType.Boolean: return react_1.default.createElement(CellEditorBoolean_1.default, __assign({}, props));
+        case enums_1.DataType.Date: return react_1.default.createElement(CellEditorDate_1.default, __assign({}, props));
+        case enums_1.DataType.Number: return react_1.default.createElement(CellEditorNumber_1.default, __assign({}, props));
+        default: return react_1.default.createElement(CellEditorString_1.default, __assign({}, props));
+    }
+};
+exports["default"] = CellEditorDataType;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorDate/CellEditorDate.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var DateUtils_1 = __webpack_require__(/*! ../../Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js");
+var CellEditorDate = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var inputValue = value && DateUtils_1.getDateInputValue(value);
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.dateInput,
+        autoFocus: autoFocus,
+        type: 'date',
+        value: inputValue || '',
+        onChange: function (event) {
+            var targetValue = event.currentTarget.value;
+            var newValue = targetValue ? new Date(targetValue) : null;
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, newValue));
+        },
+        onBlur: function () { return dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key)); }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorDate;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorNumber/CellEditorNumber.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorNumber = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.numberInput,
+        autoFocus: autoFocus,
+        type: 'number',
+        value: value === null || value === undefined ? '' : value,
+        onChange: function (event) {
+            var newValue = event.currentTarget.value !== '' ? Number(event.currentTarget.value) : null;
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, newValue));
+        },
+        onBlur: function () {
+            dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+        }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorNumber;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorState/CellEditorState.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorState/CellEditorState.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var EffectUtils_1 = __webpack_require__(/*! ../../Utils/EffectUtils */ "./node_modules/ka-table/Utils/EffectUtils.js");
+var Validation_1 = __webpack_require__(/*! ../../Utils/Validation */ "./node_modules/ka-table/Utils/Validation.js");
+var CellEditorValidation_1 = __importDefault(__webpack_require__(/*! ../CellEditorValidation/CellEditorValidation */ "./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js"));
+var CellEditorState = function (props) {
+    var column = props.column, dispatch = props.dispatch, editingMode = props.editingMode, rowData = props.rowData, rowKeyValue = props.rowKeyValue, validation = props.validation, value = props.value;
+    var validationMessage = props.validationMessage;
+    var _a = react_1.useState(rowData), rowDataState = _a[0], changeRowData = _a[1];
+    var _b = react_1.useState(value), editorValueState = _b[0], changeEditorValue = _b[1];
+    var isCellEditingMode = editingMode === enums_1.EditingMode.Cell;
+    validationMessage = isCellEditingMode || validationMessage
+        ? Validation_1.getValidationValue(editorValueState, rowDataState, column, validation) || ''
+        : validationMessage;
+    var onValueStateChange = function (action) {
+        var newRowValue = DataUtils_1.replaceValue(rowData, column, action.value);
+        changeRowData(newRowValue);
+        changeEditorValue(action.value);
+    };
+    var close = react_1.useCallback(function () {
+        dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+    }, [dispatch, column, rowKeyValue]);
+    var closeHandler = react_1.useCallback(function () {
+        if (!isCellEditingMode || !validationMessage) {
+            if (editorValueState !== value) {
+                dispatch(actionCreators_1.updateEditorValue(rowKeyValue, column.key, editorValueState));
+            }
+            if (isCellEditingMode) {
+                close();
+            }
+        }
+    }, [validationMessage, dispatch, close, column, editorValueState, rowKeyValue, value, isCellEditingMode]);
+    react_1.useEffect(function () {
+        return EffectUtils_1.addEscEnterKeyEffect(close, closeHandler);
+    }, [close, closeHandler]);
+    var dispatchHandler = function (action) {
+        if (action.type === enums_1.ActionType.CloseEditor) {
+            closeHandler();
+        }
+        else if (action.type === enums_1.ActionType.UpdateCellValue) {
+            onValueStateChange(action);
+        }
+        else {
+            dispatch(action);
+        }
+    };
+    var stateProps = __assign(__assign({}, props), {
+        dispatch: dispatchHandler,
+        value: editorValueState,
+        editorValue: editorValueState,
+        rowData: rowDataState,
+        validationMessage: validationMessage || undefined
+    });
+    return (react_1.default.createElement(CellEditorValidation_1.default, __assign({}, stateProps)));
+};
+exports["default"] = CellEditorState;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorString/CellEditorString.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorString/CellEditorString.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorString = function (props) {
+    var _a;
+    var column = props.column, dispatch = props.dispatch, value = props.value, rowKeyValue = props.rowKeyValue, autoFocus = props.autoFocus, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.textInput,
+        autoFocus: autoFocus,
+        type: 'text',
+        value: value || '',
+        onChange: function (event) {
+            dispatch(actionCreators_1.updateCellValue(rowKeyValue, column.key, event.currentTarget.value));
+        },
+        onBlur: function () {
+            dispatch(actionCreators_1.closeEditor(rowKeyValue, column.key));
+        }
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.cellEditorInput), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (content ||
+        (react_1.default.createElement("input", __assign({}, elementAttributes))));
+};
+exports["default"] = CellEditorString;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js ***!
+  \*****************************************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var CellEditorValidationMessage = function (props) {
+    var message = props.message;
+    return (react_1.default.createElement("div", { className: 'ka-validation-message-container' },
+        react_1.default.createElement("div", { className: 'ka-validation-message' }, message)));
+};
+exports["default"] = CellEditorValidationMessage;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditorValidation/CellEditorValidation.js ***!
+  \***************************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellEditorDataType_1 = __importDefault(__webpack_require__(/*! ../CellEditorDataType/CellEditorDataType */ "./node_modules/ka-table/Components/CellEditorDataType/CellEditorDataType.js"));
+var CellEditorValidationMessage_1 = __importDefault(__webpack_require__(/*! ../CellEditorValidationMessage/CellEditorValidationMessage */ "./node_modules/ka-table/Components/CellEditorValidationMessage/CellEditorValidationMessage.js"));
+var CellEditorValidation = function (props) {
+    var validationMessage = props.validationMessage;
+    return (react_1.default.createElement("div", { className: "" + (validationMessage ? defaultOptions_1.default.css.kaCellEditorValidationError : '') },
+        react_1.default.createElement(CellEditorDataType_1.default, __assign({}, props)),
+        validationMessage && react_1.default.createElement(CellEditorValidationMessage_1.default, { message: validationMessage })));
+};
+exports["default"] = CellEditorValidation;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellEditor/CellEditor.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellEditor/CellEditor.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellEditorState_1 = __importDefault(__webpack_require__(/*! ../CellEditorState/CellEditorState */ "./node_modules/ka-table/Components/CellEditorState/CellEditorState.js"));
+var CellEditor = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, editingMode = props.editingMode;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.cellEditor
+    }, props, childComponents.cellEditor), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || (editingMode === enums_1.EditingMode.Cell
+        ? React.createElement(CellEditorState_1.default, __assign({}, props, { dispatch: CellUtils_1.getCellEditorDispatchHandler(dispatch), autoFocus: true }))
+        : React.createElement(CellEditorState_1.default, __assign({}, props)))));
+};
+exports["default"] = CellEditor;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/CellText/CellText.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/CellText/CellText.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var CellText = function (props) {
+    var _a;
+    var childComponents = props.childComponents, column = props.column, format = props.format, dispatch = props.dispatch, editingMode = props.editingMode, rowKeyValue = props.rowKeyValue, value = props.value;
+    var formatedValue = (format && format({ column: column, value: value }))
+        || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.cellText,
+        onClick: function () {
+            if (editingMode === enums_1.EditingMode.Cell) {
+                dispatch(actionCreators_1.openEditor(rowKeyValue, column.key));
+            }
+        },
+    }, props, childComponents.cellText), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || formatedValue || React.createElement(React.Fragment, null, "\u00A0")));
+};
+exports["default"] = CellText;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/ColGroup/ColGroup.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/ColGroup/ColGroup.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+exports.ColGroup = function (_a) {
+    var columns = _a.columns, groupColumnsCount = _a.groupColumnsCount;
+    return (React.createElement("colgroup", null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount, isColGroup: true }),
+        columns.map(function (c) { var _a, _b, _c; return React.createElement("col", __assign({ key: c.key }, c.colGroup, { width: c.width || ((_a = c.colGroup) === null || _a === void 0 ? void 0 : _a.width) || ((_c = (_b = c.colGroup) === null || _b === void 0 ? void 0 : _b.style) === null || _c === void 0 ? void 0 : _c.width) })); })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var DataRow_1 = __importDefault(__webpack_require__(/*! ../DataRow/DataRow */ "./node_modules/ka-table/Components/DataRow/DataRow.js"));
+var DetailsRow_1 = __importDefault(__webpack_require__(/*! ../DetailsRow/DetailsRow */ "./node_modules/ka-table/Components/DetailsRow/DetailsRow.js"));
+var DataAndDetailsRows = function (props) {
+    var isDetailsRowShown = props.isDetailsRowShown;
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement(DataRow_1.default, __assign({}, props)),
+        isDetailsRowShown && react_1.default.createElement(DetailsRow_1.default, __assign({}, props))));
+};
+exports["default"] = DataAndDetailsRows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataRowContent/DataRowContent.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataRowContent/DataRowContent.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ColumnUtils_1 = __webpack_require__(/*! ../../Utils/ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var CellComponent_1 = __importDefault(__webpack_require__(/*! ../CellComponent/CellComponent */ "./node_modules/ka-table/Components/CellComponent/CellComponent.js"));
+var DataRowContent = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, treeDeep = _a.treeDeep, dispatch = _a.dispatch, editingMode = _a.editingMode, format = _a.format, isDetailsRowShown = _a.isDetailsRowShown, isSelectedRow = _a.isSelectedRow, isTreeExpanded = _a.isTreeExpanded, isTreeGroup = _a.isTreeGroup, rowData = _a.rowData, rowEditableCells = _a.rowEditableCells, rowKeyField = _a.rowKeyField, rowKeyValue = _a.rowKeyValue, selectedRows = _a.selectedRows, validation = _a.validation;
+    var arrow = isTreeGroup ? [(react_1.default.createElement("div", { onClick: function () { return dispatch(actionCreators_1.updateTreeGroupsExpanded(rowKeyValue)); }, className: isTreeExpanded
+                ? defaultOptions_1.default.css.iconTreeArrowExpanded : defaultOptions_1.default.css.iconTreeArrowCollapsed }))] : undefined;
+    return (react_1.default.createElement(react_1.default.Fragment, null, columns.map(function (column, index) {
+        var _a;
+        var editableCell = CellUtils_1.getEditableCell(column, rowEditableCells);
+        var hasEditorValue = editableCell && editableCell.hasOwnProperty('editorValue');
+        var editorValue = editableCell && editableCell.editorValue;
+        var value = hasEditorValue ? editorValue : DataUtils_1.getValueByColumn(rowData, column);
+        var cellDeep = treeDeep != null && index === 0 ? treeDeep : undefined;
+        return (react_1.default.createElement(CellComponent_1.default, { treeArrowElement: (_a = arrow) === null || _a === void 0 ? void 0 : _a.pop(), childComponents: childComponents, treeDeep: cellDeep, column: column, dispatch: dispatch, editingMode: editingMode, editorValue: editorValue, field: ColumnUtils_1.getField(column), format: format, hasEditorValue: editableCell && editableCell.hasOwnProperty('editorValue'), isDetailsRowShown: isDetailsRowShown, isEditableCell: !!editableCell, isSelectedRow: isSelectedRow, key: column.key, rowData: rowData, rowKeyField: rowKeyField, rowKeyValue: rowKeyValue, selectedRows: selectedRows, validation: validation, validationMessage: editableCell && editableCell.validationMessage, value: value }));
+    })));
+};
+exports["default"] = DataRowContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DataRow/DataRow.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DataRow/DataRow.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var DataRowContent_1 = __importDefault(__webpack_require__(/*! ../DataRowContent/DataRowContent */ "./node_modules/ka-table/Components/DataRowContent/DataRowContent.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var DataRow = function (props) {
+    var dispatch = props.dispatch, groupColumnsCount = props.groupColumnsCount, isSelectedRow = props.isSelectedRow, rowKeyValue = props.rowKeyValue, rowReordering = props.rowReordering, trRef = props.trRef;
+    var dataRow = props.childComponents.dataRow;
+    if (rowReordering) {
+        var reorderedRowProps = PropsUtils_1.getDraggableProps(rowKeyValue, dispatch, actionCreators_1.reorderRows, defaultOptions_1.default.css.draggedRow, defaultOptions_1.default.css.dragOverRow);
+        dataRow = ComponentUtils_1.addElementAttributes(reorderedRowProps, props, dataRow);
+    }
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.row + " " + (isSelectedRow ? defaultOptions_1.default.css.rowSelected : '')
+    }, props, dataRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({ ref: trRef }, elementAttributes), content
+        ? react_1.default.createElement(react_1.default.Fragment, null, content)
+        : (react_1.default.createElement(react_1.default.Fragment, null,
+            react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+            react_1.default.createElement(DataRowContent_1.default, __assign({}, props))))));
+};
+exports["default"] = DataRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/DetailsRow/DetailsRow.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/DetailsRow/DetailsRow.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var DetailsRow = function (props) {
+    var groupColumnsCount = props.groupColumnsCount, childComponents = props.childComponents, columns = props.columns;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.detailsRow,
+    }, props, childComponents.detailsRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes),
+        react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        content
+            && react_1.default.createElement("td", { className: defaultOptions_1.default.css.cell, colSpan: columns.length }, content)));
+};
+exports["default"] = DetailsRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/EmptyCells/EmptyCells.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var EmptyCells = function (_a) {
+    var count = _a.count, isTh = _a.isTh, isColGroup = _a.isColGroup;
+    return (React.createElement(React.Fragment, null, __spreadArrays(Array(count)).map(function (item, index) {
+        return isColGroup ?
+            React.createElement("col", { key: index })
+            : isTh ?
+                React.createElement("th", { key: index, className: "ka-empty-cell " + defaultOptions_1.default.css.theadBackground }) :
+                React.createElement("td", { key: index, className: 'ka-empty-cell' });
+    })));
+};
+exports["default"] = EmptyCells;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterCell/FilterCell.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterCell/FilterCell.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var FilterRowDataType_1 = __importDefault(__webpack_require__(/*! ../FilterRowDataType/FilterRowDataType */ "./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js"));
+var FilterCell = function (props) {
+    var childComponents = props.childComponents, style = props.column.style;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCell + " ka-filter-row-cell " + defaultOptions_1.default.css.theadBackground + " " + defaultOptions_1.default.css.theadFixed,
+        style: style
+    }, props, childComponents.filterRowCell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content ? content :
+        (React.createElement(FilterRowDataType_1.default, __assign({}, props)))));
+};
+exports["default"] = FilterCell;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CommonUtils_1 = __webpack_require__(/*! ../../Utils/CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var FilterRowBoolean = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var value = column.filterRowValue;
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.checkbox, type: 'checkbox', ref: function (elem) { return elem && (elem.indeterminate = CommonUtils_1.isEmpty(value)); }, checked: value || false, onChange: function (event) {
+            var filterRowValue = event.currentTarget.checked;
+            if (value === false) {
+                if (filterRowValue === true) {
+                    filterRowValue = undefined;
+                }
+            }
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowBoolean;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowDataType/FilterRowDataType.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var FilterRowBoolean_1 = __importDefault(__webpack_require__(/*! ../FilterRowBoolean/FilterRowBoolean */ "./node_modules/ka-table/Components/FilterRowBoolean/FilterRowBoolean.js"));
+var FilterRowDate_1 = __importDefault(__webpack_require__(/*! ../FilterRowDate/FilterRowDate */ "./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js"));
+var FilterRowNumber_1 = __importDefault(__webpack_require__(/*! ../FilterRowNumber/FilterRowNumber */ "./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js"));
+var FilterRowString_1 = __importDefault(__webpack_require__(/*! ../FilterRowString/FilterRowString */ "./node_modules/ka-table/Components/FilterRowString/FilterRowString.js"));
+var FilterRowDataType = function (props) {
+    switch (props.column.dataType) {
+        case enums_1.DataType.Boolean: return react_1.default.createElement(FilterRowBoolean_1.default, __assign({}, props));
+        case enums_1.DataType.Date: return react_1.default.createElement(FilterRowDate_1.default, __assign({}, props));
+        case enums_1.DataType.Number: return react_1.default.createElement(FilterRowNumber_1.default, __assign({}, props));
+        default: return react_1.default.createElement(FilterRowString_1.default, __assign({}, props));
+    }
+};
+exports["default"] = FilterRowDataType;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowDate/FilterRowDate.js ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var DateUtils_1 = __webpack_require__(/*! ../../Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js");
+var FilterRowDate = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var fieldValue = column.filterRowValue;
+    var value = fieldValue && DateUtils_1.getDateInputValue(fieldValue);
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.dateInput, type: 'date', value: value || '', onChange: function (event) {
+            var targetValue = event.currentTarget.value;
+            var filterRowValue = targetValue ? new Date(targetValue) : null;
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowDate;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowNumber/FilterRowNumber.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var FilterRowNumber = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var value = column.filterRowValue;
+    return (react_1.default.createElement("input", { className: defaultOptions_1.default.css.numberInput, type: 'number', value: value === null || value === undefined ? '' : value, onChange: function (event) {
+            var filterRowValue = event.currentTarget.value !== '' ? Number(event.currentTarget.value) : null;
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, filterRowValue));
+        } }));
+};
+exports["default"] = FilterRowNumber;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRowString/FilterRowString.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRowString/FilterRowString.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var FilterRowString = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    return (react_1.default.createElement("input", { type: 'text', className: defaultOptions_1.default.css.textInput, value: column.filterRowValue || '', onChange: function (event) {
+            dispatch(actionCreators_1.updateFilterRowValue(column.key, event.currentTarget.value));
+        } }));
+};
+exports["default"] = FilterRowString;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/FilterRow/FilterRow.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/FilterRow/FilterRow.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var FilterCell_1 = __importDefault(__webpack_require__(/*! ../FilterCell/FilterCell */ "./node_modules/ka-table/Components/FilterCell/FilterCell.js"));
+var FilterRow = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, dispatch = _a.dispatch, groupColumnsCount = _a.groupColumnsCount;
+    return (react_1.default.createElement("tr", { className: "ka-filter-row " + defaultOptions_1.default.css.theadRow + " ka-tr" },
+        react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount, isTh: true }),
+        columns.map(function (column) {
+            return (react_1.default.createElement(FilterCell_1.default, { key: column.key, column: column, childComponents: childComponents, dispatch: dispatch }));
+        })));
+};
+exports["default"] = FilterRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var GroupRowContent = function (props) {
+    var childComponents = props.childComponents, contentColSpan = props.contentColSpan, dispatch = props.dispatch, groupIndex = props.groupIndex, groupKey = props.groupKey, isExpanded = props.isExpanded, text = props.text;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupCell,
+        colSpan: contentColSpan
+    }, props, childComponents.groupCell), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement(EmptyCells_1.default, { count: groupIndex }),
+        react_1.default.createElement("td", __assign({}, elementAttributes),
+            react_1.default.createElement("div", { className: 'ka-group-cell-content' },
+                react_1.default.createElement("div", { onClick: function () {
+                        dispatch(actionCreators_1.updateGroupsExpanded(groupKey));
+                    }, className: isExpanded
+                        ? defaultOptions_1.default.css.iconGroupArrowExpanded : defaultOptions_1.default.css.iconGroupArrowCollapsed }),
+                content || react_1.default.createElement("div", { className: 'ka-group-text' }, text)))));
+};
+exports["default"] = GroupRowContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupRow/GroupRow.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupRow/GroupRow.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var GroupRowContent_1 = __importDefault(__webpack_require__(/*! ../GroupRowContent/GroupRowContent */ "./node_modules/ka-table/Components/GroupRowContent/GroupRowContent.js"));
+var GroupRow = function (props) {
+    var childComponents = props.childComponents;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupRow
+    }, props, childComponents.groupRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes), content ? content : react_1.default.createElement(GroupRowContent_1.default, __assign({}, props))));
+};
+exports["default"] = GroupRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+exports.GroupSummaryCell = function (props) {
+    var _a;
+    var style = props.column.style, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupSummaryCell,
+        style: style
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.groupSummaryCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var GroupSummaryCell_1 = __webpack_require__(/*! ../GroupSummaryCell/GroupSummaryCell */ "./node_modules/ka-table/Components/GroupSummaryCell/GroupSummaryCell.js");
+exports.GroupSummaryRow = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.groupSummaryRow,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.groupSummaryRow), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tr", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        columns.map(function (column) { return React.createElement(GroupSummaryCell_1.GroupSummaryCell, __assign({ key: column.key }, props, { column: column })); })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var GroupedColumnsUtils_1 = __webpack_require__(/*! ../../Utils/GroupedColumnsUtils */ "./node_modules/ka-table/Utils/GroupedColumnsUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var HeadCell_1 = __importDefault(__webpack_require__(/*! ../HeadCell/HeadCell */ "./node_modules/ka-table/Components/HeadCell/HeadCell.js"));
+exports.GroupedColumnsRow = function (props) {
+    var columns = props.columns, _a = props.groupedColumns, groupedColumns = _a === void 0 ? [] : _a;
+    var rows = GroupedColumnsUtils_1.getRowsWithGroupedColumns(columns, groupedColumns);
+    var columnsKeys = columns.map(function (c) { return c.key; });
+    return (React.createElement(React.Fragment, null, rows.map(function (row, index) { return ((React.createElement("tr", { className: defaultOptions_1.default.css.theadRow, key: index },
+        React.createElement(EmptyCells_1.default, { count: 0, isTh: true }),
+        row.map(function (item, columnIndex) {
+            return (React.createElement(HeadCell_1.default, __assign({}, props, { colSpan: item.colSpan, rowSpan: item.rowSpan, column: item.column, hasChildren: !columnsKeys.includes(item.column.key), isGrouped: true, key: columnIndex })));
+        })))); })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var CellUtils_1 = __webpack_require__(/*! ../../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ../../Utils/SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var HeaderFilterButton_1 = __importDefault(__webpack_require__(/*! ../HeaderFilterButton/HeaderFilterButton */ "./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js"));
+var HeadCellContent = function (props) {
+    var column = props.column, dispatch = props.dispatch, sortingMode = props.sortingMode, filteringMode = props.filteringMode, headCellContent = props.childComponents.headCellContent;
+    var sortingEnabled = SortUtils_1.isSortingEnabled(sortingMode);
+    var onClick = sortingEnabled ? function () {
+        dispatch(actionCreators_1.updateSortDirection(column.key));
+    } : undefined;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCellContent + " " + (sortingEnabled ? 'ka-pointer' : ''),
+        onClick: onClick
+    }, props, headCellContent), elementAttributes = _a.elementAttributes, content = _a.content;
+    var refToElement = React.useRef(document.createElement('div'));
+    React.useLayoutEffect(function () {
+        CellUtils_1.checkPopupPosition(column, refToElement, dispatch);
+    }, [column, dispatch]);
+    return (React.createElement(React.Fragment, null,
+        React.createElement("div", __assign({}, elementAttributes, { ref: refToElement }),
+            content || React.createElement("span", null, column.title),
+            column.sortDirection && sortingEnabled && (React.createElement("span", { className: column.sortDirection === enums_1.SortDirection.Ascend
+                    ? defaultOptions_1.default.css.iconSortArrowUp
+                    : defaultOptions_1.default.css.iconSortArrowDown }, column.sortIndex)),
+            (filteringMode === enums_1.FilteringMode.HeaderFilter) && (React.createElement(HeaderFilterButton_1.default, { column: column, dispatch: dispatch })))));
+};
+exports["default"] = HeadCellContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellResizeUtils_1 = __webpack_require__(/*! ../../Utils/CellResizeUtils */ "./node_modules/ka-table/Utils/CellResizeUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EffectUtils_1 = __webpack_require__(/*! ../../Utils/EffectUtils */ "./node_modules/ka-table/Utils/EffectUtils.js");
+var HeadCellResize = function (props) {
+    var _a, _b, _c, _d, _e;
+    var _f = props.column, key = _f.key, style = _f.style, colGroup = _f.colGroup, width = _f.width, dispatch = props.dispatch, childComponents = props.childComponents;
+    var minWidth = CellResizeUtils_1.getMinWidth(style) || CellResizeUtils_1.getMinWidth((_a = colGroup) === null || _a === void 0 ? void 0 : _a.style);
+    var currentWidth = width || ((_b = colGroup) === null || _b === void 0 ? void 0 : _b.width) || ((_d = (_c = colGroup) === null || _c === void 0 ? void 0 : _c.style) === null || _d === void 0 ? void 0 : _d.width) || ((_e = style) === null || _e === void 0 ? void 0 : _e.width);
+    var _g = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCellResize,
+        draggable: false,
+        onMouseDown: function (mouseDownEvent) {
+            mouseDownEvent.preventDefault();
+            var startX = mouseDownEvent.screenX - (CellResizeUtils_1.isNumberWidth(currentWidth) ? currentWidth : mouseDownEvent.currentTarget.parentElement.offsetWidth);
+            var mouseMoveStop = EffectUtils_1.getEventListenerEffect('mousemove', CellResizeUtils_1.getMouseMove(currentWidth, minWidth, startX, key, dispatch));
+            var mouseUpStop = EffectUtils_1.getEventListenerEffect('mouseup', function (event) {
+                var newWidth = CellResizeUtils_1.getValidatedWidth(event.screenX - startX, minWidth);
+                dispatch(actionCreators_1.resizeColumn(key, newWidth));
+                mouseUpStop();
+                mouseMoveStop();
+            });
+        }
+    }, props, childComponents.headCellResize), elementAttributes = _g.elementAttributes, content = _g.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || React.createElement(React.Fragment, null, "\u00A0")));
+};
+exports["default"] = HeadCellResize;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadCell/HeadCell.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadCell/HeadCell.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var CellResizeUtils_1 = __webpack_require__(/*! ../../Utils/CellResizeUtils */ "./node_modules/ka-table/Utils/CellResizeUtils.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ../../Utils/SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var HeadCellContent_1 = __importDefault(__webpack_require__(/*! ../HeadCellContent/HeadCellContent */ "./node_modules/ka-table/Components/HeadCellContent/HeadCellContent.js"));
+var HeadCellResize_1 = __importDefault(__webpack_require__(/*! ../HeadCellResize/HeadCellResize */ "./node_modules/ka-table/Components/HeadCellResize/HeadCellResize.js"));
+var HeadCell = function (props) {
+    var childComponents = props.childComponents, colSpan = props.colSpan, column = props.column, _a = props.column, style = _a.style, isResizable = _a.isResizable, key = _a.key, columnReordering = props.columnReordering, columnResizing = props.columnResizing, dispatch = props.dispatch, hasChildren = props.hasChildren, isGrouped = props.isGrouped, rowSpan = props.rowSpan, sortingMode = props.sortingMode;
+    var headCell = props.childComponents.headCell;
+    if (columnReordering) {
+        var reorderedRowProps = PropsUtils_1.getDraggableProps(key, dispatch, actionCreators_1.reorderColumns, defaultOptions_1.default.css.draggedColumn, defaultOptions_1.default.css.dragOverColumn);
+        headCell = ComponentUtils_1.addElementAttributes(reorderedRowProps, props, headCell);
+    }
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadCell + " " + defaultOptions_1.default.css.theadCellHeight + " " + defaultOptions_1.default.css.theadFixed + " " + defaultOptions_1.default.css.theadBackground + " " + (SortUtils_1.isSortingEnabled(sortingMode) ? 'ka-pointer' : '') + " " + (isGrouped ? 'ka-thead-grouped-cell' : ''),
+        colSpan: colSpan,
+        rowSpan: rowSpan,
+        scope: 'col',
+        style: style,
+        id: key,
+    }, props, headCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("th", __assign({}, elementAttributes),
+        React.createElement("div", { className: defaultOptions_1.default.css.theadCellWrapper },
+            React.createElement("div", { className: defaultOptions_1.default.css.theadCellContentWrapper }, content || React.createElement(HeadCellContent_1.default, __assign({}, props))),
+            CellResizeUtils_1.isCellResizeShown(isResizable, columnResizing) && !hasChildren && (React.createElement(HeadCellResize_1.default, { column: column, dispatch: dispatch, childComponents: childComponents })))));
+};
+exports["default"] = HeadCell;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeadRow/HeadRow.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeadRow/HeadRow.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var HeadCell_1 = __importDefault(__webpack_require__(/*! ../HeadCell/HeadCell */ "./node_modules/ka-table/Components/HeadCell/HeadCell.js"));
+var HeadRow = function (props) {
+    var areAllRowsSelected = props.areAllRowsSelected, childComponents = props.childComponents, columnReordering = props.columnReordering, columnResizing = props.columnResizing, columns = props.columns, dispatch = props.dispatch, filteringMode = props.filteringMode, groupColumnsCount = props.groupColumnsCount, sortingMode = props.sortingMode;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.theadRow
+    }, props, childComponents.headRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes), content ||
+        (react_1.default.createElement(react_1.default.Fragment, null,
+            react_1.default.createElement(EmptyCells_1.default, { count: groupColumnsCount, isTh: true }),
+            columns.map(function (column) {
+                return (react_1.default.createElement(HeadCell_1.default, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, column: column, dispatch: dispatch, filteringMode: filteringMode, key: column.key, sortingMode: sortingMode }));
+            })))));
+};
+exports["default"] = HeadRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/HeaderFilterButton/HeaderFilterButton.js ***!
+  \***********************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var HeaderFilterButton = function (_a) {
+    var column = _a.column, dispatch = _a.dispatch;
+    var _b;
+    return (React.createElement("span", { onClick: function (event) {
+            event.stopPropagation();
+            dispatch(actionCreators_1.updateHeaderFilterPopupState(column.key, !column.isHeaderFilterPopupShown));
+        }, className: defaultOptions_1.default.css.iconFilter + " ka-header-filter-button " + (((_b = column.headerFilterValues) === null || _b === void 0 ? void 0 : _b.length) ? 'ka-header-filter-button-has-value' : '') }));
+};
+exports["default"] = HeaderFilterButton;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Loading/Loading.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/ka-table/Components/Loading/Loading.js ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var Loading = function (props) {
+    var enabled = props.enabled, text = props.text;
+    if (enabled) {
+        return (React.createElement("div", { className: 'ka-loading' },
+            React.createElement("div", { className: 'ka-loading-icon' }),
+            text && (React.createElement("div", { className: 'ka-loading-text' }, text))));
+    }
+    return (React.createElement(React.Fragment, null));
+};
+exports["default"] = Loading;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/NewRow/NewRow.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/ka-table/Components/NewRow/NewRow.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var const_1 = __webpack_require__(/*! ../../const */ "./node_modules/ka-table/const.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var DataRow_1 = __importDefault(__webpack_require__(/*! ../DataRow/DataRow */ "./node_modules/ka-table/Components/DataRow/DataRow.js"));
+var NewRow = function (_a) {
+    var childComponents = _a.childComponents, columns = _a.columns, dispatch = _a.dispatch, editableCells = _a.editableCells, format = _a.format, groupColumnsCount = _a.groupColumnsCount, rowKeyField = _a.rowKeyField, validation = _a.validation;
+    return (react_1.default.createElement(DataRow_1.default, { childComponents: childComponents, columns: columns, dispatch: dispatch, format: format, editableCells: editableCells, editingMode: enums_1.EditingMode.None, groupColumnsCount: groupColumnsCount, isDetailsRowShown: false, isSelectedRow: false, rowData: {}, rowKeyField: rowKeyField, rowKeyValue: const_1.newRowId, rowReordering: false, validation: validation, selectedRows: [], rowEditableCells: editableCells }));
+};
+exports["default"] = NewRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/NoDataRow/NoDataRow.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/NoDataRow/NoDataRow.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var NoDataRow = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: 'ka-tr ka-no-data-row'
+    }, props, childComponents.noDataRow), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (react_1.default.createElement("tr", __assign({}, elementAttributes),
+        react_1.default.createElement("td", { className: 'ka-no-data-cell', colSpan: columns.length + groupColumnsCount }, content)));
+};
+exports["default"] = NoDataRow;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingIndex/PagingIndex.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingIndex/PagingIndex.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingIndex = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, isActive = props.isActive, pageIndex = props.pageIndex, text = props.text;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingPageIndex + " " + (isActive ? 'ka-paging-page-index-active' : ''),
+        onClick: function () { return dispatch(actionCreators_1.updatePageIndex(pageIndex)); }
+    }, props, childComponents.pagingIndex), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("li", __assign({}, elementAttributes), content || text));
+};
+exports["default"] = PagingIndex;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingPages/PagingPages.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingPages/PagingPages.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ../../Utils/PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var PagingIndex_1 = __importDefault(__webpack_require__(/*! ../PagingIndex/PagingIndex */ "./node_modules/ka-table/Components/PagingIndex/PagingIndex.js"));
+var PagingPages = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, pagesCount = props.pagesCount, _a = props.pageIndex, pageIndex = _a === void 0 ? 0 : _a;
+    var pages = PagingUtils_1.getPagesArrayBySize(pagesCount);
+    React.useEffect(function () {
+        if (pageIndex !== 0 && pageIndex >= pages.length) {
+            dispatch(actionCreators_1.updatePageIndex(0));
+        }
+    }, [dispatch, pageIndex, pages]);
+    var isEndShown = pageIndex < pages.length - PagingUtils_1.centerLength && pages.length > PagingUtils_1.centerLength + Math.ceil(PagingUtils_1.centerLength / 2);
+    var isStartShown = pageIndex >= PagingUtils_1.centerLength && pages.length > PagingUtils_1.centerLength + Math.ceil(PagingUtils_1.centerLength / 2);
+    var centerPages = PagingUtils_1.getPagesForCenter(pages, isStartShown, isEndShown, pageIndex);
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingPages
+    }, props, childComponents.pagingPages), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("ul", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        isStartShown &&
+            (React.createElement(React.Fragment, null,
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: 0, isActive: pageIndex === 0, text: 1 })),
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: centerPages[0] - 1, isActive: false, text: '...' })))),
+        centerPages.map(function (value, index) {
+            return (React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: value, isActive: pageIndex === value, key: value, text: value + 1 })));
+        }),
+        isEndShown &&
+            (React.createElement(React.Fragment, null,
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: __spreadArrays(centerPages).pop() + 1, isActive: false, text: '...' })),
+                React.createElement(PagingIndex_1.default, __assign({}, props, { pageIndex: pages[pages.length - 1], isActive: pageIndex === pages[pages.length - 1], text: pages[pages.length - 1] + 1 }))))))));
+};
+exports["default"] = PagingPages;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingSize/PagingSize.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingSize/PagingSize.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingSize = function (props) {
+    var childComponents = props.childComponents, dispatch = props.dispatch, pageSize = props.pageSize, value = props.value;
+    var isActive = pageSize === value;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingSize + " " + (isActive ? 'ka-paging-size-active' : ''),
+        onClick: function () { return dispatch(actionCreators_1.updatePageSize(value)); }
+    }, props, childComponents.pagingSize), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("li", __assign({}, elementAttributes), content || value));
+};
+exports["default"] = PagingSize;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PagingSizes/PagingSizes.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PagingSizes/PagingSizes.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingSize_1 = __importDefault(__webpack_require__(/*! ../PagingSize/PagingSize */ "./node_modules/ka-table/Components/PagingSize/PagingSize.js"));
+var PagingSizes = function (props) {
+    var childComponents = props.childComponents, _a = props.pageSizes, pageSizes = _a === void 0 ? [] : _a;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.pagingSizes
+    }, props, childComponents.pagingSizes), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("ul", __assign({}, elementAttributes), content || (pageSizes.map(function (value) { return React.createElement(PagingSize_1.default, __assign({}, props, { key: value, value: value })); }))));
+};
+exports["default"] = PagingSizes;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Paging/Paging.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Paging/Paging.js ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingPages_1 = __importDefault(__webpack_require__(/*! ../PagingPages/PagingPages */ "./node_modules/ka-table/Components/PagingPages/PagingPages.js"));
+var PagingSizes_1 = __importDefault(__webpack_require__(/*! ../PagingSizes/PagingSizes */ "./node_modules/ka-table/Components/PagingSizes/PagingSizes.js"));
+var Paging = function (props) {
+    var childComponents = props.childComponents, pageSizes = props.pageSizes;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.paging + " " + (pageSizes ? 'ka-paging-sizes-active' : ''),
+    }, props, childComponents.paging), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content ||
+        (React.createElement(React.Fragment, null,
+            pageSizes && React.createElement(PagingSizes_1.default, __assign({}, props)),
+            React.createElement(PagingPages_1.default, __assign({}, props))))));
+};
+exports["default"] = Paging;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PopupContentItem = function (props) {
+    var _a, _b, _c;
+    var column = props.column, childComponents = props.childComponents, dispatch = props.dispatch, item = props.item;
+    var checked = (_b = (_a = column.headerFilterValues) === null || _a === void 0 ? void 0 : _a.includes(item), (_b !== null && _b !== void 0 ? _b : false));
+    var handleChange = function (event) {
+        dispatch(actionCreators_1.updateHeaderFilterValues(column.key, item, event.currentTarget.checked));
+    };
+    var _d = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.popupContentItem
+    }, props, (_c = childComponents) === null || _c === void 0 ? void 0 : _c.popupContentItem), elementAttributes = _d.elementAttributes, content = _d.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement("div", { className: 'ka-popup-content-checkbox' },
+            React.createElement("input", { className: 'ka-input', type: 'checkbox', checked: checked, onChange: handleChange })),
+        React.createElement("div", { className: 'ka-popup-content-item-value' }, item)))));
+};
+exports["default"] = PopupContentItem;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/PopupContent/PopupContent.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/PopupContent/PopupContent.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var PopupContentItem_1 = __importDefault(__webpack_require__(/*! ../PopupContentItem/PopupContentItem */ "./node_modules/ka-table/Components/PopupContentItem/PopupContentItem.js"));
+var PopupContent = function (props) {
+    var _a, _b, _c;
+    var column = props.column, childComponents = props.childComponents, data = props.data, dispatch = props.dispatch, format = props.format;
+    var headerFilterValues = (_a = data) === null || _a === void 0 ? void 0 : _a.map(function (item) {
+        var _a;
+        var value = DataUtils_1.getValueByColumn(item, column);
+        var formatedValue = (format && format({ column: column, value: value }))
+            || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+        return formatedValue;
+    });
+    headerFilterValues = Array.from(new Set(headerFilterValues));
+    var _d = ComponentUtils_1.getElementCustomization({
+        className: "" + defaultOptions_1.default.css.popupContent
+    }, props, (_b = childComponents) === null || _b === void 0 ? void 0 : _b.popupContent), elementAttributes = _d.elementAttributes, content = _d.content;
+    return (React.createElement("div", __assign({}, elementAttributes), content || ((_c = headerFilterValues) === null || _c === void 0 ? void 0 : _c.map(function (item, index) { return (React.createElement(PopupContentItem_1.default, { key: index, column: column, childComponents: childComponents, dispatch: dispatch, item: item })); }))));
+};
+exports["default"] = PopupContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Popup/Popup.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Popup/Popup.js ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var UseOuterClick_1 = __webpack_require__(/*! ../../hooks/UseOuterClick */ "./node_modules/ka-table/hooks/UseOuterClick.js");
+var PopupContent_1 = __importDefault(__webpack_require__(/*! ../PopupContent/PopupContent */ "./node_modules/ka-table/Components/PopupContent/PopupContent.js"));
+var Popup = function (props) {
+    var _a, _b;
+    var column = props.column, childComponents = props.childComponents, data = props.data, dispatch = props.dispatch, format = props.format;
+    var refToElement = UseOuterClick_1.useOuterClick(function () {
+        dispatch(actionCreators_1.updateHeaderFilterPopupState(column.key, !column.isHeaderFilterPopupShown));
+    });
+    return (React.createElement("div", { className: 'ka-popup', ref: refToElement, style: {
+            left: (_a = column.headerFilterPopupPosition) === null || _a === void 0 ? void 0 : _a.x,
+            top: (_b = column.headerFilterPopupPosition) === null || _b === void 0 ? void 0 : _b.y,
+        } },
+        React.createElement(PopupContent_1.default, { column: column, childComponents: childComponents, data: data, dispatch: dispatch, format: format })));
+};
+exports["default"] = Popup;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Rows/Rows.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/ka-table/Components/Rows/Rows.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var DataUtils_1 = __webpack_require__(/*! ../../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ../../Utils/FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ../../Utils/TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+var DataAndDetailsRows_1 = __importDefault(__webpack_require__(/*! ../DataAndDetailsRows/DataAndDetailsRows */ "./node_modules/ka-table/Components/DataAndDetailsRows/DataAndDetailsRows.js"));
+var GroupRow_1 = __importDefault(__webpack_require__(/*! ../GroupRow/GroupRow */ "./node_modules/ka-table/Components/GroupRow/GroupRow.js"));
+var GroupSummaryRow_1 = __webpack_require__(/*! ../GroupSummaryRow/GroupSummaryRow */ "./node_modules/ka-table/Components/GroupSummaryRow/GroupSummaryRow.js");
+var Rows = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, data = props.data, _a = props.detailsRows, detailsRows = _a === void 0 ? [] : _a, dispatch = props.dispatch, editableCells = props.editableCells, format = props.format, groupedColumns = props.groupedColumns, _b = props.groups, groups = _b === void 0 ? [] : _b, _c = props.groupsExpanded, groupsExpanded = _c === void 0 ? [] : _c, onFirstRowRendered = props.onFirstRowRendered, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, rowReordering = props.rowReordering, selectedRows = props.selectedRows, validation = props.validation;
+    var groupMark = GroupUtils_1.getGroupMark();
+    var firstRowRef = react_1.useRef(null);
+    react_1.useEffect(function () {
+        onFirstRowRendered(firstRowRef);
+    }, [firstRowRef, onFirstRowRendered]);
+    var rowRefLink = firstRowRef;
+    return (react_1.default.createElement(react_1.default.Fragment, null, data.map(function (d) {
+        if (d.groupMark === groupMark) {
+            var groupIndex = d.key.length - 1;
+            var group_1 = groups && groups[groupIndex];
+            var column = group_1 && groupedColumns.find(function (c) { return c.key === group_1.columnKey; });
+            return (react_1.default.createElement(GroupRow_1.default, { childComponents: childComponents, column: column, contentColSpan: columns.length - groupIndex + groups.length, dispatch: dispatch, groupIndex: groupIndex, groupKey: d.key, isExpanded: groupsExpanded.some(function (ge) { return JSON.stringify(ge) === JSON.stringify(d.key); }), text: GroupUtils_1.getGroupText(d.value, column, format), key: JSON.stringify(d.key) }));
+        }
+        else if (d.groupSummaryMark === GroupUtils_1.groupSummaryMark) {
+            return react_1.default.createElement(GroupSummaryRow_1.GroupSummaryRow, __assign({}, props, { groupData: d.groupData, key: d.key, groupIndex: d.groupIndex }));
+        }
+        else {
+            var isTreeGroup = d.treeGroupMark === TreeUtils_1.treeGroupMark;
+            var isTreeData = d.treeDataMark === TreeUtils_1.treeDataMark;
+            var isTreeRow = isTreeGroup || isTreeData;
+            var rowData = isTreeRow ? d.rowData : d;
+            var rowKeyValue_1 = DataUtils_1.getValueByField(rowData, rowKeyField);
+            var isTreeExpanded = isTreeGroup && (!treeGroupsExpanded || treeGroupsExpanded.includes(rowKeyValue_1));
+            var isSelectedRow = selectedRows.some(function (s) { return s === rowKeyValue_1; });
+            var isDetailsRowShown = detailsRows.some(function (r) { return r === rowKeyValue_1; });
+            var rowEditableCells = FilterUtils_1.getRowEditableCells(rowKeyValue_1, editableCells);
+            var dataRow = (react_1.default.createElement(DataAndDetailsRows_1.default, { childComponents: props.childComponents, columns: props.columns, dispatch: dispatch, editableCells: props.editableCells, editingMode: props.editingMode, isTreeGroup: isTreeGroup, isTreeExpanded: isTreeExpanded, treeDeep: isTreeRow === true ? d.treeDeep : undefined, format: format, groupColumnsCount: props.groupColumnsCount, isDetailsRowShown: isDetailsRowShown, isSelectedRow: isSelectedRow, key: rowKeyValue_1, rowData: rowData, rowEditableCells: rowEditableCells, rowKeyField: props.rowKeyField, rowKeyValue: rowKeyValue_1, rowReordering: rowReordering, selectedRows: props.selectedRows, trRef: rowRefLink, validation: validation }));
+            rowRefLink = undefined;
+            return dataRow;
+        }
+    })));
+};
+exports["default"] = Rows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/SummaryCell/SummaryCell.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/SummaryCell/SummaryCell.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+exports.SummaryCell = function (props) {
+    var _a;
+    var style = props.column.style, childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.summaryCell,
+        style: style
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.summaryCell), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("td", __assign({}, elementAttributes), content));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/SummaryRow/SummaryRow.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/ka-table/Components/SummaryRow/SummaryRow.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var EmptyCells_1 = __importDefault(__webpack_require__(/*! ../EmptyCells/EmptyCells */ "./node_modules/ka-table/Components/EmptyCells/EmptyCells.js"));
+var SummaryCell_1 = __webpack_require__(/*! ../SummaryCell/SummaryCell */ "./node_modules/ka-table/Components/SummaryCell/SummaryCell.js");
+exports.SummaryRow = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, groupColumnsCount = props.groupColumnsCount;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.summaryRow,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.summaryRow), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tr", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        React.createElement(EmptyCells_1.default, { count: groupColumnsCount }),
+        columns.map(function (column) { return React.createElement(SummaryCell_1.SummaryCell, __assign({ key: column.key }, props, { column: column })); })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var const_1 = __webpack_require__(/*! ../../const */ "./node_modules/ka-table/const.js");
+var NewRow_1 = __importDefault(__webpack_require__(/*! ../NewRow/NewRow */ "./node_modules/ka-table/Components/NewRow/NewRow.js"));
+var NoDataRow_1 = __importDefault(__webpack_require__(/*! ../NoDataRow/NoDataRow */ "./node_modules/ka-table/Components/NoDataRow/NoDataRow.js"));
+var VirtualizedRows_1 = __importDefault(__webpack_require__(/*! ../VirtualizedRows/VirtualizedRows */ "./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js"));
+var TableBodyContent = function (props) {
+    var childComponents = props.childComponents, columns = props.columns, data = props.data, dispatch = props.dispatch, editableCells = props.editableCells, format = props.format, groupColumnsCount = props.groupColumnsCount, rowKeyField = props.rowKeyField, validation = props.validation;
+    var newRowEditableCells = editableCells && editableCells.filter(function (c) { return c.rowKeyValue === const_1.newRowId; });
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        newRowEditableCells && !!newRowEditableCells.length && (react_1.default.createElement(NewRow_1.default, { childComponents: childComponents, columns: columns, dispatch: dispatch, editableCells: newRowEditableCells, format: format, groupColumnsCount: groupColumnsCount, rowKeyField: rowKeyField, validation: validation })),
+        !data.length
+            ? react_1.default.createElement(NoDataRow_1.default, __assign({}, props))
+            : react_1.default.createElement(VirtualizedRows_1.default, __assign({}, props))));
+};
+exports["default"] = TableBodyContent;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableBody/TableBody.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableBody/TableBody.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var TableBodyContent_1 = __importDefault(__webpack_require__(/*! ../TableBodyContent/TableBodyContent */ "./node_modules/ka-table/Components/TableBodyContent/TableBodyContent.js"));
+var TableBody = function (props) {
+    var childComponents = props.childComponents;
+    var _a = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tbody,
+    }, props, childComponents.tableBody), elementAttributes = _a.elementAttributes, content = _a.content;
+    return (React.createElement("tbody", __assign({}, elementAttributes), content || React.createElement(TableBodyContent_1.default, __assign({}, props))));
+};
+exports["default"] = TableBody;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableFoot/TableFoot.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableFoot/TableFoot.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var SummaryRow_1 = __webpack_require__(/*! ../SummaryRow/SummaryRow */ "./node_modules/ka-table/Components/SummaryRow/SummaryRow.js");
+exports.TableFoot = function (props) {
+    var _a;
+    var childComponents = props.childComponents;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tfoot,
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.tableFoot), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("tfoot", __assign({}, elementAttributes), content || React.createElement(SummaryRow_1.SummaryRow, __assign({}, props))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableHead/TableHead.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableHead/TableHead.js ***!
+  \*****************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var FilterRow_1 = __importDefault(__webpack_require__(/*! ../FilterRow/FilterRow */ "./node_modules/ka-table/Components/FilterRow/FilterRow.js"));
+var GroupedColumnsRow_1 = __webpack_require__(/*! ../GroupedColumnsRow/GroupedColumnsRow */ "./node_modules/ka-table/Components/GroupedColumnsRow/GroupedColumnsRow.js");
+var HeadRow_1 = __importDefault(__webpack_require__(/*! ../HeadRow/HeadRow */ "./node_modules/ka-table/Components/HeadRow/HeadRow.js"));
+exports.TableHead = function (props) {
+    var areAllRowsSelected = props.areAllRowsSelected, childComponents = props.childComponents, columnReordering = props.columnReordering, columnResizing = props.columnResizing, columns = props.columns, dispatch = props.dispatch, filteringMode = props.filteringMode, groupColumnsCount = props.groupColumnsCount, sortingMode = props.sortingMode, _a = props.groupedColumns, groupedColumns = _a === void 0 ? [] : _a;
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.thead,
+    }, props, childComponents.tableHead), elementAttributes = _b.elementAttributes, content = _b.content;
+    return (React.createElement("thead", __assign({}, elementAttributes), content || (React.createElement(React.Fragment, null,
+        groupedColumns.length ? React.createElement(GroupedColumnsRow_1.GroupedColumnsRow, __assign({}, props)) : (React.createElement(HeadRow_1.default, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, columns: columns, dispatch: dispatch, groupColumnsCount: groupColumnsCount, sortingMode: sortingMode, filteringMode: filteringMode })),
+        filteringMode === enums_1.FilteringMode.FilterRow &&
+            (React.createElement(FilterRow_1.default, __assign({}, props, { dispatch: dispatch })))))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TablePaging/TablePaging.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TablePaging/TablePaging.js ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var Paging_1 = __importDefault(__webpack_require__(/*! ../Paging/Paging */ "./node_modules/ka-table/Components/Paging/Paging.js"));
+exports.TablePaging = function (props) {
+    var _a = props.childComponents, childComponents = _a === void 0 ? {} : _a, dispatch = props.dispatch, paging = props.paging;
+    return (React.createElement(Paging_1.default, __assign({}, paging, { dispatch: dispatch, childComponents: childComponents, pagesCount: PropsUtils_1.getPagesCountByProps(props) })));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/TableWrapper/TableWrapper.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/ka-table/Components/TableWrapper/TableWrapper.js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var Virtualize_1 = __webpack_require__(/*! ../../Utils/Virtualize */ "./node_modules/ka-table/Utils/Virtualize.js");
+var ColGroup_1 = __webpack_require__(/*! ../ColGroup/ColGroup */ "./node_modules/ka-table/Components/ColGroup/ColGroup.js");
+var TableBody_1 = __importDefault(__webpack_require__(/*! ../TableBody/TableBody */ "./node_modules/ka-table/Components/TableBody/TableBody.js"));
+var TableFoot_1 = __webpack_require__(/*! ../TableFoot/TableFoot */ "./node_modules/ka-table/Components/TableFoot/TableFoot.js");
+var TableHead_1 = __webpack_require__(/*! ../TableHead/TableHead */ "./node_modules/ka-table/Components/TableHead/TableHead.js");
+exports.TableWrapper = function (props) {
+    var _a = props.childComponents, childComponents = _a === void 0 ? {} : _a, columnReordering = props.columnReordering, columnResizing = props.columnResizing, _b = props.data, data = _b === void 0 ? [] : _b, dispatch = props.dispatch, _c = props.editableCells, editableCells = _c === void 0 ? [] : _c, _d = props.editingMode, editingMode = _d === void 0 ? enums_1.EditingMode.None : _d, _e = props.filteringMode, filteringMode = _e === void 0 ? enums_1.FilteringMode.None : _e, groups = props.groups, _f = props.rowReordering, rowReordering = _f === void 0 ? false : _f, _g = props.selectedRows, selectedRows = _g === void 0 ? [] : _g, _h = props.sortingMode, sortingMode = _h === void 0 ? enums_1.SortingMode.None : _h, virtualScrolling = props.virtualScrolling;
+    var groupsExpanded = props.groupsExpanded;
+    var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+    if (groups && !groupsExpanded) {
+        groupsExpanded = GroupUtils_1.getExpandedGroups(preparedOptions.groupedData);
+    }
+    var areAllRowsSelected = data.length === selectedRows.length;
+    var tableWrapper = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.tableWrapper,
+        onScroll: Virtualize_1.isVirtualScrollingEnabled(virtualScrolling) ? function (event) {
+            dispatch({
+                scrollTop: event.currentTarget.scrollTop,
+                type: enums_1.ActionType.ScrollTable,
+            });
+        } : undefined,
+    }, props, childComponents.tableWrapper);
+    var _j = ComponentUtils_1.getElementCustomization({
+        className: defaultOptions_1.default.css.table,
+    }, props, childComponents.table), elementAttributes = _j.elementAttributes, content = _j.content;
+    return (React.createElement("div", __assign({}, tableWrapper.elementAttributes), content || tableWrapper.content || (React.createElement("table", __assign({}, elementAttributes),
+        React.createElement(ColGroup_1.ColGroup, { columns: preparedOptions.columns, groupColumnsCount: preparedOptions.groupColumnsCount }),
+        React.createElement(TableHead_1.TableHead, __assign({}, props, { areAllRowsSelected: areAllRowsSelected, childComponents: childComponents, columnReordering: columnReordering, columnResizing: columnResizing, columns: preparedOptions.columns, dispatch: dispatch, filteringMode: filteringMode, groupColumnsCount: preparedOptions.groupColumnsCount, sortingMode: sortingMode })),
+        React.createElement(TableBody_1.default, __assign({}, props, { childComponents: childComponents, columns: preparedOptions.columns, data: preparedOptions.groupedData, editableCells: editableCells, editingMode: editingMode, groupColumnsCount: preparedOptions.groupColumnsCount, groupedColumns: preparedOptions.groupedColumns, groupsExpanded: groupsExpanded, rowReordering: rowReordering, selectedRows: selectedRows })),
+        (childComponents.tableFoot || childComponents.summaryRow || childComponents.summaryCell) && (React.createElement(TableFoot_1.TableFoot, __assign({}, props, { data: data, columns: preparedOptions.columns, groupColumnsCount: preparedOptions.groupColumnsCount })))))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/Table/Table.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/ka-table/Components/Table/Table.js ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var actionCreators_1 = __webpack_require__(/*! ../../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var ComponentUtils_1 = __webpack_require__(/*! ../../Utils/ComponentUtils */ "./node_modules/ka-table/Utils/ComponentUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ../../Utils/PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var Loading_1 = __importDefault(__webpack_require__(/*! ../Loading/Loading */ "./node_modules/ka-table/Components/Loading/Loading.js"));
+var TablePaging_1 = __webpack_require__(/*! ../TablePaging/TablePaging */ "./node_modules/ka-table/Components/TablePaging/TablePaging.js");
+var TableWrapper_1 = __webpack_require__(/*! ../TableWrapper/TableWrapper */ "./node_modules/ka-table/Components/TableWrapper/TableWrapper.js");
+var Popup_1 = __importDefault(__webpack_require__(/*! ../Popup/Popup */ "./node_modules/ka-table/Components/Popup/Popup.js"));
+exports.Table = function (props) {
+    var _a;
+    var childComponents = props.childComponents, columns = props.columns, dispatch = props.dispatch, data = props.data, format = props.format, height = props.height, loading = props.loading, width = props.width, paging = props.paging, singleAction = props.singleAction;
+    var isLoadingActive = loading && loading.enabled;
+    var kaCss = isLoadingActive ? 'ka ka-loading-active' : 'ka';
+    var _b = ComponentUtils_1.getElementCustomization({
+        className: kaCss
+    }, props, (_a = childComponents) === null || _a === void 0 ? void 0 : _a.rootDiv), elementAttributes = _b.elementAttributes, rootDivContent = _b.content;
+    elementAttributes.style = __assign({ width: width, height: height }, elementAttributes.style);
+    React.useEffect(function () {
+        if (singleAction) {
+            dispatch(singleAction);
+            dispatch(actionCreators_1.clearSingleAction());
+        }
+    });
+    return (React.createElement("div", __assign({}, elementAttributes), rootDivContent || (React.createElement(React.Fragment, null,
+        PagingUtils_1.isPagingShown(enums_1.PagingPosition.Top, paging) && React.createElement(TablePaging_1.TablePaging, __assign({}, props)),
+        React.createElement(TableWrapper_1.TableWrapper, __assign({}, props)),
+        PagingUtils_1.isPagingShown(enums_1.PagingPosition.Bottom, paging) && React.createElement(TablePaging_1.TablePaging, __assign({}, props)),
+        React.createElement(Loading_1.default, __assign({}, loading)),
+        columns.map(function (column) {
+            return column.isHeaderFilterPopupShown
+                && (React.createElement(Popup_1.default, { key: column.key, column: column, childComponents: childComponents, data: data, dispatch: dispatch, format: format }));
+        })))));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ka-table/Components/VirtualizedRows/VirtualizedRows.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../../enums */ "./node_modules/ka-table/enums.js");
+var Virtualize_1 = __webpack_require__(/*! ../../Utils/Virtualize */ "./node_modules/ka-table/Utils/Virtualize.js");
+var Rows_1 = __importDefault(__webpack_require__(/*! ../Rows/Rows */ "./node_modules/ka-table/Components/Rows/Rows.js"));
+var VirtualizedRows = function (props) {
+    var data = props.data, dispatch = props.dispatch, virtualScrolling = props.virtualScrolling;
+    var onFirstRowRendered = function (firstRowRef) {
+        if (firstRowRef
+            && firstRowRef.current
+            && (virtualScrolling
+                && (!virtualScrolling.itemHeight
+                    || !virtualScrolling.tbodyHeight))) {
+            var itemHeight = firstRowRef.current.offsetHeight || 40;
+            var rootElement = firstRowRef.current.closest("." + defaultOptions_1.default.css.root);
+            var tbodyHeight = (rootElement && rootElement.offsetHeight)
+                || 600;
+            var newVirtualScrolling = __assign({ itemHeight: itemHeight,
+                tbodyHeight: tbodyHeight }, virtualScrolling);
+            dispatch({ type: enums_1.ActionType.UpdateVirtualScrolling, virtualScrolling: newVirtualScrolling });
+        }
+    };
+    var virtualizedData = data;
+    var virtualized;
+    if (virtualScrolling) {
+        virtualized = Virtualize_1.getVirtualized(virtualScrolling, virtualizedData);
+        virtualizedData = virtualized.virtualizedData;
+    }
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        virtualized && virtualized.beginHeight !== 0 && react_1.default.createElement("tr", { style: { height: virtualized.beginHeight } },
+            react_1.default.createElement("td", { style: { height: virtualized.beginHeight } })),
+        react_1.default.createElement(Rows_1.default, __assign({}, props, { data: virtualizedData, onFirstRowRendered: onFirstRowRendered })),
+        virtualized && virtualized.endHeight !== 0 && (react_1.default.createElement("tr", { style: { height: virtualized.endHeight } },
+            react_1.default.createElement("td", { style: { height: virtualized.endHeight } })))));
+};
+exports["default"] = VirtualizedRows;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Models/CssClasses.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Models/CssClasses.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var CssClasses = /** @class */ (function () {
+    function CssClasses() {
+        this.root = 'ka';
+        this.cell = 'ka-cell';
+        this.treeCell = 'ka-tree-cell';
+        this.treeCellEmptySpace = 'ka-tree-empty-space';
+        this.cellEditor = 'ka-cell-editor';
+        this.cellText = 'ka-cell-text';
+        this.groupCell = 'ka-group-cell';
+        this.groupSummaryRow = 'ka-group-summary-row';
+        this.detailsRow = 'ka-tr ka-details-row';
+        this.groupRow = 'ka-tr ka-group-row';
+        this.groupSummaryCell = 'ka-cell ka-group-summary-cell';
+        this.kaCellEditorValidationError = 'ka-cell-editor-validation-error';
+        this.row = 'ka-tr ka-row';
+        this.rowSelected = 'ka-row-selected';
+        this.tableWrapper = 'ka-table-wrapper';
+        this.table = 'ka-table';
+        this.tbody = 'ka-tbody';
+        this.tfoot = 'ka-tfoot';
+        this.thead = 'ka-thead';
+        this.theadBackground = 'ka-thead-background';
+        this.theadFixed = 'ka-thead-fixed';
+        this.theadCell = 'ka-thead-cell';
+        this.theadCellHeight = 'ka-thead-cell-height';
+        this.summaryCell = 'ka-summary-cell';
+        this.summaryRow = 'ka-summary-row';
+        this.theadCellContent = 'ka-thead-cell-content';
+        this.theadCellContentWrapper = 'ka-thead-cell-content-wrapper';
+        this.theadCellResize = 'ka-thead-cell-resize';
+        this.theadCellWrapper = 'ka-thead-cell-wrapper';
+        this.theadRow = 'ka-tr ka-thead-row';
+        this.draggedRow = 'ka-dragged-row';
+        this.dragOverRow = 'ka-drag-over-row';
+        this.draggedColumn = 'ka-dragged-column';
+        this.dragOverColumn = 'ka-drag-over-column';
+        this.paging = 'ka-paging';
+        this.pagingPages = 'ka-paging-pages';
+        this.pagingPageIndex = 'ka-paging-page-index';
+        this.pagingSize = 'ka-paging-size';
+        this.pagingSizes = 'ka-paging-sizes';
+        this.popupContent = 'ka-popup-content';
+        this.popupContentItem = 'ka-popup-content-item';
+        this.iconClose = 'ka-icon ka-icon-close';
+        this.iconGroupArrowCollapsed = 'ka-icon ka-icon-group-arrow ka-icon-group-arrow-collapsed';
+        this.iconGroupArrowExpanded = 'ka-icon ka-icon-group-arrow ka-icon-group-arrow-expanded';
+        this.iconFilter = 'ka-icon ka-icon-filter ka-pointer';
+        this.iconTreeArrowCollapsed = 'ka-icon ka-icon-tree-arrow ka-icon-tree-arrow-collapsed';
+        this.iconTreeArrowExpanded = 'ka-icon ka-icon-tree-arrow ka-icon-tree-arrow-expanded';
+        this.iconSortArrowDown = 'ka-icon ka-icon-sort ka-icon-sort-arrow-down';
+        this.iconSortArrowUp = 'ka-icon ka-icon-sort ka-icon-sort-arrow-up';
+        this.checkbox = 'ka-input';
+        this.dateInput = 'ka-input';
+        this.numberInput = 'ka-input';
+        this.textInput = 'ka-input';
+    }
+    return CssClasses;
+}());
+exports.CssClasses = CssClasses;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Reducers/kaReducer.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Reducers/kaReducer.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var const_1 = __webpack_require__(/*! ../const */ "./node_modules/ka-table/const.js");
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var utils_1 = __webpack_require__(/*! ../utils */ "./node_modules/ka-table/utils.js");
+var ArrayUtils_1 = __webpack_require__(/*! ../Utils/ArrayUtils */ "./node_modules/ka-table/Utils/ArrayUtils.js");
+var CellUtils_1 = __webpack_require__(/*! ../Utils/CellUtils */ "./node_modules/ka-table/Utils/CellUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ../Utils/DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ../Utils/FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ../Utils/GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var HeadRowUtils_1 = __webpack_require__(/*! ../Utils/HeadRowUtils */ "./node_modules/ka-table/Utils/HeadRowUtils.js");
+var NavigationUtils_1 = __webpack_require__(/*! ../Utils/NavigationUtils */ "./node_modules/ka-table/Utils/NavigationUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ../Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var ReducerUtils_1 = __webpack_require__(/*! ../Utils/ReducerUtils */ "./node_modules/ka-table/Utils/ReducerUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ../Utils/TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+var kaReducer = function (props, action) {
+    var _a;
+    var columns = props.columns, _b = props.data, data = _b === void 0 ? [] : _b, _c = props.detailsRows, detailsRows = _c === void 0 ? [] : _c, _d = props.editableCells, editableCells = _d === void 0 ? [] : _d, groupsExpanded = props.groupsExpanded, loading = props.loading, paging = props.paging, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, _e = props.selectedRows, selectedRows = _e === void 0 ? [] : _e, validation = props.validation, _f = props.sortingMode, sortingMode = _f === void 0 ? enums_1.SortingMode.None : _f, virtualScrolling = props.virtualScrolling;
+    switch (action.type) {
+        case enums_1.ActionType.InsertRow: {
+            var rowData = action.rowData, options = action.options;
+            var _g = options || {}, rowKeyValue_1 = _g.rowKeyValue, insertRowPosition = _g.insertRowPosition;
+            var newData = __spreadArrays(data);
+            if (rowKeyValue_1 != null) {
+                var rowIndex = newData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValue_1; });
+                if (insertRowPosition === enums_1.InsertRowPosition.after) {
+                    rowIndex++;
+                }
+                newData.splice(rowIndex, 0, rowData);
+            }
+            else {
+                insertRowPosition === enums_1.InsertRowPosition.after ? newData.push(rowData) : newData.unshift(rowData);
+            }
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.UpdateHeaderFilterValues: {
+            var newColumns = columns.map(function (c) {
+                var _a;
+                if (c.key === action.columnKey) {
+                    var headerFilterValues = c.headerFilterValues;
+                    if (action.checked) {
+                        if (headerFilterValues === undefined) {
+                            headerFilterValues = [];
+                        }
+                        if (!headerFilterValues.includes(action.item)) {
+                            headerFilterValues.push(action.item);
+                        }
+                    }
+                    else {
+                        headerFilterValues = (_a = headerFilterValues) === null || _a === void 0 ? void 0 : _a.filter(function (value) { return value !== action.item; });
+                    }
+                    c.headerFilterValues = headerFilterValues;
+                }
+                return c;
+            });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdatePopupPosition: {
+            var newColumns = columns.map(function (c) { return (__assign(__assign({}, c), { headerFilterPopupPosition: action.popupPosition })); });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateHeaderFilterPopupState: {
+            var newColumns = columns.map(function (c) { return (__assign(__assign({}, c), { isHeaderFilterPopupShown: c.key === action.columnKey ? !c.isHeaderFilterPopupShown : false })); });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.MoveFocusedRight: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getRightCell);
+        }
+        case enums_1.ActionType.MoveFocusedLeft: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getLeftCell);
+        }
+        case enums_1.ActionType.MoveFocusedUp: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getUpCell);
+        }
+        case enums_1.ActionType.MoveFocusedDown: {
+            return ReducerUtils_1.getUpdatedFocused(props, action, NavigationUtils_1.getDownCell);
+        }
+        case enums_1.ActionType.SetFocused: {
+            return __assign(__assign({}, props), { focused: action.focused });
+        }
+        case enums_1.ActionType.ClearFocused: {
+            return __assign(__assign({}, props), { focused: undefined });
+        }
+        case enums_1.ActionType.ClearSingleAction: {
+            return __assign(__assign({}, props), { singleAction: undefined });
+        }
+        case enums_1.ActionType.SetSingleAction: {
+            return __assign(__assign({}, props), { singleAction: action.singleAction });
+        }
+        case enums_1.ActionType.ShowColumn: {
+            var newColumns = __spreadArrays(columns);
+            var columnIndex = newColumns.findIndex(function (c) { return c.key === action.columnKey; });
+            newColumns[columnIndex] = __assign(__assign({}, newColumns[columnIndex]), { visible: true });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.HideColumn: {
+            var newColumns = __spreadArrays(columns);
+            var columnIndex = newColumns.findIndex(function (c) { return c.key === action.columnKey; });
+            newColumns[columnIndex] = __assign(__assign({}, newColumns[columnIndex]), { visible: false });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.ReorderRows: {
+            var newData = DataUtils_1.reorderData(data, function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }, action.rowKeyValue, action.targetRowKeyValue);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.ReorderColumns: {
+            var newData = DataUtils_1.reorderData(columns, function (d) { return d.key; }, action.columnKey, action.targetColumnKey);
+            return __assign(__assign({}, props), { columns: newData });
+        }
+        case enums_1.ActionType.ResizeColumn: {
+            var columnKey_1 = action.columnKey, width_1 = action.width;
+            var newColumns = columns.map(function (column) {
+                var _a, _b, _c, _d, _e;
+                if (column.key === columnKey_1) {
+                    var newColumn = __assign({}, column);
+                    if (((_a = newColumn.style) === null || _a === void 0 ? void 0 : _a.width) != null) {
+                        newColumn.style = __assign(__assign({}, newColumn.style), { width: width_1 });
+                    }
+                    if (((_b = newColumn.style) === null || _b === void 0 ? void 0 : _b.width) == null || newColumn.width != null) {
+                        newColumn.width = width_1;
+                    }
+                    if (((_d = (_c = newColumn.colGroup) === null || _c === void 0 ? void 0 : _c.style) === null || _d === void 0 ? void 0 : _d.width) != null) {
+                        newColumn.colGroup.style = __assign(__assign({}, newColumn.colGroup.style), { width: width_1 });
+                    }
+                    if (((_e = newColumn.colGroup) === null || _e === void 0 ? void 0 : _e.width) != null) {
+                        newColumn.colGroup.width = width_1;
+                    }
+                    return newColumn;
+                }
+                return column;
+            });
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdatePageIndex: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pageIndex: action.pageIndex }) });
+        }
+        case enums_1.ActionType.UpdatePageSize: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pageSize: action.pageSize }) });
+        }
+        case enums_1.ActionType.UpdatePagesCount: {
+            return __assign(__assign({}, props), { paging: __assign(__assign({}, paging), { pagesCount: action.pagesCount }) });
+        }
+        case enums_1.ActionType.HideLoading: {
+            return __assign(__assign({}, props), { loading: __assign(__assign({}, loading), { enabled: false }) });
+        }
+        case enums_1.ActionType.ShowLoading: {
+            var newLoading = __assign(__assign({}, loading), { enabled: true });
+            if (action.text !== undefined) {
+                newLoading.text = action.text;
+            }
+            return __assign(__assign({}, props), { loading: newLoading });
+        }
+        case enums_1.ActionType.ShowDetailsRow: {
+            var newDetailsRows = __spreadArrays(detailsRows);
+            newDetailsRows.push(action.rowKeyValue);
+            return __assign(__assign({}, props), { detailsRows: newDetailsRows });
+        }
+        case enums_1.ActionType.HideDetailsRow: {
+            var newDetailsRows = detailsRows.filter(function (row) { return row !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { detailsRows: newDetailsRows });
+        }
+        case enums_1.ActionType.OpenEditor: {
+            var newEditableCells = CellUtils_1.addItemToEditableCells(action, editableCells);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.CloseEditor: {
+            var newEditableCells = CellUtils_1.removeItemFromEditableCells(action, editableCells);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateFilterRowValue: {
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var newColumn = __assign(__assign({}, column), { filterRowValue: action.filterRowValue });
+            var newColumns = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(newColumn, 'key', columns);
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateFilterRowOperator: {
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var newColumn = __assign(__assign({}, column), { filterRowOperator: action.filterRowOperator });
+            var newColumns = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(newColumn, 'key', columns);
+            return __assign(__assign({}, props), { columns: newColumns });
+        }
+        case enums_1.ActionType.UpdateEditorValue: {
+            var newEditableCells = __spreadArrays(editableCells);
+            var editableCellIndex = newEditableCells.findIndex(function (c) { return c.columnKey === action.columnKey && c.rowKeyValue === action.rowKeyValue; });
+            var editableCell = __assign(__assign({}, newEditableCells[editableCellIndex]), { editorValue: action.value });
+            newEditableCells[editableCellIndex] = editableCell;
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateCellValue: {
+            var row = data.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === action.rowKeyValue; });
+            var column = columns.find(function (c) { return c.key === action.columnKey; });
+            var updatedRowData = DataUtils_1.replaceValue(row, column, action.value);
+            var newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(updatedRowData, rowKeyField, data);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.DeleteRow: {
+            var newData = data.filter(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.SelectAllRows: {
+            var newSelectedRows = data.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); });
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectAllFilteredRows: {
+            var newData = FilterUtils_1.filterAndSearchData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            newSelectedRows = __spreadArrays(newSelectedRows, newData.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }));
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectAllVisibleRows: {
+            var newData = PropsUtils_1.getData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            newSelectedRows = __spreadArrays(newSelectedRows, newData.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); }));
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.Search: {
+            return __assign(__assign({}, props), { searchText: action.searchText });
+        }
+        case enums_1.ActionType.SelectSingleRow: {
+            var newSelectedRows = [action.rowKeyValue];
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.DeselectAllRows:
+            return __assign(__assign({}, props), { selectedRows: [] });
+        case enums_1.ActionType.DeselectAllFilteredRows: {
+            var newData = FilterUtils_1.filterAndSearchData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.DeselectAllVisibleRows: {
+            var newData = PropsUtils_1.getData(props);
+            var newSelectedRows = ReducerUtils_1.removeDataKeysFromSelectedRows(selectedRows, newData, rowKeyField);
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.SelectRow:
+            return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, [action.rowKeyValue]) });
+        case enums_1.ActionType.SelectRowsRange: {
+            var rowKeyValueTo_1 = action.rowKeyValueTo;
+            if (rowKeyValueTo_1) {
+                var shownData = utils_1.kaPropsUtils.getData(props);
+                var rowKeyValueToIndex = shownData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValueTo_1; });
+                var rowKeyValueFromIndex = shownData.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === action.rowKeyValueFrom; });
+                if (rowKeyValueToIndex != null && rowKeyValueFromIndex != null) {
+                    var _h = rowKeyValueToIndex > rowKeyValueFromIndex ? [rowKeyValueFromIndex, rowKeyValueToIndex] : [rowKeyValueToIndex, rowKeyValueFromIndex], start = _h[0], end = _h[1];
+                    var rowsToSelect = [];
+                    for (var i = start; i <= end; i++) {
+                        var value = DataUtils_1.getValueByField(shownData[i], rowKeyField);
+                        if (!selectedRows.includes(value)) {
+                            rowsToSelect.push(value);
+                        }
+                    }
+                    return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, rowsToSelect) });
+                }
+            }
+            return __assign(__assign({}, props), { selectedRows: __spreadArrays(selectedRows, [action.rowKeyValueFrom]) });
+        }
+        case enums_1.ActionType.DeselectRow: {
+            var newSelectedRows = __spreadArrays(selectedRows).filter(function (s) { return s !== action.rowKeyValue; });
+            return __assign(__assign({}, props), { selectedRows: newSelectedRows });
+        }
+        case enums_1.ActionType.UpdateSortDirection:
+            var sortedColumns = HeadRowUtils_1.getUpdatedSortedColumns(columns, action.columnKey, sortingMode);
+            return __assign(__assign({}, props), { columns: sortedColumns });
+        case enums_1.ActionType.UpdateVirtualScrolling:
+            return __assign(__assign({}, props), { virtualScrolling: action.virtualScrolling });
+        case enums_1.ActionType.UpdateData:
+            return __assign(__assign({}, props), { data: action.data });
+        case enums_1.ActionType.ScrollTable:
+            var scrollTop = action.scrollTop;
+            return __assign(__assign({}, props), { virtualScrolling: __assign(__assign({}, virtualScrolling), { scrollTop: scrollTop }) });
+        case enums_1.ActionType.UpdateGroupsExpanded: {
+            var currentGroupsExpanded = groupsExpanded;
+            if (!currentGroupsExpanded) {
+                var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+                currentGroupsExpanded = GroupUtils_1.getExpandedGroups(preparedOptions.groupedData);
+            }
+            var newGroupsExpanded = GroupUtils_1.updateExpandedGroups(currentGroupsExpanded, action.groupKey);
+            return __assign(__assign({}, props), { groupsExpanded: newGroupsExpanded });
+        }
+        case enums_1.ActionType.ShowNewRow:
+        case enums_1.ActionType.OpenRowEditors: {
+            var rowKeyValue = action.type === enums_1.ActionType.ShowNewRow ? const_1.newRowId : action.rowKeyValue;
+            var newEditableCells = ReducerUtils_1.addColumnsToRowEditableCells(editableCells, columns, rowKeyValue);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.OpenAllEditors: {
+            var newEditableCells = ReducerUtils_1.getEditableCellsByData(data, rowKeyField, columns);
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.HideNewRow:
+        case enums_1.ActionType.CloseRowEditors: {
+            var rowKeyValue_2 = action.type === enums_1.ActionType.HideNewRow ? const_1.newRowId : action.rowKeyValue;
+            var newEditableCells = editableCells.filter(function (e) { return e.rowKeyValue !== rowKeyValue_2; });
+            return __assign(__assign({}, props), { editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.Validate: {
+            var newEditableCells = ReducerUtils_1.getValidatedEditableCells(props);
+            return __assign(__assign({}, props), { editableCells: __spreadArrays(newEditableCells) });
+        }
+        case enums_1.ActionType.SaveAllEditors: {
+            var newData_1 = __spreadArrays(data);
+            (_a = editableCells) === null || _a === void 0 ? void 0 : _a.forEach(function (editableCell) {
+                if (editableCell.hasOwnProperty('editorValue')) {
+                    var rowIndex = newData_1.findIndex(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === editableCell.rowKeyValue; });
+                    if (rowIndex != null) {
+                        var column = columns.find(function (c) { return c.key === editableCell.columnKey; });
+                        newData_1[rowIndex] = DataUtils_1.replaceValue(newData_1[rowIndex], column, editableCell.editorValue);
+                    }
+                }
+            });
+            return __assign(__assign({}, props), { data: newData_1 });
+        }
+        case enums_1.ActionType.SaveRowEditors:
+        case enums_1.ActionType.SaveNewRow: {
+            var isNewRow_1 = action.type === enums_1.ActionType.SaveNewRow;
+            var rowEditorKeyValue_1 = isNewRow_1 ? const_1.newRowId : action.rowKeyValue;
+            var updatedRowData_1 = data.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowEditorKeyValue_1; });
+            var rowEditableCells = editableCells.filter(function (editableCell) { return editableCell.rowKeyValue === rowEditorKeyValue_1
+                && (isNewRow_1 || editableCell.hasOwnProperty('editorValue')); });
+            if (action.validate && !PropsUtils_1.isValid(__assign(__assign({}, props), { editableCells: rowEditableCells }))) {
+                rowEditableCells.forEach(function (cell) {
+                    var column = columns.find(function (c) { return c.key === cell.columnKey; });
+                    cell.validationMessage = validation && validation({
+                        column: column,
+                        value: cell.editorValue,
+                        rowData: updatedRowData_1
+                    });
+                });
+                return __assign(__assign({}, props), { editableCells: __spreadArrays(editableCells) });
+            }
+            var newEditableCells = editableCells.filter(function (e) { return e.rowKeyValue !== rowEditorKeyValue_1; });
+            rowEditableCells.forEach(function (cell) {
+                var column = columns.find(function (c) { return c.key === cell.columnKey; });
+                updatedRowData_1 = DataUtils_1.replaceValue(updatedRowData_1, column, cell.editorValue);
+            });
+            var newData = void 0;
+            if (isNewRow_1) {
+                updatedRowData_1[rowKeyField] = action.rowKeyValue;
+                newData = __spreadArrays([updatedRowData_1], data);
+            }
+            else {
+                newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(updatedRowData_1, rowKeyField, data);
+            }
+            return __assign(__assign({}, props), { data: newData, editableCells: newEditableCells });
+        }
+        case enums_1.ActionType.UpdateRow: {
+            var newData = ArrayUtils_1.getCopyOfArrayAndInsertOrReplaceItem(action.rowData, rowKeyField, data);
+            return __assign(__assign({}, props), { data: newData });
+        }
+        case enums_1.ActionType.UpdateTreeGroupsExpanded: {
+            var rowKeyValue_3 = action.rowKeyValue;
+            var value = treeGroupsExpanded ? !treeGroupsExpanded.some(function (v) { return v === rowKeyValue_3; }) : false;
+            if (value) {
+                return __assign(__assign({}, props), { treeGroupsExpanded: __spreadArrays((treeGroupsExpanded || []), [rowKeyValue_3]) });
+            }
+            var currentExpanded = treeGroupsExpanded;
+            if (!currentExpanded) {
+                var preparedOptions = PropsUtils_1.prepareTableOptions(props);
+                currentExpanded = TreeUtils_1.getExpandedParents(preparedOptions.groupedData, rowKeyField);
+            }
+            return __assign(__assign({}, props), { treeGroupsExpanded: currentExpanded.filter(function (item) { return item !== rowKeyValue_3; }) });
+        }
+    }
+    return props;
+};
+exports.kaReducer = kaReducer;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ArrayUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ArrayUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getCopyOfArrayAndAddItem = function (item, array) {
+    if (array === void 0) { array = []; }
+    return array.concat([item]);
+};
+exports.getCopyOfArrayAndDeleteItem = function (item, rowKeyField, array) {
+    var rowKeyValue = item[rowKeyField];
+    return array.filter(function (i) { return i[rowKeyField] !== rowKeyValue; });
+};
+exports.getCopyOfArrayAndInsertOrReplaceItem = function (item, rowKeyField, array) {
+    var newArray = __spreadArrays(array);
+    var rowKeyValue = item[rowKeyField];
+    var index = newArray.findIndex(function (i) { return i[rowKeyField] === rowKeyValue; });
+    index >= 0 ? newArray.splice(index, 1, item) : newArray.push(item);
+    return newArray;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CellResizeUtils.js":
+/*!********************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CellResizeUtils.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var actionCreators_1 = __webpack_require__(/*! ../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+exports.isCellResizeShown = function (isResizable, columnResizing) { return !!((isResizable !== false) && (columnResizing || isResizable)); };
+exports.getMouseMove = function (currentWidth, minWidth, startX, key, dispatch) { return function (event) {
+    var newWidth = event.screenX - startX;
+    if (newWidth !== currentWidth) {
+        newWidth = exports.getValidatedWidth(newWidth, minWidth);
+        dispatch(actionCreators_1.resizeColumn(key, newWidth));
+    }
+}; };
+exports.getValidatedWidth = function (newWidth, minWidth) {
+    if (newWidth < minWidth) {
+        return minWidth;
+    }
+    return newWidth;
+};
+exports.isNumberWidth = function (width) { return width && typeof width === 'number'; };
+exports.getMinWidth = function (style) {
+    var minWidth = 20;
+    if (!style) {
+        return minWidth;
+    }
+    var styleMinWidth = style.minWidth;
+    if (exports.isNumberWidth(styleMinWidth)) {
+        minWidth = styleMinWidth;
+    }
+    return minWidth;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CellUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CellUtils.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var actionCreators_1 = __webpack_require__(/*! ../actionCreators */ "./node_modules/ka-table/actionCreators.js");
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var ArrayUtils_1 = __webpack_require__(/*! ./ArrayUtils */ "./node_modules/ka-table/Utils/ArrayUtils.js");
+exports.isEditableCell = function (editingMode, column, rowEditableCells) {
+    if (column.isEditable !== undefined) {
+        return column.isEditable;
+    }
+    return !!rowEditableCells.find(function (c) { return c.columnKey === column.key; });
+};
+exports.getEditableCell = function (column, rowEditableCells) {
+    if (column.isEditable === false) {
+        return undefined;
+    }
+    return rowEditableCells.find(function (c) { return c.columnKey === column.key; });
+};
+exports.addItemToEditableCells = function (item, editableCells) {
+    return ArrayUtils_1.getCopyOfArrayAndAddItem(item, editableCells);
+};
+exports.getCellEditorDispatchHandler = function (dispatch) {
+    return function (action) {
+        if (action.type === enums_1.ActionType.UpdateEditorValue) {
+            dispatch(actionCreators_1.updateCellValue(action.rowKeyValue, action.columnKey, action.value));
+        }
+        else {
+            dispatch(action);
+        }
+    };
+};
+exports.removeItemFromEditableCells = function (item, editableCells) {
+    return editableCells.filter(function (c) { return c.columnKey !== item.columnKey || c.rowKeyValue !== item.rowKeyValue; });
+};
+exports.checkPopupPosition = function (column, refToElement, dispatch) {
+    var _a, _b, _c, _d;
+    if (refToElement.current && column.isHeaderFilterPopupShown) {
+        var newPopupPosition = {
+            x: refToElement.current.offsetLeft + ((_a = refToElement.current.offsetParent) === null || _a === void 0 ? void 0 : _a.offsetLeft),
+            y: refToElement.current.offsetTop + ((_b = refToElement.current.offsetParent) === null || _b === void 0 ? void 0 : _b.offsetTop) + refToElement.current.offsetHeight
+        };
+        if (newPopupPosition.x !== ((_c = column.headerFilterPopupPosition) === null || _c === void 0 ? void 0 : _c.x) || newPopupPosition.y !== ((_d = column.headerFilterPopupPosition) === null || _d === void 0 ? void 0 : _d.y)) {
+            dispatch(actionCreators_1.updatePopupPosition(newPopupPosition));
+        }
+    }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ColumnUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ColumnUtils.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+exports.getField = function (column) {
+    return column.field || column.key;
+};
+exports.getLastField = function (field) {
+    if (defaultOptions_1.default.fieldDelimiter) {
+        return field.split(defaultOptions_1.default.fieldDelimiter).pop();
+    }
+    return field;
+};
+exports.getFieldParts = function (field) {
+    return defaultOptions_1.default.fieldDelimiter ? field.split(defaultOptions_1.default.fieldDelimiter) : [field];
+};
+exports.getLastFieldParents = function (field) {
+    if (defaultOptions_1.default.fieldDelimiter) {
+        var fieldParents = field.split(defaultOptions_1.default.fieldDelimiter);
+        fieldParents.pop();
+        return fieldParents;
+    }
+    return [];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/CommonUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/CommonUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isEmpty = function (value) { return (value == null || value.length === 0); };
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ComponentUtils.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ComponentUtils.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var PropsUtils_1 = __webpack_require__(/*! ./PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+var ElementCustomization = /** @class */ (function () {
+    function ElementCustomization() {
+    }
+    return ElementCustomization;
+}());
+function getElementCustomization(childElementAttributes, props, childComponent) {
+    var elementAttributes = PropsUtils_1.extendProps(childElementAttributes, props, childComponent);
+    var content = childComponent && childComponent.content && childComponent.content(props);
+    return {
+        content: content,
+        elementAttributes: elementAttributes,
+    };
+}
+exports.getElementCustomization = getElementCustomization;
+;
+exports.addElementAttributes = function (elementAttributes, props, childComponent) {
+    var updatedChildComponent = __assign({}, childComponent);
+    var defaultElementAttributes = updatedChildComponent.elementAttributes && updatedChildComponent.elementAttributes(props);
+    updatedChildComponent.elementAttributes = function () { return (__assign(__assign({}, defaultElementAttributes), elementAttributes)); };
+    return updatedChildComponent;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/DataUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/DataUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var ColumnUtils_1 = __webpack_require__(/*! ./ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js");
+exports.getParentValue = function (rowData, fieldParents) {
+    var parentValue = fieldParents.reduce(function (previousValue, currentValue) {
+        var result = (previousValue && previousValue[currentValue]);
+        return result !== undefined ? result : undefined;
+    }, rowData);
+    return parentValue ? __assign({}, parentValue) : undefined;
+};
+exports.createObjByFields = function (fieldParents, field, value) {
+    var parentValue = {};
+    if (fieldParents.length) {
+        fieldParents.reduce(function (previousValue, currentItem, currentIndex) {
+            var lastObj = {};
+            previousValue[currentItem] = lastObj;
+            if (currentIndex === (fieldParents.length - 1)) {
+                lastObj[field] = value;
+            }
+            return lastObj;
+        }, parentValue);
+    }
+    else {
+        parentValue[field] = value;
+    }
+    return __assign({}, parentValue);
+};
+exports.getValueByColumn = function (rowData, column) {
+    return exports.getValueByField(rowData, ColumnUtils_1.getField(column));
+};
+exports.getValueByField = function (rowData, field) {
+    var o = __assign({}, rowData);
+    var names = ColumnUtils_1.getFieldParts(field);
+    for (var i = 0, n = names.length; i < n; ++i) {
+        var k = names[i];
+        if (k in o) {
+            o = o[k];
+        }
+        else {
+            return;
+        }
+    }
+    return o;
+};
+var replaceValueForField = function (rowData, field, newValue, fieldParents) {
+    var result = __assign({}, rowData);
+    if (fieldParents && fieldParents.length) {
+        var parentValue = exports.getParentValue(result, fieldParents) || {};
+        parentValue[field] = newValue;
+        var parentsOfParent = __spreadArrays(fieldParents);
+        var parentFieldName = parentsOfParent.pop();
+        result = replaceValueForField(result, parentFieldName, parentValue, parentsOfParent);
+    }
+    else {
+        result[field] = newValue;
+    }
+    return result;
+};
+exports.replaceValue = function (rowData, column, newValue) {
+    var field = ColumnUtils_1.getField(column);
+    return replaceValueForField(rowData, ColumnUtils_1.getLastField(field), newValue, ColumnUtils_1.getLastFieldParents(field));
+};
+exports.reorderData = function (data, getKey, keyValue, targetKeyValue) {
+    var moved = data.find(function (d) { return getKey(d) === keyValue; });
+    var newData = data.filter(function (d) { return getKey(d) !== keyValue; });
+    var targetIndex = data.findIndex(function (d) { return getKey(d) === targetKeyValue; });
+    newData.splice(targetIndex, 0, moved);
+    return newData;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/DateUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/DateUtils.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getDateInputValue = function (date) {
+    return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split('T')[0];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/EffectUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/EffectUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+/*
+  Used inside effects and returned as result from them,
+  it adds listener to esc & enter keys on life cycle of component
+*/
+exports.addEscEnterKeyEffect = function (escKeyHandler, enterKeyHandler) {
+    var handleKeyboard = function (event) {
+        if (event.keyCode === enums_1.KeyboardEnum.Esc) {
+            escKeyHandler();
+        }
+        if (event.keyCode === enums_1.KeyboardEnum.Enter) {
+            enterKeyHandler();
+        }
+    };
+    return exports.getEventListenerEffect('keyup', handleKeyboard);
+};
+exports.getEventListenerEffect = function (eventName, handler) {
+    window.addEventListener(eventName, handler);
+    return function () {
+        window.removeEventListener(eventName, handler);
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/FilterUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/FilterUtils.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var CommonUtils_1 = __webpack_require__(/*! ./CommonUtils */ "./node_modules/ka-table/Utils/CommonUtils.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var TypeUtils_1 = __webpack_require__(/*! ./TypeUtils */ "./node_modules/ka-table/Utils/TypeUtils.js");
+exports.getRowEditableCells = function (rowKeyValue, editableCells) {
+    return editableCells.filter(function (c) { return c.rowKeyValue === rowKeyValue; });
+};
+exports.searchData = function (columns, data, searchText, search) {
+    var searched = columns.reduce(function (initialData, c) {
+        var filterFunction = function (item) {
+            if (initialData.indexOf(item) >= 0) {
+                return false;
+            }
+            var searchContent = search && search({ column: c, searchText: searchText, rowData: item });
+            if (searchContent != null) {
+                return searchContent;
+            }
+            var columnValue = DataUtils_1.getValueByColumn(item, c);
+            if (columnValue == null) {
+                return false;
+            }
+            return columnValue.toString().toLowerCase().includes(searchText.toLowerCase());
+        };
+        return initialData.concat(data.filter(filterFunction));
+    }, []);
+    return data.filter(function (d) { return searched.indexOf(d) >= 0; });
+};
+exports.filterAndSearchData = function (props) {
+    var extendedFilter = props.extendedFilter, searchText = props.searchText, columns = props.columns, search = props.search, filter = props.filter, format = props.format;
+    var _a = props.data, data = _a === void 0 ? [] : _a;
+    data = __spreadArrays(data);
+    data = extendedFilter ? extendedFilter(data) : data;
+    data = searchText ? exports.searchData(columns, data, searchText, search) : data;
+    data = TypeUtils_1.convertToColumnTypes(data, columns);
+    data = exports.filterData(data, columns, filter);
+    data = exports.filterByHeaderFilter(data, columns, format);
+    return data;
+};
+var getCompare = function (column) {
+    var filterRowOperator = column.filterRowOperator
+        || exports.getDefaultOperatorForType(column.dataType || defaultOptions_1.default.columnDataType);
+    var filterOperator = exports.predefinedFilterOperators.find(function (fo) { return filterRowOperator === fo.name; });
+    if (!filterOperator) {
+        throw new Error("'" + column.filterRowOperator + "' has not found in predefinedFilterOperators array, available operators: " + exports.predefinedFilterOperators.map(function (o) { return o.name; }).join(', '));
+    }
+    return filterOperator.compare;
+};
+exports.filterData = function (data, columns, filter) {
+    return columns.reduce(function (initialData, column) {
+        var _a;
+        if (CommonUtils_1.isEmpty(column.filterRowValue)
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsEmpty
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsNotEmpty) {
+            return initialData;
+        }
+        var compare = ((_a = filter) === null || _a === void 0 ? void 0 : _a({ column: column })) || getCompare(column);
+        return initialData.filter(function (d) {
+            var fieldValue = DataUtils_1.getValueByColumn(d, column);
+            var conditionValue = column.filterRowValue;
+            if (column.dataType === enums_1.DataType.Date) {
+                fieldValue = fieldValue == null ? fieldValue : new Date(fieldValue).setHours(0, 0, 0, 0);
+                conditionValue = conditionValue == null ? conditionValue : new Date(conditionValue).setHours(0, 0, 0, 0);
+            }
+            return compare(fieldValue, conditionValue);
+        });
+    }, data);
+};
+exports.getDefaultOperatorForType = function (type) {
+    var filterOperator = exports.predefinedFilterOperators.find(function (o) { return o.defaultForTypes && o.defaultForTypes.includes(type); });
+    return (filterOperator && filterOperator.name) || '=';
+};
+exports.predefinedFilterOperators = [{
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue === conditionValue;
+        },
+        defaultForTypes: [enums_1.DataType.Boolean, enums_1.DataType.Number, enums_1.DataType.Date],
+        name: enums_1.FilterOperatorName.Equal,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue > conditionValue;
+        },
+        name: enums_1.FilterOperatorName.MoreThan,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue < conditionValue;
+        },
+        name: enums_1.FilterOperatorName.LessThan,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue >= conditionValue;
+        },
+        name: enums_1.FilterOperatorName.MoreThanOrEqual,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue <= conditionValue;
+        },
+        name: enums_1.FilterOperatorName.LessThanOrEqual,
+    }, {
+        compare: function (fieldValue, conditionValue) {
+            return fieldValue != null && fieldValue.toString().toLowerCase().includes(conditionValue.toString().toLowerCase());
+        },
+        defaultForTypes: [enums_1.DataType.String],
+        name: enums_1.FilterOperatorName.Contains,
+    }, {
+        compare: function (fieldValue) {
+            return CommonUtils_1.isEmpty(fieldValue);
+        },
+        name: enums_1.FilterOperatorName.IsEmpty,
+    }, {
+        compare: function (fieldValue) {
+            return !CommonUtils_1.isEmpty(fieldValue);
+        },
+        name: enums_1.FilterOperatorName.IsNotEmpty,
+    }];
+exports.filterByHeaderFilter = function (data, columns, format) {
+    return columns.reduce(function (initialData, column) {
+        if (CommonUtils_1.isEmpty(column.headerFilterValues)
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsEmpty
+            && column.filterRowOperator !== enums_1.FilterOperatorName.IsNotEmpty) {
+            return initialData;
+        }
+        return initialData.filter(function (item) {
+            var _a, _b;
+            var value = DataUtils_1.getValueByColumn(item, column);
+            var fieldValue = (format && format({ column: column, value: value }))
+                || ((_a = value) === null || _a === void 0 ? void 0 : _a.toString());
+            return (_b = column.headerFilterValues) === null || _b === void 0 ? void 0 : _b.includes(fieldValue);
+        });
+    }, data);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/GroupUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/GroupUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.groupMark = {};
+exports.groupSummaryMark = {};
+var getGroupSummary = function (groupData, key, groupIndex) { return ({ groupData: groupData, groupSummaryMark: exports.groupSummaryMark, key: JSON.stringify([key, '--:+summary--']), groupIndex: groupIndex }); };
+exports.updateExpandedGroups = function (groupsExpanded, groupKey) {
+    var newGroupsExpanded = groupsExpanded.filter(function (ge) { return JSON.stringify(ge) !== JSON.stringify(groupKey); });
+    if (newGroupsExpanded.length === groupsExpanded.length) {
+        newGroupsExpanded.push(groupKey);
+    }
+    return newGroupsExpanded;
+};
+exports.getExpandedGroups = function (groupedData) {
+    return groupedData
+        .filter(function (g) { return g.groupMark === exports.groupMark; })
+        .map(function (g) { return g.key; });
+};
+exports.getGroupedData = function (data, groups, groupedColumns, groupsExpanded) {
+    var grouped = exports.getGroupedStructure(data, groups, groupedColumns, 0, groupsExpanded);
+    return exports.convertToFlat(grouped);
+};
+exports.convertToFlat = function (grouped, key) {
+    if (key === void 0) { key = []; }
+    var result = [];
+    grouped.forEach(function (value, groupValue) {
+        if (groupValue === exports.groupSummaryMark) {
+            result.push(value);
+        }
+        else {
+            var groupKey = __spreadArrays(key);
+            groupKey.push(groupValue);
+            result.push({ groupMark: exports.groupMark, key: groupKey, value: groupValue });
+            result = __spreadArrays(result, (Array.isArray(value) ? value : exports.convertToFlat(value, groupKey)));
+        }
+    });
+    return result;
+};
+exports.getGroupedStructure = function (data, groups, groupedColumns, expandedDeep, groupsExpanded, parentGroupKey) {
+    if (expandedDeep === void 0) { expandedDeep = 0; }
+    if (parentGroupKey === void 0) { parentGroupKey = []; }
+    groups = __spreadArrays(groups);
+    var group = groups.shift();
+    if (group) {
+        var column_1 = groupedColumns && groupedColumns.find(function (g) { return g.key === group.columnKey; });
+        if (column_1) {
+            var grouped_1 = exports.groupBy(data, function (item) { return DataUtils_1.getValueByColumn(item, column_1); });
+            grouped_1.forEach(function (groupData, key) {
+                var groupExpandedItems = groupsExpanded && groupsExpanded.filter(function (ge) { return ge[expandedDeep] === key; });
+                var isGroupExpanded = !groupExpandedItems
+                    || groupExpandedItems.some(function (ge) { return ge.length === expandedDeep + 1; });
+                if (isGroupExpanded) {
+                    var fullKey = __spreadArrays(parentGroupKey, [key]);
+                    var newStructure = exports.getGroupedStructure(groupData, groups, groupedColumns, expandedDeep + 1, groupExpandedItems && groupExpandedItems.filter(function (ge) { return ge.length > expandedDeep + 1; }), fullKey);
+                    if (newStructure) {
+                        if (group.enableSummary) {
+                            newStructure.set(exports.groupSummaryMark, getGroupSummary(groupData, fullKey, expandedDeep));
+                        }
+                        grouped_1.set(key, newStructure);
+                    }
+                    else if (group.enableSummary) {
+                        groupData.push(getGroupSummary(__spreadArrays(groupData), fullKey, expandedDeep));
+                    }
+                }
+                else {
+                    grouped_1.set(key, []);
+                }
+            });
+            return grouped_1;
+        }
+    }
+};
+exports.groupBy = function (data, keyGetter, isEmptyValue) {
+    if (isEmptyValue === void 0) { isEmptyValue = false; }
+    var map = new Map();
+    data.forEach(function (item) {
+        var key = keyGetter(item);
+        if (isEmptyValue) {
+            map.set(key, []);
+        }
+        else {
+            var collection = map.get(key);
+            if (!collection) {
+                map.set(key, [item]);
+            }
+            else {
+                collection.push(item);
+            }
+        }
+    });
+    return map;
+};
+exports.getGroupMark = function () { return exports.groupMark; };
+exports.getGroupText = function (value, column, format) {
+    return format ? format({ column: column, value: value }) : "" + (column && column.title ? column.title + ': ' : '') + value;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/GroupedColumnsUtils.js":
+/*!************************************************************!*\
+  !*** ./node_modules/ka-table/Utils/GroupedColumnsUtils.js ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getChain = function (column, groupedColumns, currentChain) {
+    if (currentChain === void 0) { currentChain = []; }
+    var newChain = __spreadArrays([column], currentChain);
+    var groupedColumn = groupedColumns.find(function (gc) { return gc.columnsKeys.includes(column.key); });
+    if (groupedColumn) {
+        return exports.getChain(groupedColumn, groupedColumns, newChain);
+    }
+    return newChain;
+};
+exports.addColumnToRows = function (rows, column, groupedColumns) {
+    var rowsResult = __spreadArrays(rows);
+    var columnsChain = exports.getChain(column, groupedColumns);
+    var isSameLast = true;
+    columnsChain.forEach(function (item, index) {
+        if (!rowsResult[index]) {
+            rowsResult[index] = [];
+        }
+        var last = __spreadArrays(rowsResult[index]).pop();
+        if (last && last.column === item) {
+            if (isSameLast) {
+                last.colSpan++;
+                last.columns.push(column);
+                return;
+            }
+            isSameLast = true;
+        }
+        else {
+            isSameLast = false;
+        }
+        rowsResult[index].push({
+            colSpan: 1,
+            columnChainLength: columnsChain.length,
+            column: item,
+            columns: [column]
+        });
+    });
+    return rowsResult;
+};
+exports.getRowsWithGroupedColumns = function (columns, groupedColumns) {
+    var rows = [];
+    columns.forEach(function (c) {
+        rows = exports.addColumnToRows(rows, c, groupedColumns);
+    });
+    rows.forEach(function (row, index) {
+        row.forEach(function (c) {
+            c.rowSpan = index === c.columnChainLength - 1 ? rows.length - c.columnChainLength + 1 : 1;
+        });
+    });
+    return rows;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/HeadRowUtils.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/HeadRowUtils.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var defaultOptions_1 = __importDefault(__webpack_require__(/*! ../defaultOptions */ "./node_modules/ka-table/defaultOptions.js"));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var SortUtils_1 = __webpack_require__(/*! ./SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+exports.getUpdatedSortedColumns = function (columns, columnKey, sortingMode) {
+    var newColumns = columns.map(function (c) { return (__assign({}, c)); });
+    var curentColumn = newColumns.find(function (c) { return c.key === columnKey; });
+    if (curentColumn) {
+        var nextSortDirection = exports.getNextSortDirection(curentColumn.sortDirection);
+        if (SortUtils_1.isTripleStateSorting(sortingMode)
+            && curentColumn.sortDirection
+            && nextSortDirection === defaultOptions_1.default.columnSortDirection) {
+            nextSortDirection = undefined;
+        }
+        if (!SortUtils_1.isMultipleSorting(sortingMode)) {
+            newColumns.forEach(function (c) {
+                delete c.sortDirection;
+                delete c.sortIndex;
+            });
+        }
+        if (nextSortDirection) {
+            curentColumn.sortDirection = nextSortDirection;
+            if (SortUtils_1.isMultipleSorting(sortingMode) && !curentColumn.sortIndex) {
+                var sortedColumns = newColumns.filter(function (c) { return c.sortDirection; });
+                curentColumn.sortIndex = sortedColumns.length + 1;
+            }
+        }
+        else {
+            delete curentColumn.sortDirection;
+            delete curentColumn.sortIndex;
+        }
+        if (SortUtils_1.isMultipleSorting(sortingMode)) {
+            var sortedColumns = SortUtils_1.sortColumns(newColumns);
+            sortedColumns.forEach(function (c, i) {
+                c.sortIndex = i + 1;
+            });
+        }
+    }
+    return newColumns;
+};
+exports.getNextSortDirection = function (previousSortdirection) {
+    var nextSortDirection;
+    if (previousSortdirection) {
+        nextSortDirection = previousSortdirection === enums_1.SortDirection.Ascend
+            ? enums_1.SortDirection.Descend : enums_1.SortDirection.Ascend;
+    }
+    else {
+        nextSortDirection = defaultOptions_1.default.columnSortDirection;
+    }
+    return nextSortDirection;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/NavigationUtils.js":
+/*!********************************************************!*\
+  !*** ./node_modules/ka-table/Utils/NavigationUtils.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var PropsUtils_1 = __webpack_require__(/*! ./PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js");
+exports.getRightCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var nextColumnKey;
+    var hasNextColumn = true;
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        nextColumnKey = (_b = props.columns[props.columns.length - 1]) === null || _b === void 0 ? void 0 : _b.key;
+    }
+    else {
+        var columnIndex = props.columns.findIndex(function (c) { return c.key === currentCell.columnKey; });
+        hasNextColumn = columnIndex < props.columns.length - 1;
+        nextColumnKey = hasNextColumn
+            ? props.columns[columnIndex + 1].key
+            : currentCell.columnKey;
+    }
+    return { columnKey: nextColumnKey, rowKeyValue: currentCell.rowKeyValue };
+};
+exports.getLeftCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var nextColumnKey;
+    var hasNextColumn = true;
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        nextColumnKey = (_b = props.columns[0]) === null || _b === void 0 ? void 0 : _b.key;
+    }
+    else {
+        var columnIndex = props.columns.findIndex(function (c) { return c.key === currentCell.columnKey; });
+        hasNextColumn = 0 < columnIndex;
+        nextColumnKey = hasNextColumn
+            ? props.columns[columnIndex - 1].key
+            : currentCell.columnKey;
+    }
+    return { columnKey: nextColumnKey, rowKeyValue: currentCell.rowKeyValue };
+};
+exports.getUpCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var rowKeyValue = currentCell.rowKeyValue;
+    var visibleData = PropsUtils_1.getData(props);
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        var nextRow = visibleData[0];
+        rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+    }
+    else {
+        var rowIndex = (_b = visibleData) === null || _b === void 0 ? void 0 : _b.findIndex(function (d) { return DataUtils_1.getValueByField(d, props.rowKeyField) === currentCell.rowKeyValue; });
+        if (rowIndex > 0) {
+            var nextRow = visibleData[rowIndex - 1];
+            rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+        }
+    }
+    return { columnKey: currentCell.columnKey, rowKeyValue: rowKeyValue };
+};
+exports.getDownCell = function (currentCell, props, settings) {
+    var _a, _b;
+    var rowKeyValue = currentCell.rowKeyValue;
+    var visibleData = PropsUtils_1.getData(props);
+    if ((_a = settings) === null || _a === void 0 ? void 0 : _a.end) {
+        var nextRow = visibleData[visibleData.length - 1];
+        rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+    }
+    else {
+        var rowIndex = (_b = visibleData) === null || _b === void 0 ? void 0 : _b.findIndex(function (d) { return DataUtils_1.getValueByField(d, props.rowKeyField) === currentCell.rowKeyValue; });
+        if (rowIndex < visibleData.length - 1) {
+            var nextRow = visibleData[rowIndex + 1];
+            rowKeyValue = DataUtils_1.getValueByField(nextRow, props.rowKeyField);
+        }
+    }
+    return { columnKey: currentCell.columnKey, rowKeyValue: rowKeyValue };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/PagingUtils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/PagingUtils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+exports.centerLength = 5;
+var DEFAULT_PAGE_SIZE = 10;
+exports.getPagesCount = function (data, paging) {
+    if (!paging || !paging.enabled) {
+        return 1;
+    }
+    if (paging.pagesCount) {
+        return paging.pagesCount;
+    }
+    return Math.ceil(data.length / ((paging && paging.pageSize) || DEFAULT_PAGE_SIZE));
+};
+exports.getPageData = function (data, paging) {
+    if (!paging || !paging.enabled || paging.pagesCount) {
+        return data;
+    }
+    var pageSize = paging.pageSize || DEFAULT_PAGE_SIZE;
+    var pageIndex = paging.pageIndex || 0;
+    var startIndex = pageSize * pageIndex;
+    return data.slice(startIndex, startIndex + pageSize);
+};
+exports.getPagesForCenter = function (pages, isStartShown, isEndShown, pageIndex) {
+    if (isStartShown && !isEndShown) {
+        return pages.filter(function (page) { return (page >= pages.length - exports.centerLength - 1); });
+    }
+    else if (!isStartShown && isEndShown) {
+        return pages.filter(function (page) { return (page <= exports.centerLength); });
+    }
+    else if (isStartShown && isEndShown) {
+        return pages.filter(function (page) { return (page >= pageIndex - Math.floor(exports.centerLength / 2)) && (page <= pageIndex + Math.floor(exports.centerLength / 2)); });
+    }
+    return pages;
+};
+exports.getPagesArrayBySize = function (pagesCount) { return new Array(pagesCount).fill(undefined).map(function (_, index) { return index; }); };
+exports.isPagingShown = function (position, paging) {
+    var _a;
+    return !!(((_a = paging) === null || _a === void 0 ? void 0 : _a.enabled) && (paging.position
+        ? position === paging.position || paging.position === enums_1.PagingPosition.TopAndBottom
+        : position === enums_1.PagingPosition.Bottom));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/PropsUtils.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/PropsUtils.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+var FilterUtils_1 = __webpack_require__(/*! ./FilterUtils */ "./node_modules/ka-table/Utils/FilterUtils.js");
+var GroupUtils_1 = __webpack_require__(/*! ./GroupUtils */ "./node_modules/ka-table/Utils/GroupUtils.js");
+var PagingUtils_1 = __webpack_require__(/*! ./PagingUtils */ "./node_modules/ka-table/Utils/PagingUtils.js");
+var ReducerUtils_1 = __webpack_require__(/*! ./ReducerUtils */ "./node_modules/ka-table/Utils/ReducerUtils.js");
+var SortUtils_1 = __webpack_require__(/*! ./SortUtils */ "./node_modules/ka-table/Utils/SortUtils.js");
+var TreeUtils_1 = __webpack_require__(/*! ./TreeUtils */ "./node_modules/ka-table/Utils/TreeUtils.js");
+function extendProps(childElementAttributes, childProps, childComponent) {
+    var resultProps = childElementAttributes;
+    var childCustomAttributes = childComponent && childComponent.elementAttributes && childComponent.elementAttributes(childProps);
+    if (childCustomAttributes) {
+        var dispatch = childProps.dispatch;
+        resultProps = mergeProps(childElementAttributes, childProps, childCustomAttributes, dispatch);
+    }
+    return resultProps;
+}
+exports.extendProps = extendProps;
+;
+var emptyFunc = function () { };
+function mergeProps(childElementAttributes, childProps, childCustomAttributes, dispatch) {
+    var customPropsWithEvents = {};
+    var _loop_1 = function (prop) {
+        if (childCustomAttributes.hasOwnProperty(prop)) {
+            var propName = prop;
+            var propValue_1 = childCustomAttributes[propName];
+            var baseFunc_1 = childElementAttributes[propName] || emptyFunc;
+            if (typeof propValue_1 === 'function') {
+                customPropsWithEvents[prop] = function (e) {
+                    propValue_1(e, {
+                        baseFunc: baseFunc_1,
+                        childElementAttributes: childElementAttributes,
+                        childProps: childProps,
+                        dispatch: dispatch,
+                    });
+                };
+            }
+        }
+    };
+    for (var prop in childCustomAttributes) {
+        _loop_1(prop);
+    }
+    var mergedResult = __assign(__assign(__assign(__assign({}, childElementAttributes), childCustomAttributes), customPropsWithEvents), { className: (childElementAttributes.className || '') + " " + (childCustomAttributes.className || ''), style: __assign(__assign({}, childElementAttributes.style), childCustomAttributes.style) });
+    return mergedResult;
+}
+exports.mergeProps = mergeProps;
+;
+exports.areAllFilteredRowsSelected = function (props) {
+    var _a = props.selectedRows, selectedRows = _a === void 0 ? [] : _a, rowKeyField = props.rowKeyField;
+    return FilterUtils_1.filterAndSearchData(props).every(function (d) { return selectedRows.includes(DataUtils_1.getValueByField(d, rowKeyField)); });
+};
+exports.areAllVisibleRowsSelected = function (props) {
+    var _a = props.selectedRows, selectedRows = _a === void 0 ? [] : _a, rowKeyField = props.rowKeyField;
+    return exports.getData(props).every(function (d) { return selectedRows.includes(DataUtils_1.getValueByField(d, rowKeyField)); });
+};
+exports.getData = function (props) {
+    var columns = props.columns, groups = props.groups, groupsExpanded = props.groupsExpanded, paging = props.paging, treeGroupKeyField = props.treeGroupKeyField, treeGroupsExpanded = props.treeGroupsExpanded, rowKeyField = props.rowKeyField, sort = props.sort, _a = props.sortingMode, sortingMode = _a === void 0 ? enums_1.SortingMode.None : _a;
+    var _b = props.data, data = _b === void 0 ? [] : _b;
+    var resultData = __spreadArrays(data);
+    resultData = FilterUtils_1.filterAndSearchData(props);
+    if (!SortUtils_1.isRemoteSorting(sortingMode)) {
+        resultData = SortUtils_1.sortData(columns, resultData, sort);
+    }
+    var groupedColumns = groups ? columns.filter(function (c) { return groups.some(function (g) { return g.columnKey === c.key; }); }) : [];
+    resultData = groups ? GroupUtils_1.getGroupedData(resultData, groups, groupedColumns, groupsExpanded) : resultData;
+    resultData = treeGroupKeyField ? TreeUtils_1.getTreeData({ data: resultData, rowKeyField: rowKeyField, treeGroupKeyField: treeGroupKeyField, treeGroupsExpanded: treeGroupsExpanded, originalData: data }) : resultData;
+    resultData = PagingUtils_1.getPageData(resultData, paging);
+    return resultData;
+};
+exports.isValid = function (props) {
+    return (!props.validation || !ReducerUtils_1.getValidatedEditableCells(props).some(function (cell) { return cell.validationMessage; }));
+};
+exports.getSelectedData = function (_a) {
+    var data = _a.data, selectedRows = _a.selectedRows, rowKeyField = _a.rowKeyField;
+    return data ? data.filter(function (d) {
+        var _a;
+        var value = DataUtils_1.getValueByField(d, rowKeyField);
+        return (_a = selectedRows) === null || _a === void 0 ? void 0 : _a.some(function (v) { return v === value; });
+    }) : [];
+};
+exports.getSortedColumns = function (props) {
+    return SortUtils_1.sortColumns(props.columns);
+};
+exports.getPagesCountByProps = function (props) {
+    var paging = props.paging;
+    var pagesCount = 1;
+    if (paging && paging.enabled) {
+        var data = FilterUtils_1.filterAndSearchData(props);
+        var rowKeyField = props.rowKeyField, treeGroupKeyField = props.treeGroupKeyField, treeGroupsExpanded = props.treeGroupsExpanded;
+        data = treeGroupKeyField ? TreeUtils_1.getTreeData({ data: data, rowKeyField: rowKeyField, treeGroupKeyField: treeGroupKeyField, treeGroupsExpanded: treeGroupsExpanded, originalData: props.data || [] }) : data;
+        pagesCount = PagingUtils_1.getPagesCount(data, paging);
+    }
+    return pagesCount;
+};
+exports.prepareTableOptions = function (props) {
+    var groups = props.groups;
+    var columns = props.columns;
+    var groupedData = exports.getData(props);
+    var groupColumnsCount = 0;
+    var groupedColumns = [];
+    if (groups) {
+        groupColumnsCount = groups.length;
+        groupedColumns = columns.filter(function (c) { return groups.some(function (g) { return g.columnKey === c.key; }); });
+        columns = columns.filter(function (c) { return !groups.some(function (g) { return g.columnKey === c.key; }); });
+    }
+    columns = columns.filter(function (c) { return c.visible !== false; });
+    return {
+        columns: columns,
+        groupColumnsCount: groupColumnsCount,
+        groupedColumns: groupedColumns,
+        groupedData: groupedData
+    };
+};
+exports.getDraggableProps = function (key, dispatch, actionCreator, draggedClass, dragOverClass) {
+    var count = 0;
+    return {
+        draggable: true,
+        onDragStart: function (event) {
+            count = 0;
+            event.dataTransfer.setData('ka-draggableKeyValue', JSON.stringify(key));
+            event.currentTarget.classList.add(draggedClass);
+            event.dataTransfer.effectAllowed = 'move';
+        },
+        onDragEnd: function (event) {
+            event.currentTarget.classList.remove(draggedClass);
+        },
+        onDrop: function (event) {
+            event.currentTarget.classList.remove(dragOverClass);
+            var draggableKeyValue = JSON.parse(event.dataTransfer.getData('ka-draggableKeyValue'));
+            dispatch(actionCreator(draggableKeyValue, key));
+        },
+        onDragEnter: function (event) {
+            count++;
+            if (!event.currentTarget.classList.contains(dragOverClass)) {
+                event.currentTarget.classList.add(dragOverClass);
+            }
+            event.preventDefault();
+        },
+        onDragLeave: function (event) {
+            count--;
+            if (count === 0) {
+                event.currentTarget.classList.remove(dragOverClass);
+            }
+        },
+        onDragOver: function (event) {
+            if (!event.currentTarget.classList.contains(dragOverClass)) {
+                event.currentTarget.classList.add(dragOverClass);
+            }
+            event.preventDefault();
+        }
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/ReducerUtils.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ka-table/Utils/ReducerUtils.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.getValidatedEditableCells = function (_a) {
+    var data = _a.data, _b = _a.editableCells, editableCells = _b === void 0 ? [] : _b, columns = _a.columns, rowKeyField = _a.rowKeyField, validation = _a.validation;
+    return editableCells.map(function (cell) {
+        var _a;
+        var column = columns.find(function (c) { return c.key === cell.columnKey; });
+        var updatedRowData = (_a = data) === null || _a === void 0 ? void 0 : _a.find(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === cell.rowKeyValue; });
+        var value = cell.hasOwnProperty('editorValue') ? cell.editorValue : DataUtils_1.getValueByField(updatedRowData, cell.columnKey);
+        return __assign(__assign({}, cell), { validationMessage: validation && validation({
+                column: column,
+                rowData: updatedRowData,
+                value: value
+            }) });
+    });
+};
+exports.getEditableCellsByData = function (data, rowKeyField, columns) {
+    var _a;
+    var editableCells = [];
+    (_a = data) === null || _a === void 0 ? void 0 : _a.forEach(function (rowData) {
+        var rowKeyValue = DataUtils_1.getValueByField(rowData, rowKeyField);
+        columns.forEach(function (column) {
+            editableCells.push({ columnKey: column.key, rowKeyValue: rowKeyValue });
+        });
+    });
+    return editableCells;
+};
+exports.addColumnsToRowEditableCells = function (editableCells, columns, rowKeyValue) {
+    var newEditableCells = __spreadArrays(editableCells);
+    columns.forEach(function (column) {
+        if (column.isEditable !== false
+            && !newEditableCells.some(function (e) { return e.columnKey === column.key && e.rowKeyValue === rowKeyValue; })) {
+            newEditableCells.push({
+                columnKey: column.key,
+                rowKeyValue: rowKeyValue
+            });
+        }
+    });
+    return newEditableCells;
+};
+exports.removeDataKeysFromSelectedRows = function (selectedRows, data, rowKeyField) {
+    var newSelectedRows = selectedRows.filter(function (rowKeyValue) {
+        return !data.some(function (d) { return DataUtils_1.getValueByField(d, rowKeyField) === rowKeyValue; });
+    });
+    return newSelectedRows;
+};
+exports.getUpdatedFocused = function (props, action, funcToUpdate) {
+    var _a, _b;
+    if (!((_b = (_a = props) === null || _a === void 0 ? void 0 : _a.focused) === null || _b === void 0 ? void 0 : _b.cell))
+        return props;
+    var newFocused = { cell: funcToUpdate(props.focused.cell, props, action.settings) };
+    return __assign(__assign({}, props), { focused: newFocused });
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/SortUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/SortUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.sortColumns = function (columns) {
+    return columns.filter(function (c) { return c.sortDirection; }).sort(function (a, b) {
+        if (a.sortIndex === b.sortIndex) {
+            return 0;
+        }
+        if (!a.sortIndex) {
+            return -1;
+        }
+        if (!b.sortIndex) {
+            return 1;
+        }
+        if (a.sortIndex < b.sortIndex) {
+            return -1;
+        }
+        return 1;
+    });
+};
+exports.sortData = function (columns, data, sort) {
+    var column = columns.find(function (c) { return c.sortDirection; });
+    if (!column) {
+        return data;
+    }
+    var customSort = sort && sort({ column: column });
+    var sortFunc = (customSort && (function (rowDataA, rowDataB) { return customSort(DataUtils_1.getValueByColumn(rowDataA, column), DataUtils_1.getValueByColumn(rowDataB, column)); })) || (column.sortDirection === enums_1.SortDirection.Ascend
+        ? ascendSort(column)
+        : descendSort(column));
+    var newData = __spreadArrays(data).sort(sortFunc);
+    return newData;
+};
+var ascendSort = function (sortedColumn) {
+    return function (a, b) {
+        var aValue = DataUtils_1.getValueByColumn(a, sortedColumn);
+        var bValue = DataUtils_1.getValueByColumn(b, sortedColumn);
+        if (aValue === bValue) {
+            return 0;
+        }
+        else if (aValue == null) {
+            return -1;
+        }
+        else if (bValue == null) {
+            return 1;
+        }
+        return aValue < bValue ? -1 : 1;
+    };
+};
+var descendSort = function (sortedColumn) {
+    return function (a, b) {
+        var aValue = DataUtils_1.getValueByColumn(a, sortedColumn);
+        var bValue = DataUtils_1.getValueByColumn(b, sortedColumn);
+        if (aValue === bValue) {
+            return 0;
+        }
+        else if (aValue == null) {
+            return 1;
+        }
+        else if (bValue == null) {
+            return -1;
+        }
+        return aValue > bValue ? -1 : 1;
+    };
+};
+exports.isTripleStateSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.SingleTripleState
+        || sortingMode === enums_1.SortingMode.SingleTripleStateRemote;
+};
+exports.isMultipleSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.MultipleRemote;
+};
+exports.isRemoteSorting = function (sortingMode) {
+    return sortingMode === enums_1.SortingMode.SingleRemote
+        || sortingMode === enums_1.SortingMode.MultipleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.SingleTripleStateRemote
+        || sortingMode === enums_1.SortingMode.MultipleRemote;
+};
+exports.isSortingEnabled = function (sortingMode) {
+    return sortingMode !== enums_1.SortingMode.None;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/TreeUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/TreeUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.treeGroupMark = {};
+exports.treeDataMark = {};
+exports.getExpandedParents = function (treeData, rowKeyField) {
+    return treeData
+        .filter(function (item) { return item.treeGroupMark === exports.treeGroupMark; })
+        .map(function (item) { return DataUtils_1.getValueByField(item.rowData, rowKeyField); });
+};
+var getItemStructure = function (item, dataHash, rowKeyField, treeDeep) {
+    if (treeDeep === void 0) { treeDeep = 0; }
+    var children = dataHash[DataUtils_1.getValueByField(item, rowKeyField)];
+    if (!children) {
+        return [{ treeDataMark: exports.treeDataMark, rowData: item, treeDeep: treeDeep + 1 }];
+    }
+    var result = [{ treeGroupMark: exports.treeGroupMark, rowData: item, treeDeep: treeDeep }];
+    children.forEach(function (c) {
+        var childrenData = getItemStructure(c, dataHash, rowKeyField, treeDeep + 1);
+        result.push.apply(result, childrenData);
+    });
+    return result;
+};
+exports.getTreeGroupChain = function (keyValue, dataMap, treeGroupKeyField, treeGroupKeyValues, groupChain) {
+    if (groupChain === void 0) { groupChain = []; }
+    var value = dataMap[keyValue];
+    var chain = groupChain;
+    if (!treeGroupKeyValues.includes(keyValue)) {
+        treeGroupKeyValues.push(keyValue);
+        chain = __spreadArrays(groupChain, [value]);
+    }
+    var treeGroupKeyValue = DataUtils_1.getValueByField(value, treeGroupKeyField);
+    if (treeGroupKeyValue) {
+        return exports.getTreeGroupChain(treeGroupKeyValue, dataMap, treeGroupKeyField, treeGroupKeyValues, chain);
+    }
+    return chain;
+};
+exports.restoreFilteredData = function (_a) {
+    var data = _a.data, originalData = _a.originalData, rowKeyField = _a.rowKeyField, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    var filteredData = [];
+    var treeGroupKeyValues = data.map(function (d) { return DataUtils_1.getValueByField(d, rowKeyField); });
+    var dataMap = originalData.reduce(function (acc, d) {
+        acc[DataUtils_1.getValueByField(d, rowKeyField)] = d;
+        return acc;
+    }, {});
+    data.forEach(function (d) {
+        var treeGroupKeyValue = DataUtils_1.getValueByField(d, treeGroupKeyField);
+        if (treeGroupKeyValues.includes(treeGroupKeyValue) || !treeGroupKeyValue) {
+            filteredData.push(d);
+        }
+        else {
+            var groupsChain = exports.getTreeGroupChain(treeGroupKeyValue, dataMap, treeGroupKeyField, treeGroupKeyValues);
+            filteredData = __spreadArrays(filteredData, groupsChain, [d]);
+        }
+    });
+    return filteredData;
+};
+var getDataHashAndRootElements = function (_a) {
+    var data = _a.data, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    var dataHash = {};
+    var rootElements = [];
+    data.forEach(function (d) {
+        var _a;
+        var parentRowKeyValue = (_a = DataUtils_1.getValueByField(d, treeGroupKeyField), (_a !== null && _a !== void 0 ? _a : undefined));
+        if (!parentRowKeyValue) {
+            rootElements.push(d);
+            return;
+        }
+        if (!dataHash[parentRowKeyValue]) {
+            dataHash[parentRowKeyValue] = [];
+        }
+        if (!treeGroupsExpanded || treeGroupsExpanded.includes(parentRowKeyValue)) {
+            dataHash[parentRowKeyValue].push(d);
+        }
+    });
+    return { dataHash: dataHash, rootElements: rootElements };
+};
+exports.getTreeData = function (_a) {
+    var data = _a.data, originalData = _a.originalData, rowKeyField = _a.rowKeyField, treeGroupKeyField = _a.treeGroupKeyField, treeGroupsExpanded = _a.treeGroupsExpanded;
+    if (data.length !== originalData.length) {
+        data = exports.restoreFilteredData({
+            data: data,
+            originalData: originalData,
+            rowKeyField: rowKeyField,
+            treeGroupKeyField: treeGroupKeyField,
+            treeGroupsExpanded: treeGroupsExpanded
+        });
+    }
+    var _b = getDataHashAndRootElements({
+        data: data,
+        treeGroupKeyField: treeGroupKeyField,
+        treeGroupsExpanded: treeGroupsExpanded
+    }), dataHash = _b.dataHash, rootElements = _b.rootElements;
+    var newData = [];
+    rootElements.forEach(function (d) {
+        newData.push.apply(newData, getItemStructure(d, dataHash, rowKeyField));
+    });
+    return newData;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/TypeUtils.js":
+/*!**************************************************!*\
+  !*** ./node_modules/ka-table/Utils/TypeUtils.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ../enums */ "./node_modules/ka-table/enums.js");
+var DataUtils_1 = __webpack_require__(/*! ./DataUtils */ "./node_modules/ka-table/Utils/DataUtils.js");
+exports.convertToColumnTypes = function (data, columns) {
+    var columnsToReplace = __spreadArrays(columns);
+    var dataCopy = __spreadArrays(data);
+    columnsToReplace.forEach(function (c) {
+        if (c.dataType && c.dataType !== enums_1.DataType.Object) {
+            for (var i = 0; i < dataCopy.length; i++) {
+                var value = DataUtils_1.getValueByColumn(dataCopy[i], c);
+                if (value != null) {
+                    switch (c.dataType) {
+                        case enums_1.DataType.String:
+                            if (value.constructor !== String) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, value.toString());
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Number:
+                            if (value.constructor !== Number) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, Number(value));
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Date:
+                            if (value.constructor !== Date) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, new Date(value));
+                                continue;
+                            }
+                            break;
+                        case enums_1.DataType.Boolean:
+                            if (value.constructor !== Boolean) {
+                                dataCopy[i] = DataUtils_1.replaceValue(dataCopy[i], c, exports.toBoolean(value));
+                                continue;
+                            }
+                            break;
+                    }
+                    break;
+                }
+            }
+        }
+    });
+    return dataCopy;
+};
+exports.toBoolean = function (value) {
+    if (typeof value === 'string') {
+        switch (value.toLowerCase().trim()) {
+            case 'true':
+            case 'yes':
+            case '1': return true;
+            case 'false':
+            case 'no':
+            case '0':
+            case null: return false;
+        }
+    }
+    return Boolean(value);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/Validation.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/Validation.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getValidationValue = function (value, rowData, column, validation) {
+    if (validation) {
+        return validation({ value: value, rowData: rowData, column: column });
+    }
+    return undefined;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/Utils/Virtualize.js":
+/*!***************************************************!*\
+  !*** ./node_modules/ka-table/Utils/Virtualize.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isVirtualScrollingEnabled = function (virtualScrolling) {
+    return virtualScrolling && virtualScrolling.enabled !== false;
+};
+exports.getVirtualized = function (virtualScrolling, data) {
+    var virtualizedData = [];
+    var _a = virtualScrolling.scrollTop, scrollTop = _a === void 0 ? 0 : _a;
+    var _b = virtualScrolling.tbodyHeight, tbodyHeight = _b === void 0 ? 600 : _b;
+    var beginHeight = 0;
+    var endHeight = 0;
+    data.reduce(function (acc, value) {
+        var itemHeight = virtualScrolling.itemHeight ?
+            (typeof virtualScrolling.itemHeight === 'number'
+                ? virtualScrolling.itemHeight
+                : virtualScrolling.itemHeight(value))
+            : 40;
+        if (acc >= scrollTop - itemHeight) {
+            if (tbodyHeight >= -(itemHeight * 5)) {
+                tbodyHeight = tbodyHeight - itemHeight;
+                virtualizedData.push(value);
+            }
+            else {
+                endHeight += itemHeight;
+            }
+        }
+        else {
+            beginHeight = acc + itemHeight;
+        }
+        return acc + itemHeight;
+    }, 0);
+    return {
+        beginHeight: beginHeight,
+        endHeight: endHeight,
+        virtualizedData: virtualizedData,
+    };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/actionCreators.js":
+/*!*************************************************!*\
+  !*** ./node_modules/ka-table/actionCreators.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ./enums */ "./node_modules/ka-table/enums.js");
+exports.updateHeaderFilterValues = function (columnKey, item, checked) { return ({
+    columnKey: columnKey,
+    checked: checked,
+    item: item,
+    type: enums_1.ActionType.UpdateHeaderFilterValues
+}); };
+exports.updatePopupPosition = function (popupPosition) { return ({
+    popupPosition: popupPosition,
+    type: enums_1.ActionType.UpdatePopupPosition
+}); };
+exports.updateHeaderFilterPopupState = function (columnKey, isHeaderFilterPopupShown) { return ({
+    columnKey: columnKey,
+    isHeaderFilterPopupShown: isHeaderFilterPopupShown,
+    type: enums_1.ActionType.UpdateHeaderFilterPopupState
+}); };
+exports.updateFilterRowValue = function (columnKey, filterRowValue) { return ({
+    columnKey: columnKey,
+    filterRowValue: filterRowValue,
+    type: enums_1.ActionType.UpdateFilterRowValue,
+}); };
+exports.updateFilterRowOperator = function (columnKey, filterRowOperator) { return ({
+    columnKey: columnKey,
+    filterRowOperator: filterRowOperator,
+    type: enums_1.ActionType.UpdateFilterRowOperator,
+}); };
+exports.updateEditorValue = function (rowKeyValue, columnKey, value) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateEditorValue,
+    value: value,
+}); };
+exports.updateCellValue = function (rowKeyValue, columnKey, value) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateCellValue,
+    value: value,
+}); };
+exports.updateSortDirection = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.UpdateSortDirection,
+}); };
+exports.closeEditor = function (rowKeyValue, columnKey) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.CloseEditor,
+}); };
+exports.deleteRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.DeleteRow,
+}); };
+exports.deselectAllRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllRows,
+}); };
+exports.deselectAllFilteredRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllFilteredRows,
+}); };
+exports.deselectAllVisibleRows = function () { return ({
+    type: enums_1.ActionType.DeselectAllVisibleRows,
+}); };
+exports.deselectRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.DeselectRow,
+}); };
+exports.openEditor = function (rowKeyValue, columnKey) { return ({
+    columnKey: columnKey,
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.OpenEditor,
+}); };
+exports.search = function (searchText) { return ({
+    searchText: searchText,
+    type: enums_1.ActionType.Search,
+}); };
+exports.selectAllRows = function () { return ({
+    type: enums_1.ActionType.SelectAllRows,
+}); };
+exports.selectAllFilteredRows = function () { return ({
+    type: enums_1.ActionType.SelectAllFilteredRows,
+}); };
+exports.selectAllVisibleRows = function () { return ({
+    type: enums_1.ActionType.SelectAllVisibleRows,
+}); };
+exports.selectSingleRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.SelectSingleRow,
+}); };
+exports.selectRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.SelectRow,
+}); };
+exports.selectRowsRange = function (rowKeyValueFrom, rowKeyValueTo) { return ({
+    rowKeyValueFrom: rowKeyValueFrom,
+    rowKeyValueTo: rowKeyValueTo,
+    type: enums_1.ActionType.SelectRowsRange,
+}); };
+exports.updateGroupsExpanded = function (groupKey) { return ({
+    groupKey: groupKey,
+    type: enums_1.ActionType.UpdateGroupsExpanded,
+}); };
+exports.updateData = function (data) { return ({
+    data: data,
+    type: enums_1.ActionType.UpdateData,
+}); };
+exports.showLoading = function (text) { return ({
+    text: text,
+    type: enums_1.ActionType.ShowLoading,
+}); };
+exports.hideLoading = function () { return ({
+    type: enums_1.ActionType.HideLoading,
+}); };
+exports.showNewRow = function () { return ({
+    type: enums_1.ActionType.ShowNewRow,
+}); };
+exports.hideNewRow = function () { return ({
+    type: enums_1.ActionType.HideNewRow,
+}); };
+exports.showDetailsRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.ShowDetailsRow,
+}); };
+exports.hideDetailsRow = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.HideDetailsRow,
+}); };
+exports.saveNewRow = function (rowKeyValue, settings) { return ({
+    rowKeyValue: rowKeyValue,
+    validate: settings && settings.validate,
+    type: enums_1.ActionType.SaveNewRow,
+}); };
+exports.openRowEditors = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.OpenRowEditors,
+}); };
+exports.closeRowEditors = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.CloseRowEditors,
+}); };
+exports.saveRowEditors = function (rowKeyValue, settings) { return ({
+    rowKeyValue: rowKeyValue,
+    validate: settings && settings.validate,
+    type: enums_1.ActionType.SaveRowEditors,
+}); };
+exports.updateRow = function (rowData) {
+    return {
+        type: enums_1.ActionType.UpdateRow,
+        rowData: rowData,
+    };
+};
+exports.updatePageIndex = function (pageIndex) { return ({
+    pageIndex: pageIndex,
+    type: enums_1.ActionType.UpdatePageIndex,
+}); };
+exports.updatePageSize = function (pageSize) { return ({
+    pageSize: pageSize,
+    type: enums_1.ActionType.UpdatePageSize,
+}); };
+exports.updatePagesCount = function (pagesCount) { return ({
+    pagesCount: pagesCount,
+    type: enums_1.ActionType.UpdatePagesCount,
+}); };
+exports.resizeColumn = function (columnKey, width) { return ({
+    type: enums_1.ActionType.ResizeColumn,
+    columnKey: columnKey,
+    width: width,
+}); };
+exports.reorderRows = function (rowKeyValue, targetRowKeyValue) { return ({
+    type: enums_1.ActionType.ReorderRows,
+    rowKeyValue: rowKeyValue,
+    targetRowKeyValue: targetRowKeyValue,
+}); };
+exports.reorderColumns = function (columnKey, targetColumnKey) { return ({
+    type: enums_1.ActionType.ReorderColumns,
+    columnKey: columnKey,
+    targetColumnKey: targetColumnKey,
+}); };
+exports.showColumn = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.ShowColumn,
+}); };
+exports.hideColumn = function (columnKey) { return ({
+    columnKey: columnKey,
+    type: enums_1.ActionType.HideColumn,
+}); };
+exports.loadData = function () { return ({
+    type: enums_1.ActionType.LoadData
+}); };
+exports.clearSingleAction = function () { return ({
+    type: enums_1.ActionType.ClearSingleAction
+}); };
+exports.setSingleAction = function (singleAction) { return ({
+    singleAction: singleAction,
+    type: enums_1.ActionType.SetSingleAction
+}); };
+exports.clearFocused = function () { return ({
+    type: enums_1.ActionType.ClearFocused
+}); };
+exports.setFocused = function (focused) { return ({
+    focused: focused,
+    type: enums_1.ActionType.SetFocused
+}); };
+exports.moveFocusedRight = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedRight
+}); };
+exports.moveFocusedLeft = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedLeft
+}); };
+exports.moveFocusedUp = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedUp
+}); };
+exports.moveFocusedDown = function (settings) { return ({
+    settings: settings,
+    type: enums_1.ActionType.MoveFocusedDown
+}); };
+exports.updateTreeGroupsExpanded = function (rowKeyValue) { return ({
+    rowKeyValue: rowKeyValue,
+    type: enums_1.ActionType.UpdateTreeGroupsExpanded,
+}); };
+exports.validate = function () { return ({
+    type: enums_1.ActionType.Validate,
+}); };
+exports.openAllEditors = function () { return ({
+    type: enums_1.ActionType.OpenAllEditors,
+}); };
+exports.saveAllEditors = function () { return ({
+    type: enums_1.ActionType.SaveAllEditors
+}); };
+exports.insertRow = function (rowData, options) { return ({
+    rowData: rowData,
+    options: options,
+    type: enums_1.ActionType.InsertRow
+}); };
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/const.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/const.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.newRowId = {};
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/defaultOptions.js":
+/*!*************************************************!*\
+  !*** ./node_modules/ka-table/defaultOptions.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var enums_1 = __webpack_require__(/*! ./enums */ "./node_modules/ka-table/enums.js");
+var CssClasses_1 = __webpack_require__(/*! ./Models/CssClasses */ "./node_modules/ka-table/Models/CssClasses.js");
+var DefaultOptions = /** @class */ (function () {
+    function DefaultOptions() {
+        this.columnDataType = enums_1.DataType.String;
+        this.columnSortDirection = enums_1.SortDirection.Ascend;
+        this.css = new CssClasses_1.CssClasses();
+        this.fieldDelimiter = '.';
+    }
+    return DefaultOptions;
+}());
+var defaultOptions = new DefaultOptions();
+exports["default"] = defaultOptions;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/enums.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/enums.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var PagingPosition;
+(function (PagingPosition) {
+    PagingPosition["Bottom"] = "bottom";
+    PagingPosition["Top"] = "top";
+    PagingPosition["TopAndBottom"] = "topAndBottom";
+})(PagingPosition = exports.PagingPosition || (exports.PagingPosition = {}));
+var DataType;
+(function (DataType) {
+    DataType["Boolean"] = "boolean";
+    DataType["Date"] = "date";
+    DataType["Number"] = "number";
+    DataType["Object"] = "object";
+    DataType["String"] = "string";
+})(DataType = exports.DataType || (exports.DataType = {}));
+var EditingMode;
+(function (EditingMode) {
+    EditingMode["None"] = "none";
+    EditingMode["Cell"] = "cell";
+})(EditingMode = exports.EditingMode || (exports.EditingMode = {}));
+var ActionType;
+(function (ActionType) {
+    ActionType["ClearFocused"] = "ClearFocused";
+    ActionType["ClearSingleAction"] = "ClearSingleAction";
+    ActionType["CloseEditor"] = "CloseEditor";
+    ActionType["CloseRowEditors"] = "CloseRowEditors";
+    ActionType["DeleteRow"] = "DeleteRow";
+    ActionType["DeselectAllFilteredRows"] = "DeselectAllFilteredRows";
+    ActionType["DeselectAllRows"] = "DeselectAllRows";
+    ActionType["DeselectAllVisibleRows"] = "DeselectAllVisibleRows";
+    ActionType["DeselectRow"] = "DeselectRow";
+    ActionType["HideColumn"] = "HideColumn";
+    ActionType["HideDetailsRow"] = "HideDetailsRow";
+    ActionType["HideLoading"] = "HideLoading";
+    ActionType["HideNewRow"] = "HideNewRow";
+    ActionType["InsertRow"] = "InsertRow";
+    ActionType["LoadData"] = "LoadData";
+    ActionType["MoveFocusedDown"] = "MoveFocusedDown";
+    ActionType["MoveFocusedLeft"] = "MoveFocusedLeft";
+    ActionType["MoveFocusedRight"] = "MoveFocusedRight";
+    ActionType["MoveFocusedUp"] = "MoveFocusedUp";
+    ActionType["OpenAllEditors"] = "OpenAllEditors";
+    ActionType["OpenEditor"] = "OpenEditor";
+    ActionType["OpenRowEditors"] = "OpenRowEditors";
+    ActionType["ReorderColumns"] = "ReorderColumns";
+    ActionType["ReorderRows"] = "ReorderRows";
+    ActionType["ResizeColumn"] = "ResizeColumn";
+    ActionType["SaveAllEditors"] = "SaveAllEditors";
+    ActionType["SaveNewRow"] = "SaveNewRow";
+    ActionType["SaveRowEditors"] = "SaveRowEditors";
+    ActionType["ScrollTable"] = "ScrollTable";
+    ActionType["Search"] = "Search";
+    ActionType["SelectAllFilteredRows"] = "SelectAllFilteredRows";
+    ActionType["SelectAllRows"] = "SelectAllRows";
+    ActionType["SelectAllVisibleRows"] = "SelectAllVisibleRows";
+    ActionType["SelectRow"] = "SelectRow";
+    ActionType["SelectRowsRange"] = "SelectRowsRange";
+    ActionType["SelectSingleRow"] = "SelectSingleRow";
+    ActionType["SetFocused"] = "SetFocused";
+    ActionType["SetSingleAction"] = "SetSingleAction";
+    ActionType["ShowColumn"] = "ShowColumn";
+    ActionType["ShowDetailsRow"] = "ShowDetailsRow";
+    ActionType["ShowLoading"] = "ShowLoading";
+    ActionType["ShowNewRow"] = "ShowNewRow";
+    ActionType["UpdateCellValue"] = "UpdateCellValue";
+    ActionType["UpdateData"] = "UpdateData";
+    ActionType["UpdateEditorValue"] = "UpdateEditorValue";
+    ActionType["UpdateFilterRowOperator"] = "UpdateFilterRowOperator";
+    ActionType["UpdateFilterRowValue"] = "UpdateFilterRowValue";
+    ActionType["UpdateGroupsExpanded"] = "UpdateGroupsExpanded";
+    ActionType["UpdateHeaderFilterValues"] = "UpdateHeaderFilterValues";
+    ActionType["UpdateHeaderFilterPopupState"] = "UpdateHeaderFilterPopupState";
+    ActionType["UpdatePopupPosition"] = "UpdatePopupPosition";
+    ActionType["UpdatePageIndex"] = "UpdatePageIndex";
+    ActionType["UpdatePageSize"] = "UpdatePageSize";
+    ActionType["UpdatePagesCount"] = "UpdatePagesCount";
+    ActionType["UpdateRow"] = "UpdateRow";
+    ActionType["UpdateSortDirection"] = "UpdateSortDirection";
+    ActionType["UpdateTreeGroupsExpanded"] = "UpdateTreeGroupsExpanded ";
+    ActionType["UpdateVirtualScrolling"] = "UpdateVirtualScrolling";
+    ActionType["Validate"] = "Validate";
+})(ActionType = exports.ActionType || (exports.ActionType = {}));
+var KeyboardEnum;
+(function (KeyboardEnum) {
+    KeyboardEnum[KeyboardEnum["Esc"] = 27] = "Esc";
+    KeyboardEnum[KeyboardEnum["Enter"] = 13] = "Enter";
+})(KeyboardEnum = exports.KeyboardEnum || (exports.KeyboardEnum = {}));
+var SortDirection;
+(function (SortDirection) {
+    SortDirection["Ascend"] = "ascend";
+    SortDirection["Descend"] = "descend";
+})(SortDirection = exports.SortDirection || (exports.SortDirection = {}));
+var SortingMode;
+(function (SortingMode) {
+    SortingMode["None"] = "none";
+    SortingMode["Single"] = "single";
+    SortingMode["SingleTripleState"] = "singleTripleState";
+    SortingMode["SingleRemote"] = "singleRemote";
+    SortingMode["SingleTripleStateRemote"] = "singleTripleStateRemote";
+    SortingMode["MultipleRemote"] = "multipleRemote";
+    SortingMode["MultipleTripleStateRemote"] = "multipleTripleStateRemote";
+})(SortingMode = exports.SortingMode || (exports.SortingMode = {}));
+var FilteringMode;
+(function (FilteringMode) {
+    FilteringMode["None"] = "none";
+    FilteringMode["FilterRow"] = "filterRow";
+    FilteringMode["HeaderFilter"] = "headerFilter";
+})(FilteringMode = exports.FilteringMode || (exports.FilteringMode = {}));
+var FilterOperatorName;
+(function (FilterOperatorName) {
+    FilterOperatorName["Equal"] = "=";
+    FilterOperatorName["MoreThan"] = ">";
+    FilterOperatorName["LessThan"] = "<";
+    FilterOperatorName["MoreThanOrEqual"] = ">=";
+    FilterOperatorName["LessThanOrEqual"] = "<=";
+    FilterOperatorName["Contains"] = "contains";
+    FilterOperatorName["IsEmpty"] = "IsEmpty";
+    FilterOperatorName["IsNotEmpty"] = "IsNotEmpty";
+})(FilterOperatorName = exports.FilterOperatorName || (exports.FilterOperatorName = {}));
+var InsertRowPosition;
+(function (InsertRowPosition) {
+    InsertRowPosition["before"] = "before";
+    InsertRowPosition["after"] = "after";
+})(InsertRowPosition = exports.InsertRowPosition || (exports.InsertRowPosition = {}));
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/hooks/UseOuterClick.js":
+/*!******************************************************!*\
+  !*** ./node_modules/ka-table/hooks/UseOuterClick.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+function useOuterClick(callback) {
+    var callbackRef = react_1.default.useRef(function (event) { });
+    var innerRef = react_1.default.useRef(document.createElement('div'));
+    react_1.default.useEffect(function () {
+        callbackRef.current = callback;
+    });
+    react_1.default.useEffect(function () {
+        document.addEventListener('click', handleClick);
+        return function () { return document.removeEventListener('click', handleClick); };
+        function handleClick(event) {
+            if (innerRef.current && callbackRef.current &&
+                !innerRef.current.contains(event.target))
+                callbackRef.current(event);
+        }
+    }, []);
+    return innerRef;
+}
+exports.useOuterClick = useOuterClick;
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/index.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__export(__webpack_require__(/*! ./Components/Table/Table */ "./node_modules/ka-table/Components/Table/Table.js"));
+__export(__webpack_require__(/*! ./Reducers/kaReducer */ "./node_modules/ka-table/Reducers/kaReducer.js"));
+
+
+/***/ }),
+
+/***/ "./node_modules/ka-table/utils.js":
+/*!****************************************!*\
+  !*** ./node_modules/ka-table/utils.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var kaColumnUtils = __importStar(__webpack_require__(/*! ./Utils/ColumnUtils */ "./node_modules/ka-table/Utils/ColumnUtils.js"));
+exports.kaColumnUtils = kaColumnUtils;
+var kaDateUtils = __importStar(__webpack_require__(/*! ./Utils/DateUtils */ "./node_modules/ka-table/Utils/DateUtils.js"));
+exports.kaDateUtils = kaDateUtils;
+var kaPropsUtils = __importStar(__webpack_require__(/*! ./Utils/PropsUtils */ "./node_modules/ka-table/Utils/PropsUtils.js"));
+exports.kaPropsUtils = kaPropsUtils;
+var kaTypeUtils = __importStar(__webpack_require__(/*! ./Utils/TypeUtils */ "./node_modules/ka-table/Utils/TypeUtils.js"));
+exports.kaTypeUtils = kaTypeUtils;
+
+
+/***/ }),
+
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 "use strict";
 /**
-<<<<<<< HEAD
- * Resets warning cache when testing.
- *
- * @private
-=======
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
  */
-checkPropTypes.resetWarningCache = function() {
-  if (true) {
-    loggedTypeFailures = {};
-  }
-}
 
-module.exports = checkPropTypes;
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!************************************************************!*\
-  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-<<<<<<< HEAD
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
-=======
 
 
 var printWarning = function() {};
@@ -15534,7 +16814,6 @@ if (true) {
  * @param {string} componentName Name of the component for error messages.
  * @param {?Function} getStack Returns the component stack.
  * @private
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
  */
 function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
   if (true) {
@@ -15585,263 +16864,6 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
   }
 }
 
-<<<<<<< HEAD
-
-
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
-
-var has = Function.call.bind(Object.prototype.hasOwnProperty);
-var printWarning = function() {};
-
-if (true) {
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-
-module.exports = function(isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker,
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (true) {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error(
-            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-            'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
-          );
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ( true && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (
-            !manualPropTypeCallCache[cacheKey] &&
-            // Avoid spamming the console because they are often not actionable except for lib authors
-            manualPropTypeWarningCount < 3
-          ) {
-            printWarning(
-              'You are manually calling a React.PropTypes validation ' +
-              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
-              'and will throw in the standalone `prop-types` package. ' +
-              'You may be seeing this warning due to a third-party PropTypes ' +
-              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
-            );
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-=======
 /**
  * Resets warning cache when testing.
  *
@@ -16102,33 +17124,12 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
         var preciseType = getPreciseType(propValue);
 
         return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
       }
       return null;
     }
     return createChainableTypeChecker(validate);
   }
 
-<<<<<<< HEAD
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-=======
   function createAnyTypeChecker() {
     return createChainableTypeChecker(emptyFunctionThatReturnsNull);
   }
@@ -16160,35 +17161,23 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
       if (!isValidElement(propValue)) {
         var propType = getPropType(propValue);
         return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
       }
       return null;
     }
     return createChainableTypeChecker(validate);
   }
 
-<<<<<<< HEAD
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-=======
   function createElementTypeTypeChecker() {
     function validate(props, propName, componentName, location, propFullName) {
       var propValue = props[propName];
       if (!ReactIs.isValidElementType(propValue)) {
         var propType = getPropType(propValue);
         return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
       }
       return null;
     }
     return createChainableTypeChecker(validate);
   }
-<<<<<<< HEAD
-=======
 
   function createInstanceTypeChecker(expectedClass) {
     function validate(props, propName, componentName, location, propFullName) {
@@ -16201,7 +17190,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     }
     return createChainableTypeChecker(validate);
   }
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
   function createEnumTypeChecker(expectedValues) {
     if (!Array.isArray(expectedValues)) {
@@ -16399,47 +17387,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
         return false;
     }
   }
-<<<<<<< HEAD
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // falsy value can't be a Symbol
-    if (!propValue) {
-      return false;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-=======
 
   function isSymbol(propType, propValue) {
     // Native Symbol.
@@ -16483,25 +17430,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return propType;
   }
 
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-    }
-    return propType;
-  }
-
-<<<<<<< HEAD
   // This handles more types than `getPropType`. Only used for error messages.
   // See `createPrimitiveTypeChecker`.
   function getPreciseType(propValue) {
@@ -16593,1506 +17521,12 @@ if (true) {
  * LICENSE file in the root directory of this source tree.
  */
 
-=======
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/prop-types/index.js ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
-} else {}
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*************************************************************/
-/***/ ((module) => {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-
-/***/ "./node_modules/react-dropzone/dist/es/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/react-dropzone/dist/es/index.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "useDropzone": () => (/* binding */ useDropzone),
-/* harmony export */   "ErrorCode": () => (/* reexport safe */ _utils_index__WEBPACK_IMPORTED_MODULE_3__.ErrorCode)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var file_selector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! file-selector */ "./node_modules/file-selector/dist/es5/index.js");
-/* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils */ "./node_modules/react-dropzone/dist/es/utils/index.js");
-var _excluded = ["children"],
-    _excluded2 = ["open"],
-    _excluded3 = ["refKey", "onKeyDown", "onFocus", "onBlur", "onClick", "onDragEnter", "onDragOver", "onDragLeave", "onDrop"],
-    _excluded4 = ["refKey", "onChange", "onClick"];
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-/* eslint prefer-template: 0 */
-
-
-
-
-/**
- * Convenience wrapper component for the `useDropzone` hook
- *
- * ```jsx
- * <Dropzone>
- *   {({getRootProps, getInputProps}) => (
- *     <div {...getRootProps()}>
- *       <input {...getInputProps()} />
- *       <p>Drag 'n' drop some files here, or click to select files</p>
- *     </div>
- *   )}
- * </Dropzone>
- * ```
- */
-
-var Dropzone = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (_ref, ref) {
-  var children = _ref.children,
-      params = _objectWithoutProperties(_ref, _excluded);
-
-  var _useDropzone = useDropzone(params),
-      open = _useDropzone.open,
-      props = _objectWithoutProperties(_useDropzone, _excluded2);
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useImperativeHandle)(ref, function () {
-    return {
-      open: open
-    };
-  }, [open]); // TODO: Figure out why react-styleguidist cannot create docs if we don't return a jsx element
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, children(_objectSpread(_objectSpread({}, props), {}, {
-    open: open
-  })));
-});
-Dropzone.displayName = 'Dropzone'; // Add default props for react-docgen
-
-var defaultProps = {
-  disabled: false,
-  getFilesFromEvent: file_selector__WEBPACK_IMPORTED_MODULE_2__.fromEvent,
-  maxSize: Infinity,
-  minSize: 0,
-  multiple: true,
-  maxFiles: 0,
-  preventDropOnDocument: true,
-  noClick: false,
-  noKeyboard: false,
-  noDrag: false,
-  noDragEventsBubbling: false,
-  validator: null
-};
-Dropzone.defaultProps = defaultProps;
-Dropzone.propTypes = {
-  /**
-   * Render function that exposes the dropzone state and prop getter fns
-   *
-   * @param {object} params
-   * @param {Function} params.getRootProps Returns the props you should apply to the root drop container you render
-   * @param {Function} params.getInputProps Returns the props you should apply to hidden file input you render
-   * @param {Function} params.open Open the native file selection dialog
-   * @param {boolean} params.isFocused Dropzone area is in focus
-   * @param {boolean} params.isFileDialogActive File dialog is opened
-   * @param {boolean} params.isDragActive Active drag is in progress
-   * @param {boolean} params.isDragAccept Dragged files are accepted
-   * @param {boolean} params.isDragReject Some dragged files are rejected
-   * @param {File[]} params.draggedFiles Files in active drag
-   * @param {File[]} params.acceptedFiles Accepted files
-   * @param {FileRejection[]} params.fileRejections Rejected files and why they were rejected
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Set accepted file types.
-   * See https://github.com/okonet/attr-accept for more information.
-   * Keep in mind that mime type determination is not reliable across platforms. CSV files,
-   * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
-   * Windows. In some cases there might not be a mime type set at all.
-   * See: https://github.com/react-dropzone/react-dropzone/issues/276
-   */
-  accept: prop_types__WEBPACK_IMPORTED_MODULE_1___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_1___default().string), prop_types__WEBPACK_IMPORTED_MODULE_1___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_1___default().string))]),
-
-  /**
-   * Allow drag 'n' drop (or selection from the file dialog) of multiple files
-   */
-  multiple: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * If false, allow dropped items to take over the current browser window
-   */
-  preventDropOnDocument: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * If true, disables click to open the native file selection dialog
-   */
-  noClick: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * If true, disables SPACE/ENTER to open the native file selection dialog.
-   * Note that it also stops tracking the focus state.
-   */
-  noKeyboard: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * If true, disables drag 'n' drop
-   */
-  noDrag: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * If true, stops drag event propagation to parents
-   */
-  noDragEventsBubbling: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-<<<<<<< HEAD
-
-  /**
-   * Minimum file size (in bytes)
-   */
-  minSize: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Maximum file size (in bytes)
-   */
-  maxSize: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Maximum accepted number of files
-   * The default value is 0 which means there is no limitation to how many files are accepted.
-   */
-  maxFiles: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Enable/disable the dropzone
-   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * Use this to provide a custom file aggregator
-   *
-   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
-   */
-  getFilesFromEvent: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when closing the file dialog with no selection
-   */
-  onFileDialogCancel: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragenter` event occurs.
-   *
-   * @param {DragEvent} event
-   */
-  onDragEnter: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragleave` event occurs
-   *
-   * @param {DragEvent} event
-   */
-  onDragLeave: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragover` event occurs
-   *
-   * @param {DragEvent} event
-   */
-  onDragOver: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
-   *
-   * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
-   * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
-   * If `multiple` is set to false and additional files are dropped,
-   * all files besides the first will be rejected.
-   * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
-   *
-   * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
-   * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
-   *
-   * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
-   * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
-   *
-   * ```js
-   * function onDrop(acceptedFiles) {
-   *   const req = request.post('/upload')
-   *   acceptedFiles.forEach(file => {
-   *     req.attach(file.name, file)
-   *   })
-   *   req.end(callback)
-   * }
-   * ```
-   *
-   * @param {File[]} acceptedFiles
-   * @param {FileRejection[]} fileRejections
-   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
-   */
-  onDrop: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that if no files are accepted, this callback is not invoked.
-   *
-   * @param {File[]} files
-   * @param {(DragEvent|Event)} event
-   */
-  onDropAccepted: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that if no files are rejected, this callback is not invoked.
-   *
-   * @param {FileRejection[]} fileRejections
-   * @param {(DragEvent|Event)} event
-   */
-  onDropRejected: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-=======
-
-  /**
-   * Minimum file size (in bytes)
-   */
-  minSize: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Maximum file size (in bytes)
-   */
-  maxSize: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Maximum accepted number of files
-   * The default value is 0 which means there is no limitation to how many files are accepted.
-   */
-  maxFiles: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().number),
-
-  /**
-   * Enable/disable the dropzone
-   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
-
-  /**
-   * Use this to provide a custom file aggregator
-   *
-   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
-   */
-  getFilesFromEvent: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when closing the file dialog with no selection
-   */
-  onFileDialogCancel: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragenter` event occurs.
-   *
-   * @param {DragEvent} event
-   */
-  onDragEnter: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragleave` event occurs
-   *
-   * @param {DragEvent} event
-   */
-  onDragLeave: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `dragover` event occurs
-   *
-   * @param {DragEvent} event
-   */
-  onDragOver: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
-   *
-   * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
-   * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
-   * If `multiple` is set to false and additional files are dropped,
-   * all files besides the first will be rejected.
-   * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
-   *
-   * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
-   * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
-   *
-   * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
-   * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
-   *
-   * ```js
-   * function onDrop(acceptedFiles) {
-   *   const req = request.post('/upload')
-   *   acceptedFiles.forEach(file => {
-   *     req.attach(file.name, file)
-   *   })
-   *   req.end(callback)
-   * }
-   * ```
-   *
-   * @param {File[]} acceptedFiles
-   * @param {FileRejection[]} fileRejections
-   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
-   */
-  onDrop: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that if no files are accepted, this callback is not invoked.
-   *
-   * @param {File[]} files
-   * @param {(DragEvent|Event)} event
-   */
-  onDropAccepted: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
-   * Cb for when the `drop` event occurs.
-   * Note that if no files are rejected, this callback is not invoked.
-   *
-   * @param {FileRejection[]} fileRejections
-   * @param {(DragEvent|Event)} event
-   */
-  onDropRejected: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
-
-  /**
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-   * Custom validation function 
-   * @param {File} file
-   * @returns {FileError|FileError[]}
-   */
-  validator: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func)
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropzone);
-/**
- * A function that is invoked for the `dragenter`,
- * `dragover` and `dragleave` events.
- * It is not invoked if the items are not files (such as link, text, etc.).
- *
- * @callback dragCb
- * @param {DragEvent} event
- */
-
-/**
- * A function that is invoked for the `drop` or input change event.
- * It is not invoked if the items are not files (such as link, text, etc.).
- *
- * @callback dropCb
- * @param {File[]} acceptedFiles List of accepted files
- * @param {FileRejection[]} fileRejections List of rejected files and why they were rejected
- * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
- */
-
-/**
- * A function that is invoked for the `drop` or input change event.
- * It is not invoked if the items are files (such as link, text, etc.).
- *
- * @callback dropAcceptedCb
- * @param {File[]} files List of accepted files that meet the given criteria
- * (`accept`, `multiple`, `minSize`, `maxSize`)
- * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
- */
-
-/**
- * A function that is invoked for the `drop` or input change event.
- *
- * @callback dropRejectedCb
- * @param {File[]} files List of rejected files that do not meet the given criteria
- * (`accept`, `multiple`, `minSize`, `maxSize`)
- * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
- */
-
-/**
- * A function that is used aggregate files,
- * in a asynchronous fashion, from drag or input change events.
- *
- * @callback getFilesFromEvent
- * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
- * @returns {(File[]|Promise<File[]>)}
- */
-
-/**
- * An object with the current dropzone state and some helper functions.
- *
- * @typedef {object} DropzoneState
- * @property {Function} getRootProps Returns the props you should apply to the root drop container you render
- * @property {Function} getInputProps Returns the props you should apply to hidden file input you render
- * @property {Function} open Open the native file selection dialog
- * @property {boolean} isFocused Dropzone area is in focus
- * @property {boolean} isFileDialogActive File dialog is opened
- * @property {boolean} isDragActive Active drag is in progress
- * @property {boolean} isDragAccept Dragged files are accepted
- * @property {boolean} isDragReject Some dragged files are rejected
- * @property {File[]} draggedFiles Files in active drag
- * @property {File[]} acceptedFiles Accepted files
- * @property {FileRejection[]} fileRejections Rejected files and why they were rejected
- */
-
-var initialState = {
-  isFocused: false,
-  isFileDialogActive: false,
-  isDragActive: false,
-  isDragAccept: false,
-  isDragReject: false,
-  draggedFiles: [],
-  acceptedFiles: [],
-  fileRejections: []
-};
-/**
- * A React hook that creates a drag 'n' drop area.
- *
- * ```jsx
- * function MyDropzone(props) {
- *   const {getRootProps, getInputProps} = useDropzone({
- *     onDrop: acceptedFiles => {
- *       // do something with the File objects, e.g. upload to some server
- *     }
- *   });
- *   return (
- *     <div {...getRootProps()}>
- *       <input {...getInputProps()} />
- *       <p>Drag and drop some files here, or click to select files</p>
- *     </div>
- *   )
- * }
- * ```
- *
- * @function useDropzone
- *
- * @param {object} props
- * @param {string|string[]} [props.accept] Set accepted file types.
- * See https://github.com/okonet/attr-accept for more information.
- * Keep in mind that mime type determination is not reliable across platforms. CSV files,
- * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
- * Windows. In some cases there might not be a mime type set at all.
- * See: https://github.com/react-dropzone/react-dropzone/issues/276
- * @param {boolean} [props.multiple=true] Allow drag 'n' drop (or selection from the file dialog) of multiple files
- * @param {boolean} [props.preventDropOnDocument=true] If false, allow dropped items to take over the current browser window
- * @param {boolean} [props.noClick=false] If true, disables click to open the native file selection dialog
- * @param {boolean} [props.noKeyboard=false] If true, disables SPACE/ENTER to open the native file selection dialog.
- * Note that it also stops tracking the focus state.
- * @param {boolean} [props.noDrag=false] If true, disables drag 'n' drop
- * @param {boolean} [props.noDragEventsBubbling=false] If true, stops drag event propagation to parents
- * @param {number} [props.minSize=0] Minimum file size (in bytes)
- * @param {number} [props.maxSize=Infinity] Maximum file size (in bytes)
- * @param {boolean} [props.disabled=false] Enable/disable the dropzone
- * @param {getFilesFromEvent} [props.getFilesFromEvent] Use this to provide a custom file aggregator
- * @param {Function} [props.onFileDialogCancel] Cb for when closing the file dialog with no selection
- * @param {dragCb} [props.onDragEnter] Cb for when the `dragenter` event occurs.
- * @param {dragCb} [props.onDragLeave] Cb for when the `dragleave` event occurs
- * @param {dragCb} [props.onDragOver] Cb for when the `dragover` event occurs
- * @param {dropCb} [props.onDrop] Cb for when the `drop` event occurs.
- * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
- *
- * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
- * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
- * If `multiple` is set to false and additional files are dropped,
- * all files besides the first will be rejected.
- * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
- *
- * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
- * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
- *
- * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
- * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
- *
- * ```js
- * function onDrop(acceptedFiles) {
- *   const req = request.post('/upload')
- *   acceptedFiles.forEach(file => {
- *     req.attach(file.name, file)
- *   })
- *   req.end(callback)
- * }
- * ```
- * @param {dropAcceptedCb} [props.onDropAccepted]
- * @param {dropRejectedCb} [props.onDropRejected]
- *
- * @returns {DropzoneState}
- */
-
-function useDropzone() {
-  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  var _defaultProps$options = _objectSpread(_objectSpread({}, defaultProps), options),
-      accept = _defaultProps$options.accept,
-      disabled = _defaultProps$options.disabled,
-      getFilesFromEvent = _defaultProps$options.getFilesFromEvent,
-      maxSize = _defaultProps$options.maxSize,
-      minSize = _defaultProps$options.minSize,
-      multiple = _defaultProps$options.multiple,
-      maxFiles = _defaultProps$options.maxFiles,
-      onDragEnter = _defaultProps$options.onDragEnter,
-      onDragLeave = _defaultProps$options.onDragLeave,
-      onDragOver = _defaultProps$options.onDragOver,
-      onDrop = _defaultProps$options.onDrop,
-      onDropAccepted = _defaultProps$options.onDropAccepted,
-      onDropRejected = _defaultProps$options.onDropRejected,
-      onFileDialogCancel = _defaultProps$options.onFileDialogCancel,
-      preventDropOnDocument = _defaultProps$options.preventDropOnDocument,
-      noClick = _defaultProps$options.noClick,
-      noKeyboard = _defaultProps$options.noKeyboard,
-      noDrag = _defaultProps$options.noDrag,
-      noDragEventsBubbling = _defaultProps$options.noDragEventsBubbling,
-      validator = _defaultProps$options.validator;
-
-  var rootRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var inputRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-
-  var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(reducer, initialState),
-      _useReducer2 = _slicedToArray(_useReducer, 2),
-      state = _useReducer2[0],
-      dispatch = _useReducer2[1];
-
-  var isFocused = state.isFocused,
-      isFileDialogActive = state.isFileDialogActive,
-      draggedFiles = state.draggedFiles; // Fn for opening the file dialog programmatically
-
-  var openFileDialog = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    if (inputRef.current) {
-      dispatch({
-        type: 'openDialog'
-      });
-      inputRef.current.value = null;
-      inputRef.current.click();
-    }
-  }, [dispatch]); // Update file dialog active state when the window is focused on
-
-  var onWindowFocus = function onWindowFocus() {
-    // Execute the timeout only if the file dialog is opened in the browser
-    if (isFileDialogActive) {
-      setTimeout(function () {
-        if (inputRef.current) {
-          var files = inputRef.current.files;
-
-          if (!files.length) {
-            dispatch({
-              type: 'closeDialog'
-            });
-
-            if (typeof onFileDialogCancel === 'function') {
-              onFileDialogCancel();
-            }
-          }
-        }
-      }, 300);
-    }
-  };
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    window.addEventListener('focus', onWindowFocus, false);
-    return function () {
-      window.removeEventListener('focus', onWindowFocus, false);
-    };
-  }, [inputRef, isFileDialogActive, onFileDialogCancel]); // Cb to open the file dialog when SPACE/ENTER occurs on the dropzone
-
-  var onKeyDownCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    // Ignore keyboard events bubbling up the DOM tree
-    if (!rootRef.current || !rootRef.current.isEqualNode(event.target)) {
-      return;
-    }
-
-    if (event.keyCode === 32 || event.keyCode === 13) {
-      event.preventDefault();
-      openFileDialog();
-    }
-  }, [rootRef, inputRef]); // Update focus state for the dropzone
-
-  var onFocusCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    dispatch({
-      type: 'focus'
-    });
-  }, []);
-  var onBlurCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    dispatch({
-      type: 'blur'
-    });
-  }, []); // Cb to open the file dialog when click occurs on the dropzone
-
-  var onClickCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    if (noClick) {
-      return;
-    } // In IE11/Edge the file-browser dialog is blocking, therefore, use setTimeout()
-    // to ensure React can handle state changes
-    // See: https://github.com/react-dropzone/react-dropzone/issues/450
-
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isIeOrEdge)()) {
-      setTimeout(openFileDialog, 0);
-    } else {
-      openFileDialog();
-    }
-  }, [inputRef, noClick]);
-  var dragTargetsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)([]);
-
-  var onDocumentDrop = function onDocumentDrop(event) {
-    if (rootRef.current && rootRef.current.contains(event.target)) {
-      // If we intercepted an event for our instance, let it propagate down to the instance's onDrop handler
-      return;
-    }
-
-    event.preventDefault();
-    dragTargetsRef.current = [];
-  };
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (preventDropOnDocument) {
-      document.addEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__.onDocumentDragOver, false);
-      document.addEventListener('drop', onDocumentDrop, false);
-    }
-
-    return function () {
-      if (preventDropOnDocument) {
-        document.removeEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__.onDocumentDragOver);
-        document.removeEventListener('drop', onDocumentDrop);
-      }
-    };
-  }, [rootRef, preventDropOnDocument]);
-  var onDragEnterCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
-
-    event.persist();
-    stopPropagation(event);
-    dragTargetsRef.current = [].concat(_toConsumableArray(dragTargetsRef.current), [event.target]);
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event)) {
-      Promise.resolve(getFilesFromEvent(event)).then(function (draggedFiles) {
-        if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isPropagationStopped)(event) && !noDragEventsBubbling) {
-          return;
-        }
-<<<<<<< HEAD
-
-        dispatch({
-          draggedFiles: draggedFiles,
-          isDragActive: true,
-          type: 'setDraggedFiles'
-        });
-
-        if (onDragEnter) {
-          onDragEnter(event);
-        }
-      });
-    }
-  }, [getFilesFromEvent, onDragEnter, noDragEventsBubbling]);
-  var onDragOverCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault();
-    event.persist();
-    stopPropagation(event);
-    var hasFiles = (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event);
-
-    if (hasFiles && event.dataTransfer) {
-      try {
-        event.dataTransfer.dropEffect = 'copy';
-      } catch (_unused) {}
-      /* eslint-disable-line no-empty */
-
-    }
-
-    if (hasFiles && onDragOver) {
-      onDragOver(event);
-    }
-
-    return false;
-  }, [onDragOver, noDragEventsBubbling]);
-  var onDragLeaveCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault();
-    event.persist();
-    stopPropagation(event); // Only deactivate once the dropzone and all children have been left
-
-=======
-
-        dispatch({
-          draggedFiles: draggedFiles,
-          isDragActive: true,
-          type: 'setDraggedFiles'
-        });
-
-        if (onDragEnter) {
-          onDragEnter(event);
-        }
-      });
-    }
-  }, [getFilesFromEvent, onDragEnter, noDragEventsBubbling]);
-  var onDragOverCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault();
-    event.persist();
-    stopPropagation(event);
-    var hasFiles = (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event);
-
-    if (hasFiles && event.dataTransfer) {
-      try {
-        event.dataTransfer.dropEffect = 'copy';
-      } catch (_unused) {}
-      /* eslint-disable-line no-empty */
-
-    }
-
-    if (hasFiles && onDragOver) {
-      onDragOver(event);
-    }
-
-    return false;
-  }, [onDragOver, noDragEventsBubbling]);
-  var onDragLeaveCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault();
-    event.persist();
-    stopPropagation(event); // Only deactivate once the dropzone and all children have been left
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-    var targets = dragTargetsRef.current.filter(function (target) {
-      return rootRef.current && rootRef.current.contains(target);
-    }); // Make sure to remove a target present multiple times only once
-    // (Firefox may fire dragenter/dragleave multiple times on the same element)
-<<<<<<< HEAD
-
-    var targetIdx = targets.indexOf(event.target);
-
-    if (targetIdx !== -1) {
-      targets.splice(targetIdx, 1);
-    }
-
-    dragTargetsRef.current = targets;
-
-    if (targets.length > 0) {
-      return;
-    }
-
-    dispatch({
-      isDragActive: false,
-      type: 'setDraggedFiles',
-      draggedFiles: []
-    });
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event) && onDragLeave) {
-      onDragLeave(event);
-    }
-  }, [rootRef, onDragLeave, noDragEventsBubbling]);
-  var onDropCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
-
-    event.persist();
-    stopPropagation(event);
-    dragTargetsRef.current = [];
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event)) {
-      Promise.resolve(getFilesFromEvent(event)).then(function (files) {
-        if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isPropagationStopped)(event) && !noDragEventsBubbling) {
-          return;
-        }
-
-=======
-
-    var targetIdx = targets.indexOf(event.target);
-
-    if (targetIdx !== -1) {
-      targets.splice(targetIdx, 1);
-    }
-
-    dragTargetsRef.current = targets;
-
-    if (targets.length > 0) {
-      return;
-    }
-
-    dispatch({
-      isDragActive: false,
-      type: 'setDraggedFiles',
-      draggedFiles: []
-    });
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event) && onDragLeave) {
-      onDragLeave(event);
-    }
-  }, [rootRef, onDragLeave, noDragEventsBubbling]);
-  var onDropCb = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
-
-    event.persist();
-    stopPropagation(event);
-    dragTargetsRef.current = [];
-
-    if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isEvtWithFiles)(event)) {
-      Promise.resolve(getFilesFromEvent(event)).then(function (files) {
-        if ((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.isPropagationStopped)(event) && !noDragEventsBubbling) {
-          return;
-        }
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-        var acceptedFiles = [];
-        var fileRejections = [];
-        files.forEach(function (file) {
-          var _fileAccepted = (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.fileAccepted)(file, accept),
-              _fileAccepted2 = _slicedToArray(_fileAccepted, 2),
-              accepted = _fileAccepted2[0],
-              acceptError = _fileAccepted2[1];
-
-          var _fileMatchSize = (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.fileMatchSize)(file, minSize, maxSize),
-              _fileMatchSize2 = _slicedToArray(_fileMatchSize, 2),
-              sizeMatch = _fileMatchSize2[0],
-              sizeError = _fileMatchSize2[1];
-
-          var customErrors = validator ? validator(file) : null;
-
-          if (accepted && sizeMatch && !customErrors) {
-            acceptedFiles.push(file);
-          } else {
-            var errors = [acceptError, sizeError];
-
-            if (customErrors) {
-              errors = errors.concat(customErrors);
-            }
-
-            fileRejections.push({
-              file: file,
-              errors: errors.filter(function (e) {
-                return e;
-              })
-            });
-          }
-        });
-
-        if (!multiple && acceptedFiles.length > 1 || multiple && maxFiles >= 1 && acceptedFiles.length > maxFiles) {
-          // Reject everything and empty accepted files
-          acceptedFiles.forEach(function (file) {
-            fileRejections.push({
-              file: file,
-              errors: [_utils_index__WEBPACK_IMPORTED_MODULE_3__.TOO_MANY_FILES_REJECTION]
-            });
-          });
-          acceptedFiles.splice(0);
-        }
-
-        dispatch({
-          acceptedFiles: acceptedFiles,
-          fileRejections: fileRejections,
-          type: 'setFiles'
-        });
-
-        if (onDrop) {
-          onDrop(acceptedFiles, fileRejections, event);
-        }
-
-        if (fileRejections.length > 0 && onDropRejected) {
-          onDropRejected(fileRejections, event);
-        }
-
-        if (acceptedFiles.length > 0 && onDropAccepted) {
-          onDropAccepted(acceptedFiles, event);
-        }
-      });
-    }
-
-    dispatch({
-      type: 'reset'
-    });
-  }, [multiple, accept, minSize, maxSize, maxFiles, getFilesFromEvent, onDrop, onDropAccepted, onDropRejected, noDragEventsBubbling, validator]);
-
-  var composeHandler = function composeHandler(fn) {
-    return disabled ? null : fn;
-  };
-
-  var composeKeyboardHandler = function composeKeyboardHandler(fn) {
-    return noKeyboard ? null : composeHandler(fn);
-  };
-
-  var composeDragHandler = function composeDragHandler(fn) {
-    return noDrag ? null : composeHandler(fn);
-  };
-
-  var stopPropagation = function stopPropagation(event) {
-    if (noDragEventsBubbling) {
-      event.stopPropagation();
-    }
-  };
-<<<<<<< HEAD
-
-  var getRootProps = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return function () {
-      var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-          _ref2$refKey = _ref2.refKey,
-          refKey = _ref2$refKey === void 0 ? 'ref' : _ref2$refKey,
-          onKeyDown = _ref2.onKeyDown,
-          onFocus = _ref2.onFocus,
-          onBlur = _ref2.onBlur,
-          onClick = _ref2.onClick,
-          onDragEnter = _ref2.onDragEnter,
-          onDragOver = _ref2.onDragOver,
-          onDragLeave = _ref2.onDragLeave,
-          onDrop = _ref2.onDrop,
-          rest = _objectWithoutProperties(_ref2, _excluded3);
-
-      return _objectSpread(_objectSpread(_defineProperty({
-        onKeyDown: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onKeyDown, onKeyDownCb)),
-        onFocus: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onFocus, onFocusCb)),
-        onBlur: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onBlur, onBlurCb)),
-        onClick: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onClick, onClickCb)),
-        onDragEnter: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragEnter, onDragEnterCb)),
-        onDragOver: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragOver, onDragOverCb)),
-        onDragLeave: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragLeave, onDragLeaveCb)),
-        onDrop: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDrop, onDropCb))
-      }, refKey, rootRef), !disabled && !noKeyboard ? {
-        tabIndex: 0
-      } : {}), rest);
-    };
-  }, [rootRef, onKeyDownCb, onFocusCb, onBlurCb, onClickCb, onDragEnterCb, onDragOverCb, onDragLeaveCb, onDropCb, noKeyboard, noDrag, disabled]);
-  var onInputElementClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.stopPropagation();
-  }, []);
-  var getInputProps = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return function () {
-      var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-          _ref3$refKey = _ref3.refKey,
-          refKey = _ref3$refKey === void 0 ? 'ref' : _ref3$refKey,
-          onChange = _ref3.onChange,
-          onClick = _ref3.onClick,
-          rest = _objectWithoutProperties(_ref3, _excluded4);
-
-      var inputProps = _defineProperty({
-        accept: accept,
-        multiple: multiple,
-        type: 'file',
-        style: {
-          display: 'none'
-        },
-        onChange: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onChange, onDropCb)),
-        onClick: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onClick, onInputElementClick)),
-        autoComplete: 'off',
-        tabIndex: -1
-      }, refKey, inputRef);
-
-      return _objectSpread(_objectSpread({}, inputProps), rest);
-    };
-  }, [inputRef, accept, multiple, onDropCb, disabled]);
-  var fileCount = draggedFiles.length;
-  var isDragAccept = fileCount > 0 && (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.allFilesAccepted)({
-    files: draggedFiles,
-    accept: accept,
-    minSize: minSize,
-    maxSize: maxSize,
-    multiple: multiple,
-    maxFiles: maxFiles
-  });
-  var isDragReject = fileCount > 0 && !isDragAccept;
-  return _objectSpread(_objectSpread({}, state), {}, {
-    isDragAccept: isDragAccept,
-    isDragReject: isDragReject,
-    isFocused: isFocused && !disabled,
-    getRootProps: getRootProps,
-    getInputProps: getInputProps,
-    rootRef: rootRef,
-    inputRef: inputRef,
-    open: composeHandler(openFileDialog)
-  });
-}
-
-function reducer(state, action) {
-  /* istanbul ignore next */
-  switch (action.type) {
-    case 'focus':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFocused: true
-      });
-
-    case 'blur':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFocused: false
-      });
-
-    case 'openDialog':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFileDialogActive: true
-      });
-
-    case 'closeDialog':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFileDialogActive: false
-      });
-
-    case 'setDraggedFiles':
-      /* eslint no-case-declarations: 0 */
-      var isDragActive = action.isDragActive,
-          draggedFiles = action.draggedFiles;
-      return _objectSpread(_objectSpread({}, state), {}, {
-        draggedFiles: draggedFiles,
-        isDragActive: isDragActive
-      });
-
-    case 'setFiles':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        acceptedFiles: action.acceptedFiles,
-        fileRejections: action.fileRejections
-      });
-
-    case 'reset':
-      return _objectSpread({}, initialState);
-
-=======
-
-  var getRootProps = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return function () {
-      var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-          _ref2$refKey = _ref2.refKey,
-          refKey = _ref2$refKey === void 0 ? 'ref' : _ref2$refKey,
-          onKeyDown = _ref2.onKeyDown,
-          onFocus = _ref2.onFocus,
-          onBlur = _ref2.onBlur,
-          onClick = _ref2.onClick,
-          onDragEnter = _ref2.onDragEnter,
-          onDragOver = _ref2.onDragOver,
-          onDragLeave = _ref2.onDragLeave,
-          onDrop = _ref2.onDrop,
-          rest = _objectWithoutProperties(_ref2, _excluded3);
-
-      return _objectSpread(_objectSpread(_defineProperty({
-        onKeyDown: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onKeyDown, onKeyDownCb)),
-        onFocus: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onFocus, onFocusCb)),
-        onBlur: composeKeyboardHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onBlur, onBlurCb)),
-        onClick: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onClick, onClickCb)),
-        onDragEnter: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragEnter, onDragEnterCb)),
-        onDragOver: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragOver, onDragOverCb)),
-        onDragLeave: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDragLeave, onDragLeaveCb)),
-        onDrop: composeDragHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onDrop, onDropCb))
-      }, refKey, rootRef), !disabled && !noKeyboard ? {
-        tabIndex: 0
-      } : {}), rest);
-    };
-  }, [rootRef, onKeyDownCb, onFocusCb, onBlurCb, onClickCb, onDragEnterCb, onDragOverCb, onDragLeaveCb, onDropCb, noKeyboard, noDrag, disabled]);
-  var onInputElementClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (event) {
-    event.stopPropagation();
-  }, []);
-  var getInputProps = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return function () {
-      var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-          _ref3$refKey = _ref3.refKey,
-          refKey = _ref3$refKey === void 0 ? 'ref' : _ref3$refKey,
-          onChange = _ref3.onChange,
-          onClick = _ref3.onClick,
-          rest = _objectWithoutProperties(_ref3, _excluded4);
-
-      var inputProps = _defineProperty({
-        accept: accept,
-        multiple: multiple,
-        type: 'file',
-        style: {
-          display: 'none'
-        },
-        onChange: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onChange, onDropCb)),
-        onClick: composeHandler((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.composeEventHandlers)(onClick, onInputElementClick)),
-        autoComplete: 'off',
-        tabIndex: -1
-      }, refKey, inputRef);
-
-      return _objectSpread(_objectSpread({}, inputProps), rest);
-    };
-  }, [inputRef, accept, multiple, onDropCb, disabled]);
-  var fileCount = draggedFiles.length;
-  var isDragAccept = fileCount > 0 && (0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.allFilesAccepted)({
-    files: draggedFiles,
-    accept: accept,
-    minSize: minSize,
-    maxSize: maxSize,
-    multiple: multiple,
-    maxFiles: maxFiles
-  });
-  var isDragReject = fileCount > 0 && !isDragAccept;
-  return _objectSpread(_objectSpread({}, state), {}, {
-    isDragAccept: isDragAccept,
-    isDragReject: isDragReject,
-    isFocused: isFocused && !disabled,
-    getRootProps: getRootProps,
-    getInputProps: getInputProps,
-    rootRef: rootRef,
-    inputRef: inputRef,
-    open: composeHandler(openFileDialog)
-  });
-}
-
-function reducer(state, action) {
-  /* istanbul ignore next */
-  switch (action.type) {
-    case 'focus':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFocused: true
-      });
-
-    case 'blur':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFocused: false
-      });
-
-    case 'openDialog':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFileDialogActive: true
-      });
-
-    case 'closeDialog':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        isFileDialogActive: false
-      });
-
-    case 'setDraggedFiles':
-      /* eslint no-case-declarations: 0 */
-      var isDragActive = action.isDragActive,
-          draggedFiles = action.draggedFiles;
-      return _objectSpread(_objectSpread({}, state), {}, {
-        draggedFiles: draggedFiles,
-        isDragActive: isDragActive
-      });
-
-    case 'setFiles':
-      return _objectSpread(_objectSpread({}, state), {}, {
-        acceptedFiles: action.acceptedFiles,
-        fileRejections: action.fileRejections
-      });
-
-    case 'reset':
-      return _objectSpread({}, initialState);
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-    default:
-      return state;
-  }
-}
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-dropzone/dist/es/utils/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/react-dropzone/dist/es/utils/index.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "FILE_INVALID_TYPE": () => (/* binding */ FILE_INVALID_TYPE),
-/* harmony export */   "FILE_TOO_LARGE": () => (/* binding */ FILE_TOO_LARGE),
-/* harmony export */   "FILE_TOO_SMALL": () => (/* binding */ FILE_TOO_SMALL),
-/* harmony export */   "TOO_MANY_FILES": () => (/* binding */ TOO_MANY_FILES),
-/* harmony export */   "ErrorCode": () => (/* binding */ ErrorCode),
-/* harmony export */   "getInvalidTypeRejectionErr": () => (/* binding */ getInvalidTypeRejectionErr),
-/* harmony export */   "getTooLargeRejectionErr": () => (/* binding */ getTooLargeRejectionErr),
-/* harmony export */   "getTooSmallRejectionErr": () => (/* binding */ getTooSmallRejectionErr),
-/* harmony export */   "TOO_MANY_FILES_REJECTION": () => (/* binding */ TOO_MANY_FILES_REJECTION),
-/* harmony export */   "fileAccepted": () => (/* binding */ fileAccepted),
-/* harmony export */   "fileMatchSize": () => (/* binding */ fileMatchSize),
-/* harmony export */   "allFilesAccepted": () => (/* binding */ allFilesAccepted),
-/* harmony export */   "isPropagationStopped": () => (/* binding */ isPropagationStopped),
-/* harmony export */   "isEvtWithFiles": () => (/* binding */ isEvtWithFiles),
-/* harmony export */   "isKindFile": () => (/* binding */ isKindFile),
-/* harmony export */   "onDocumentDragOver": () => (/* binding */ onDocumentDragOver),
-/* harmony export */   "isIeOrEdge": () => (/* binding */ isIeOrEdge),
-/* harmony export */   "composeEventHandlers": () => (/* binding */ composeEventHandlers)
-/* harmony export */ });
-/* harmony import */ var attr_accept__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! attr-accept */ "./node_modules/attr-accept/dist/es/index.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
- // Error codes
-
-var FILE_INVALID_TYPE = 'file-invalid-type';
-var FILE_TOO_LARGE = 'file-too-large';
-var FILE_TOO_SMALL = 'file-too-small';
-var TOO_MANY_FILES = 'too-many-files';
-var ErrorCode = {
-  FileInvalidType: FILE_INVALID_TYPE,
-  FileTooLarge: FILE_TOO_LARGE,
-  FileTooSmall: FILE_TOO_SMALL,
-  TooManyFiles: TOO_MANY_FILES
-}; // File Errors
-
-var getInvalidTypeRejectionErr = function getInvalidTypeRejectionErr(accept) {
-  accept = Array.isArray(accept) && accept.length === 1 ? accept[0] : accept;
-  var messageSuffix = Array.isArray(accept) ? "one of ".concat(accept.join(', ')) : accept;
-  return {
-    code: FILE_INVALID_TYPE,
-    message: "File type must be ".concat(messageSuffix)
-<<<<<<< HEAD
-  };
-};
-var getTooLargeRejectionErr = function getTooLargeRejectionErr(maxSize) {
-  return {
-    code: FILE_TOO_LARGE,
-    message: "File is larger than ".concat(maxSize, " bytes")
-  };
-};
-var getTooSmallRejectionErr = function getTooSmallRejectionErr(minSize) {
-  return {
-    code: FILE_TOO_SMALL,
-    message: "File is smaller than ".concat(minSize, " bytes")
-  };
-};
-=======
-  };
-};
-var getTooLargeRejectionErr = function getTooLargeRejectionErr(maxSize) {
-  return {
-    code: FILE_TOO_LARGE,
-    message: "File is larger than ".concat(maxSize, " bytes")
-  };
-};
-var getTooSmallRejectionErr = function getTooSmallRejectionErr(minSize) {
-  return {
-    code: FILE_TOO_SMALL,
-    message: "File is smaller than ".concat(minSize, " bytes")
-  };
-};
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-var TOO_MANY_FILES_REJECTION = {
-  code: TOO_MANY_FILES,
-  message: 'Too many files'
-}; // Firefox versions prior to 53 return a bogus MIME type for every file drag, so dragovers with
-// that MIME type will always be accepted
-
-function fileAccepted(file, accept) {
-  var isAcceptable = file.type === 'application/x-moz-file' || (0,attr_accept__WEBPACK_IMPORTED_MODULE_0__["default"])(file, accept);
-  return [isAcceptable, isAcceptable ? null : getInvalidTypeRejectionErr(accept)];
-}
-function fileMatchSize(file, minSize, maxSize) {
-  if (isDefined(file.size)) {
-    if (isDefined(minSize) && isDefined(maxSize)) {
-      if (file.size > maxSize) return [false, getTooLargeRejectionErr(maxSize)];
-      if (file.size < minSize) return [false, getTooSmallRejectionErr(minSize)];
-    } else if (isDefined(minSize) && file.size < minSize) return [false, getTooSmallRejectionErr(minSize)];else if (isDefined(maxSize) && file.size > maxSize) return [false, getTooLargeRejectionErr(maxSize)];
-  }
-
-  return [true, null];
-}
-
-function isDefined(value) {
-  return value !== undefined && value !== null;
-}
-
-function allFilesAccepted(_ref) {
-  var files = _ref.files,
-      accept = _ref.accept,
-      minSize = _ref.minSize,
-      maxSize = _ref.maxSize,
-      multiple = _ref.multiple,
-      maxFiles = _ref.maxFiles;
-
-  if (!multiple && files.length > 1 || multiple && maxFiles >= 1 && files.length > maxFiles) {
-    return false;
-  }
-
-  return files.every(function (file) {
-    var _fileAccepted = fileAccepted(file, accept),
-        _fileAccepted2 = _slicedToArray(_fileAccepted, 1),
-        accepted = _fileAccepted2[0];
-
-    var _fileMatchSize = fileMatchSize(file, minSize, maxSize),
-        _fileMatchSize2 = _slicedToArray(_fileMatchSize, 1),
-        sizeMatch = _fileMatchSize2[0];
-
-    return accepted && sizeMatch;
-  });
-} // React's synthetic events has event.isPropagationStopped,
-// but to remain compatibility with other libs (Preact) fall back
-// to check event.cancelBubble
-
-function isPropagationStopped(event) {
-  if (typeof event.isPropagationStopped === 'function') {
-    return event.isPropagationStopped();
-  } else if (typeof event.cancelBubble !== 'undefined') {
-    return event.cancelBubble;
-  }
-
-  return false;
-}
-function isEvtWithFiles(event) {
-  if (!event.dataTransfer) {
-    return !!event.target && !!event.target.files;
-  } // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types
-  // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_types#file
-<<<<<<< HEAD
-
-
-  return Array.prototype.some.call(event.dataTransfer.types, function (type) {
-    return type === 'Files' || type === 'application/x-moz-file';
-  });
-}
-function isKindFile(item) {
-  return _typeof(item) === 'object' && item !== null && item.kind === 'file';
-} // allow the entire document to be a drag target
-
-function onDocumentDragOver(event) {
-  event.preventDefault();
-}
-
-=======
-
-
-  return Array.prototype.some.call(event.dataTransfer.types, function (type) {
-    return type === 'Files' || type === 'application/x-moz-file';
-  });
-}
-function isKindFile(item) {
-  return _typeof(item) === 'object' && item !== null && item.kind === 'file';
-} // allow the entire document to be a drag target
-
-function onDocumentDragOver(event) {
-  event.preventDefault();
-}
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-function isIe(userAgent) {
-  return userAgent.indexOf('MSIE') !== -1 || userAgent.indexOf('Trident/') !== -1;
-}
-
-function isEdge(userAgent) {
-  return userAgent.indexOf('Edge/') !== -1;
-}
-
-function isIeOrEdge() {
-  var userAgent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window.navigator.userAgent;
-  return isIe(userAgent) || isEdge(userAgent);
-}
-/**
- * This is intended to be used to compose event handlers
- * They are executed in order until one of them calls `event.isPropagationStopped()`.
- * Note that the check is done on the first invoke too,
- * meaning that if propagation was stopped before invoking the fns,
- * no handlers will be executed.
- *
- * @param {Function} fns the event hanlder functions
- * @return {Function} the event handler to add to an element
- */
-
-function composeEventHandlers() {
-  for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
-    fns[_key] = arguments[_key];
-  }
-
-  return function (event) {
-    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-      args[_key2 - 1] = arguments[_key2];
-    }
-
-    return fns.some(function (fn) {
-      if (!isPropagationStopped(event) && fn) {
-        fn.apply(void 0, [event].concat(args));
-      }
-
-      return isPropagationStopped(event);
-    });
-  };
-}
 
 /***/ }),
 
@@ -18329,7 +17763,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./config */ "./node_modules/react-transition-group/esm/config.js");
 /* harmony import */ var _utils_PropTypes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/PropTypes */ "./node_modules/react-transition-group/esm/utils/PropTypes.js");
 /* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/react-transition-group/esm/TransitionGroupContext.js");
-<<<<<<< HEAD
 
 
 
@@ -18338,16 +17771,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-=======
-
-
-
-
-
-
-
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 var UNMOUNTED = 'unmounted';
 var EXITED = 'exited';
 var ENTERING = 'entering';
@@ -18546,7 +17969,6 @@ var Transition = /*#__PURE__*/function (_React$Component) {
     if (timeout != null && typeof timeout !== 'number') {
       exit = timeout.exit;
       enter = timeout.enter; // TODO: remove fallback for next major
-<<<<<<< HEAD
 
       appear = timeout.appear !== undefined ? timeout.appear : enter;
     }
@@ -18618,311 +18040,6 @@ var Transition = /*#__PURE__*/function (_React$Component) {
     });
   };
 
-  _proto.performExit = function performExit() {
-    var _this3 = this;
-
-    var exit = this.props.exit;
-    var timeouts = this.getTimeouts();
-    var maybeNode = this.props.nodeRef ? undefined : react_dom__WEBPACK_IMPORTED_MODULE_4__.findDOMNode(this); // no exit animation skip right to EXITED
-
-    if (!exit || _config__WEBPACK_IMPORTED_MODULE_5__["default"].disabled) {
-      this.safeSetState({
-        status: EXITED
-      }, function () {
-        _this3.props.onExited(maybeNode);
-=======
-
-      appear = timeout.appear !== undefined ? timeout.appear : enter;
-    }
-
-    return {
-      exit: exit,
-      enter: enter,
-      appear: appear
-    };
-  };
-
-  _proto.updateStatus = function updateStatus(mounting, nextStatus) {
-    if (mounting === void 0) {
-      mounting = false;
-    }
-
-    if (nextStatus !== null) {
-      // nextStatus will always be ENTERING or EXITING.
-      this.cancelNextCallback();
-
-      if (nextStatus === ENTERING) {
-        this.performEnter(mounting);
-      } else {
-        this.performExit();
-      }
-    } else if (this.props.unmountOnExit && this.state.status === EXITED) {
-      this.setState({
-        status: UNMOUNTED
-      });
-    }
-  };
-
-  _proto.performEnter = function performEnter(mounting) {
-    var _this2 = this;
-
-    var enter = this.props.enter;
-    var appearing = this.context ? this.context.isMounting : mounting;
-
-    var _ref2 = this.props.nodeRef ? [appearing] : [react_dom__WEBPACK_IMPORTED_MODULE_4__.findDOMNode(this), appearing],
-        maybeNode = _ref2[0],
-        maybeAppearing = _ref2[1];
-
-    var timeouts = this.getTimeouts();
-    var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
-    // if we are mounting and running this it means appear _must_ be set
-
-    if (!mounting && !enter || _config__WEBPACK_IMPORTED_MODULE_5__["default"].disabled) {
-      this.safeSetState({
-        status: ENTERED
-      }, function () {
-        _this2.props.onEntered(maybeNode);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-      });
-      return;
-    }
-
-<<<<<<< HEAD
-    this.props.onExit(maybeNode);
-    this.safeSetState({
-      status: EXITING
-    }, function () {
-      _this3.props.onExiting(maybeNode);
-
-      _this3.onTransitionEnd(timeouts.exit, function () {
-        _this3.safeSetState({
-          status: EXITED
-        }, function () {
-          _this3.props.onExited(maybeNode);
-=======
-    this.props.onEnter(maybeNode, maybeAppearing);
-    this.safeSetState({
-      status: ENTERING
-    }, function () {
-      _this2.props.onEntering(maybeNode, maybeAppearing);
-
-      _this2.onTransitionEnd(enterTimeout, function () {
-        _this2.safeSetState({
-          status: ENTERED
-        }, function () {
-          _this2.props.onEntered(maybeNode, maybeAppearing);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-        });
-      });
-    });
-  };
-
-<<<<<<< HEAD
-  _proto.cancelNextCallback = function cancelNextCallback() {
-    if (this.nextCallback !== null) {
-      this.nextCallback.cancel();
-      this.nextCallback = null;
-    }
-  };
-
-  _proto.safeSetState = function safeSetState(nextState, callback) {
-    // This shouldn't be necessary, but there are weird race conditions with
-    // setState callbacks and unmounting in testing, so always make sure that
-    // we can cancel any pending setState callbacks after we unmount.
-    callback = this.setNextCallback(callback);
-    this.setState(nextState, callback);
-  };
-
-  _proto.setNextCallback = function setNextCallback(callback) {
-    var _this4 = this;
-
-    var active = true;
-
-    this.nextCallback = function (event) {
-      if (active) {
-        active = false;
-        _this4.nextCallback = null;
-        callback(event);
-      }
-    };
-
-    this.nextCallback.cancel = function () {
-      active = false;
-    };
-
-    return this.nextCallback;
-  };
-
-  _proto.onTransitionEnd = function onTransitionEnd(timeout, handler) {
-    this.setNextCallback(handler);
-    var node = this.props.nodeRef ? this.props.nodeRef.current : react_dom__WEBPACK_IMPORTED_MODULE_4__.findDOMNode(this);
-    var doesNotHaveTimeoutOrListener = timeout == null && !this.props.addEndListener;
-
-    if (!node || doesNotHaveTimeoutOrListener) {
-      setTimeout(this.nextCallback, 0);
-      return;
-    }
-
-    if (this.props.addEndListener) {
-      var _ref3 = this.props.nodeRef ? [this.nextCallback] : [node, this.nextCallback],
-          maybeNode = _ref3[0],
-          maybeNextCallback = _ref3[1];
-
-      this.props.addEndListener(maybeNode, maybeNextCallback);
-    }
-
-    if (timeout != null) {
-      setTimeout(this.nextCallback, timeout);
-    }
-  };
-
-  _proto.render = function render() {
-    var status = this.state.status;
-
-    if (status === UNMOUNTED) {
-      return null;
-    }
-
-    var _this$props = this.props,
-        children = _this$props.children,
-        _in = _this$props.in,
-        _mountOnEnter = _this$props.mountOnEnter,
-        _unmountOnExit = _this$props.unmountOnExit,
-        _appear = _this$props.appear,
-        _enter = _this$props.enter,
-        _exit = _this$props.exit,
-        _timeout = _this$props.timeout,
-        _addEndListener = _this$props.addEndListener,
-        _onEnter = _this$props.onEnter,
-        _onEntering = _this$props.onEntering,
-        _onEntered = _this$props.onEntered,
-        _onExit = _this$props.onExit,
-        _onExiting = _this$props.onExiting,
-        _onExited = _this$props.onExited,
-        _nodeRef = _this$props.nodeRef,
-        childProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["children", "in", "mountOnEnter", "unmountOnExit", "appear", "enter", "exit", "timeout", "addEndListener", "onEnter", "onEntering", "onEntered", "onExit", "onExiting", "onExited", "nodeRef"]);
-
-    return (
-      /*#__PURE__*/
-      // allows for nested Transitions
-      react__WEBPACK_IMPORTED_MODULE_3__.createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
-        value: null
-      }, typeof children === 'function' ? children(status, childProps) : react__WEBPACK_IMPORTED_MODULE_3__.cloneElement(react__WEBPACK_IMPORTED_MODULE_3__.Children.only(children), childProps))
-    );
-  };
-
-  return Transition;
-}(react__WEBPACK_IMPORTED_MODULE_3__.Component);
-
-Transition.contextType = _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"];
-Transition.propTypes =  true ? {
-  /**
-   * A React reference to DOM element that need to transition:
-   * https://stackoverflow.com/a/51127130/4671932
-   *
-   *   - When `nodeRef` prop is used, `node` is not passed to callback functions
-   *      (e.g. `onEnter`) because user already has direct access to the node.
-   *   - When changing `key` prop of `Transition` in a `TransitionGroup` a new
-   *     `nodeRef` need to be provided to `Transition` with changed `key` prop
-   *     (see
-   *     [test/CSSTransition-test.js](https://github.com/reactjs/react-transition-group/blob/13435f897b3ab71f6e19d724f145596f5910581c/test/CSSTransition-test.js#L362-L437)).
-   */
-  nodeRef: prop_types__WEBPACK_IMPORTED_MODULE_2___default().shape({
-    current: typeof Element === 'undefined' ? (prop_types__WEBPACK_IMPORTED_MODULE_2___default().any) : function (propValue, key, componentName, location, propFullName, secret) {
-      var value = propValue[key];
-      return prop_types__WEBPACK_IMPORTED_MODULE_2___default().instanceOf(value && 'ownerDocument' in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
-    }
-  }),
-
-  /**
-   * A `function` child can be used instead of a React element. This function is
-   * called with the current transition status (`'entering'`, `'entered'`,
-   * `'exiting'`, `'exited'`), which can be used to apply context
-   * specific props to a component.
-   *
-   * ```jsx
-   * <Transition in={this.state.in} timeout={150}>
-   *   {state => (
-   *     <MyComponent className={`fade fade-${state}`} />
-   *   )}
-   * </Transition>
-   * ```
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().func.isRequired), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().element.isRequired)]).isRequired,
-
-  /**
-   * Show the component; triggers the enter or exit states
-   */
-  in: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * By default the child component is mounted immediately along with
-   * the parent `Transition` component. If you want to "lazy mount" the component on the
-   * first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
-   * mounted, even on "exited", unless you also specify `unmountOnExit`.
-   */
-  mountOnEnter: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * By default the child component stays mounted after it reaches the `'exited'` state.
-   * Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
-   */
-  unmountOnExit: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * By default the child component does not perform the enter transition when
-   * it first mounts, regardless of the value of `in`. If you want this
-   * behavior, set both `appear` and `in` to `true`.
-   *
-   * > **Note**: there are no special appear states like `appearing`/`appeared`, this prop
-   * > only adds an additional enter transition. However, in the
-   * > `<CSSTransition>` component that first enter transition does result in
-   * > additional `.appear-*` classes, that way you can choose to style it
-   * > differently.
-   */
-  appear: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * Enable or disable enter transitions.
-   */
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * Enable or disable exit transitions.
-   */
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
-
-  /**
-   * The duration of the transition, in milliseconds.
-   * Required unless `addEndListener` is provided.
-   *
-   * You may specify a single timeout for all transitions:
-   *
-   * ```jsx
-   * timeout={500}
-   * ```
-   *
-   * or individually:
-   *
-   * ```jsx
-   * timeout={{
-   *  appear: 500,
-   *  enter: 300,
-   *  exit: 500,
-   * }}
-   * ```
-   *
-   * - `appear` defaults to the value of `enter`
-   * - `enter` defaults to `0`
-   * - `exit` defaults to `0`
-   *
-   * @type {number | { enter?: number, exit?: number, appear?: number }}
-   */
-  timeout: function timeout(props) {
-    var pt = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_7__.timeoutsShape;
-    if (!props.addEndListener) pt = pt.isRequired;
-
-=======
   _proto.performExit = function performExit() {
     var _this3 = this;
 
@@ -19159,7 +18276,6 @@ Transition.propTypes =  true ? {
     var pt = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_7__.timeoutsShape;
     if (!props.addEndListener) pt = pt.isRequired;
 
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
     for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
       args[_key - 1] = arguments[_key];
     }
@@ -19286,19 +18402,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/react-transition-group/esm/TransitionGroupContext.js");
 /* harmony import */ var _utils_ChildMapping__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/ChildMapping */ "./node_modules/react-transition-group/esm/utils/ChildMapping.js");
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 
 
 
 
 
-<<<<<<< HEAD
 
 
 
@@ -19338,68 +18447,8 @@ var TransitionGroup = /*#__PURE__*/function (_React$Component) {
     _this = _React$Component.call(this, props, context) || this;
 
     var handleExited = _this.handleExited.bind((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this)); // Initial children should all be entering, dependent on appear
-=======
-var values = Object.values || function (obj) {
-  return Object.keys(obj).map(function (k) {
-    return obj[k];
-  });
-};
-
-var defaultProps = {
-  component: 'div',
-  childFactory: function childFactory(child) {
-    return child;
-  }
-};
-/**
- * The `<TransitionGroup>` component manages a set of transition components
- * (`<Transition>` and `<CSSTransition>`) in a list. Like with the transition
- * components, `<TransitionGroup>` is a state machine for managing the mounting
- * and unmounting of components over time.
- *
- * Consider the example below. As items are removed or added to the TodoList the
- * `in` prop is toggled automatically by the `<TransitionGroup>`.
- *
- * Note that `<TransitionGroup>`  does not define any animation behavior!
- * Exactly _how_ a list item animates is up to the individual transition
- * component. This means you can mix and match animations across different list
- * items.
- */
-
-var TransitionGroup = /*#__PURE__*/function (_React$Component) {
-  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__["default"])(TransitionGroup, _React$Component);
-
-  function TransitionGroup(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-
-    var handleExited = _this.handleExited.bind((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this)); // Initial children should all be entering, dependent on appear
 
 
-    _this.state = {
-      contextValue: {
-        isMounting: true
-      },
-      handleExited: handleExited,
-      firstRender: true
-    };
-    return _this;
-  }
-
-  var _proto = TransitionGroup.prototype;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.mounted = true;
-    this.setState({
-      contextValue: {
-        isMounting: false
-      }
-    });
-  };
-
-<<<<<<< HEAD
     _this.state = {
       contextValue: {
         isMounting: true
@@ -19507,94 +18556,6 @@ TransitionGroup.propTypes =  true ? {
    */
   children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node),
 
-=======
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.mounted = false;
-  };
-
-  TransitionGroup.getDerivedStateFromProps = function getDerivedStateFromProps(nextProps, _ref) {
-    var prevChildMapping = _ref.children,
-        handleExited = _ref.handleExited,
-        firstRender = _ref.firstRender;
-    return {
-      children: firstRender ? (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_6__.getInitialChildMapping)(nextProps, handleExited) : (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_6__.getNextChildMapping)(nextProps, prevChildMapping, handleExited),
-      firstRender: false
-    };
-  } // node is `undefined` when user provided `nodeRef` prop
-  ;
-
-  _proto.handleExited = function handleExited(child, node) {
-    var currentChildMapping = (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_6__.getChildMapping)(this.props.children);
-    if (child.key in currentChildMapping) return;
-
-    if (child.props.onExited) {
-      child.props.onExited(node);
-    }
-
-    if (this.mounted) {
-      this.setState(function (state) {
-        var children = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state.children);
-
-        delete children[child.key];
-        return {
-          children: children
-        };
-      });
-    }
-  };
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Component = _this$props.component,
-        childFactory = _this$props.childFactory,
-        props = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["component", "childFactory"]);
-
-    var contextValue = this.state.contextValue;
-    var children = values(this.state.children).map(childFactory);
-    delete props.appear;
-    delete props.enter;
-    delete props.exit;
-
-    if (Component === null) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-        value: contextValue
-      }, children);
-    }
-
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-      value: contextValue
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement(Component, props, children));
-  };
-
-  return TransitionGroup;
-}(react__WEBPACK_IMPORTED_MODULE_5__.Component);
-
-TransitionGroup.propTypes =  true ? {
-  /**
-   * `<TransitionGroup>` renders a `<div>` by default. You can change this
-   * behavior by providing a `component` prop.
-   * If you use React v16+ and would like to avoid a wrapping `<div>` element
-   * you can pass in `component={null}`. This is useful if the wrapping div
-   * borks your css styles.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().any),
-
-  /**
-   * A set of `<Transition>` components, that are toggled `in` and out as they
-   * leave. the `<TransitionGroup>` will inject specific transition props, so
-   * remember to spread them through if you are wrapping the `<Transition>` as
-   * with our `<Fade>` example.
-   *
-   * While this component is meant for multiple `Transition` or `CSSTransition`
-   * children, sometimes you may want to have a single transition child with
-   * content that you want to be transitioned out and in when you change it
-   * (e.g. routes, images etc.) In that case you can change the `key` prop of
-   * the transition child as you change its content, this will cause
-   * `TransitionGroup` to transition the child out and back in.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node),
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   /**
    * A convenience prop that enables or disables appear animations
    * for all children. Note that specifying this will override any defaults set
@@ -19771,7 +18732,6 @@ function mergeChildMappings(prev, next) {
 function getProp(child, prop, props) {
   return props[prop] != null ? props[prop] : child.props[prop];
 }
-<<<<<<< HEAD
 
 function getInitialChildMapping(props, onExited) {
   return getChildMapping(props.children, function (child) {
@@ -19795,31 +18755,6 @@ function getNextChildMapping(nextProps, prevChildMapping, onExited) {
     var prevChild = prevChildMapping[key];
     var isLeaving = (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild) && !prevChild.props.in; // item is new (entering)
 
-=======
-
-function getInitialChildMapping(props, onExited) {
-  return getChildMapping(props.children, function (child) {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
-      onExited: onExited.bind(null, child),
-      in: true,
-      appear: getProp(child, 'appear', props),
-      enter: getProp(child, 'enter', props),
-      exit: getProp(child, 'exit', props)
-    });
-  });
-}
-function getNextChildMapping(nextProps, prevChildMapping, onExited) {
-  var nextChildMapping = getChildMapping(nextProps.children);
-  var children = mergeChildMappings(prevChildMapping, nextChildMapping);
-  Object.keys(children).forEach(function (key) {
-    var child = children[key];
-    if (!(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child)) return;
-    var hasPrev = (key in prevChildMapping);
-    var hasNext = (key in nextChildMapping);
-    var prevChild = prevChildMapping[key];
-    var isLeaving = (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild) && !prevChild.props.in; // item is new (entering)
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
     if (hasNext && (!hasPrev || isLeaving)) {
       // console.log('entering', key)
       children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
@@ -19886,6 +18821,315 @@ var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().
 
 /***/ }),
 
+/***/ "./node_modules/ka-table/style.scss":
+/*!******************************************!*\
+  !*** ./node_modules/ka-table/style.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!../postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!../sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./style.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[8].oneOf[1].use[3]!./node_modules/ka-table/style.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_1_postcss_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_2_sass_loader_dist_cjs_js_ruleSet_1_rules_8_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+var stylesInDom = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDom.length; i++) {
+    if (stylesInDom[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var index = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
+    };
+
+    if (index !== -1) {
+      stylesInDom[index].references++;
+      stylesInDom[index].updater(obj);
+    } else {
+      stylesInDom.push({
+        identifier: identifier,
+        updater: addStyle(obj, options),
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+  var attributes = options.attributes || {};
+
+  if (typeof attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : 0;
+
+    if (nonce) {
+      attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
+  }
+
+  if (sourceMap && typeof btoa !== 'undefined') {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    if (Object.prototype.toString.call(newList) !== '[object Array]') {
+      return;
+    }
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDom[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDom[_index].references === 0) {
+        stylesInDom[_index].updater();
+
+        stylesInDom.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/tiny-warning/dist/tiny-warning.esm.js":
 /*!************************************************************!*\
   !*** ./node_modules/tiny-warning/dist/tiny-warning.esm.js ***!
@@ -19917,300 +19161,6 @@ function warning(condition, message) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (warning);
-
-
-/***/ }),
-
-/***/ "./node_modules/tslib/tslib.es6.js":
-/*!*****************************************!*\
-  !*** ./node_modules/tslib/tslib.es6.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__spreadArray": () => (/* binding */ __spreadArray),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
-/* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    if (typeof b !== "function" && b !== null)
-        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-<<<<<<< HEAD
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-=======
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-var __createBinding = Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-});
-
-function __exportStar(m, o) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-/** @deprecated */
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-/** @deprecated */
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-}
-
-function __spreadArray(to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-var __setModuleDefault = Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, state, kind, f) {
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, state, value, kind, f) {
-    if (kind === "m") throw new TypeError("Private method is not writable");
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
 
 
 /***/ }),
@@ -20319,12 +19269,9 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
-<<<<<<< HEAD
-=======
   Object.defineProperty(Constructor, "prototype", {
     writable: false
   });
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   return Constructor;
 }
 
@@ -20469,7 +19416,6 @@ function _iterableToArrayLimit(arr, i) {
 }
 
 /***/ }),
-<<<<<<< HEAD
 
 /***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js":
 /*!********************************************************************!*\
@@ -20509,36 +19455,11 @@ function _nonIterableSpread() {
 /*!****************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
   \****************************************************************************/
-=======
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js ***!
-  \********************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _nonIterableRest)
-/* harmony export */ });
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js ***!
-  \**********************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
 /* harmony export */   "default": () => (/* binding */ _objectWithoutProperties)
 /* harmony export */ });
 /* harmony import */ var _objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose.js */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
@@ -20560,92 +19481,19 @@ function _objectWithoutProperties(source, excluded) {
   }
 
   return target;
-=======
-/* harmony export */   "default": () => (/* binding */ _nonIterableSpread)
-/* harmony export */ });
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
 /*!*********************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
   \*********************************************************************************/
-=======
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
-  \****************************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "default": () => (/* binding */ _objectWithoutPropertiesLoose)
-/* harmony export */ });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-=======
-/* harmony export */   "default": () => (/* binding */ _objectWithoutProperties)
-/* harmony export */ });
-/* harmony import */ var _objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose.js */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = (0,_objectWithoutPropertiesLoose_js__WEBPACK_IMPORTED_MODULE_0__["default"])(source, excluded);
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-  }
-
-  return target;
-}
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
-  \*******************************************************************/
-=======
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
-/* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
-/* harmony export */ });
-=======
 /* harmony export */   "default": () => (/* binding */ _objectWithoutPropertiesLoose)
 /* harmony export */ });
 function _objectWithoutPropertiesLoose(source, excluded) {
@@ -20676,7 +19524,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
 /* harmony export */ });
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 function _setPrototypeOf(o, p) {
   _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
     o.__proto__ = p;
@@ -20728,43 +19575,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _iterableToArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray.js */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
 /* harmony import */ var _unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
 /* harmony import */ var _nonIterableSpread_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableSpread.js */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
-<<<<<<< HEAD
-
-
-
-
-function _toConsumableArray(arr) {
-  return (0,_arrayWithoutHoles_js__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || (0,_iterableToArray_js__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || (0,_unsupportedIterableToArray_js__WEBPACK_IMPORTED_MODULE_2__["default"])(arr) || (0,_nonIterableSpread_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _typeof)
-/* harmony export */ });
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-=======
 
 
 
@@ -20794,7 +19604,6 @@ function _typeof(obj) {
   } : function (obj) {
     return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
   }, _typeof(obj);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
 
 /***/ }),
