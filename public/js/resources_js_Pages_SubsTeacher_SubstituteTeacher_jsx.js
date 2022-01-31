@@ -12,12 +12,8 @@ function _interopRequireDefault(obj) {
   };
 }
 
-<<<<<<< HEAD
 module.exports = _interopRequireDefault;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -27,11 +23,7 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-<<<<<<< HEAD
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
-=======
-var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
@@ -83,12 +75,8 @@ function _interopRequireWildcard(obj, nodeInterop) {
   return newObj;
 }
 
-<<<<<<< HEAD
 module.exports = _interopRequireWildcard;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -101,7 +89,6 @@ module.exports = _interopRequireWildcard, module.exports.__esModule = true, modu
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-<<<<<<< HEAD
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     module.exports = _typeof = function _typeof(obj) {
       return typeof obj;
@@ -121,16 +108,6 @@ function _typeof(obj) {
 
 module.exports = _typeof;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
-}
-
-module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -7223,8 +7200,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
-<<<<<<< HEAD
-=======
               return handleOpen("manage_student");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -7280,7 +7255,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
               return handleOpen("manage_routine");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -13920,12 +13894,6 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
-<<<<<<< HEAD
-=======
-  Object.defineProperty(Constructor, "prototype", {
-    writable: false
-  });
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   return Constructor;
 }
 
@@ -14253,7 +14221,6 @@ __webpack_require__.r(__webpack_exports__);
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-<<<<<<< HEAD
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     _typeof = function _typeof(obj) {
       return typeof obj;
@@ -14265,13 +14232,6 @@ function _typeof(obj) {
   }
 
   return _typeof(obj);
-=======
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
 
 /***/ }),

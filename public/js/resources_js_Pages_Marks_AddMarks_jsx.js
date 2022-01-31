@@ -12,12 +12,8 @@ function _interopRequireDefault(obj) {
   };
 }
 
-<<<<<<< HEAD
 module.exports = _interopRequireDefault;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -27,11 +23,7 @@ module.exports = _interopRequireDefault, module.exports.__esModule = true, modul
   \***********************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-<<<<<<< HEAD
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
-=======
-var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
@@ -83,12 +75,8 @@ function _interopRequireWildcard(obj, nodeInterop) {
   return newObj;
 }
 
-<<<<<<< HEAD
 module.exports = _interopRequireWildcard;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -101,7 +89,6 @@ module.exports = _interopRequireWildcard, module.exports.__esModule = true, modu
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-<<<<<<< HEAD
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     module.exports = _typeof = function _typeof(obj) {
       return typeof obj;
@@ -121,16 +108,6 @@ function _typeof(obj) {
 
 module.exports = _typeof;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-=======
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
-}
-
-module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 
 /***/ }),
 
@@ -7365,8 +7342,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
-<<<<<<< HEAD
-=======
               return handleOpen("manage_student");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -7422,7 +7397,6 @@ function Sidebar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             button: true,
             onClick: function onClick() {
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
               return handleOpen("manage_routine");
             },
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -7613,6 +7587,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -7641,9 +7621,58 @@ var AddMarks = function AddMarks() {
       sending = _useState2[0],
       setSending = _useState2[1];
 
-  var handleSubmit = function handleSubmit() {};
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      courseCode = _useState4[0],
+      setCourseCode = _useState4[1];
 
-  var handleChange = function handleChange() {};
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    course_title: "",
+    course_code: "",
+    department: "",
+    batch: "",
+    session: "",
+    student_id: "",
+    term: "",
+    mark: ""
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      values = _useState6[0],
+      setValues = _useState6[1];
+
+  var handleChange = function handleChange(e) {
+    var key = e.target.name;
+    var value = e.target.value;
+    console.log("val", value);
+    setValues(function (oldValues) {
+      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, value));
+    });
+  };
+
+  var handleSelect = function handleSelect(val, key) {
+    if (key === 'course_title') {
+      console.log("ddd", key, val);
+      var course = courseInfo.find(function (o) {
+        return o.course_title === val;
+      });
+
+      if (courseCode) {
+        var tmpKey = "course_code";
+        setValues(function (oldValues) {
+          return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, tmpKey, course === null || course === void 0 ? void 0 : course.course_code));
+        });
+      }
+    }
+
+    setValues(function (oldValues) {
+      return _objectSpread(_objectSpread({}, oldValues), {}, _defineProperty({}, key, val));
+    });
+  }; // useEffect(() => {
+  //     const course_code = 
+  // }, [values?.course]);
+
+
+  var handleSubmit = function handleSubmit() {};
 
   var department = [{
     value: '',
@@ -7714,7 +7743,10 @@ var AddMarks = function AddMarks() {
     value: 'final',
     label: 'Final'
   }];
-  var courseInfo = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.usePage)().props.courseInfo;
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.usePage)().props,
+      courseInfo = _usePage$props.courseInfo,
+      courseTitles = _usePage$props.courseTitles;
+  console.log('courseInfo', courseInfo);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
     className: "main-div",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
@@ -7734,8 +7766,10 @@ var AddMarks = function AddMarks() {
               children: "Department"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
               className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              // onChange={val => handleMapping('trigger', val, flowKey)}
               ,
+              onChange: function onChange(val) {
+                return handleSelect(val, 'department');
+              },
               options: department,
               singleSelect: true
             })]
@@ -7745,8 +7779,10 @@ var AddMarks = function AddMarks() {
               children: "Batch"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
               className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              // onChange={val => handleMapping('trigger', val, flowKey)}
               ,
+              onChange: function onChange(val) {
+                return handleSelect(val, 'batch');
+              },
               options: batch,
               singleSelect: true
             })]
@@ -7756,22 +7792,23 @@ var AddMarks = function AddMarks() {
               children: "Course Name"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
               className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              // onChange={val => handleMapping('trigger', val, flowKey)}
-              // options={[flowData.elementorpro]}
               ,
+              onChange: function onChange(val) {
+                return handleSelect(val, 'course_title');
+              },
+              options: courseTitles,
               singleSelect: true
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
-              className: "font-inter-600 text-md mb-2 mt-2",
-              children: "Course Code"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_multiple_select_dropdown_lite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-              className: "w-full" // defaultValue={flowMap[flowKey]?.trigger?.event}
-              // onChange={val => handleMapping('trigger', val, flowKey)}
-              // options={[flowData.elementorpro]}
-              ,
-              singleSelect: true
-            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            id: "course_code",
+            name: "course_code",
+            label: "Course Code",
+            type: "text",
+            onChange: handleChange,
+            inputClass: "profile-textinput-input",
+            inputLabelClass: "font-inter-600 text-md",
+            value: values === null || values === void 0 ? void 0 : values.course_code,
+            placeholder: "Course Code..."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
               className: "font-inter-600 text-md mb-2 mt-2",
@@ -14670,12 +14707,6 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
-<<<<<<< HEAD
-=======
-  Object.defineProperty(Constructor, "prototype", {
-    writable: false
-  });
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
   return Constructor;
 }
 
@@ -15003,7 +15034,6 @@ __webpack_require__.r(__webpack_exports__);
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-<<<<<<< HEAD
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     _typeof = function _typeof(obj) {
       return typeof obj;
@@ -15015,13 +15045,6 @@ function _typeof(obj) {
   }
 
   return _typeof(obj);
-=======
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
->>>>>>> 579b28383acb5ee5ce97aa9a61002c6ce729c08b
 }
 
 /***/ }),
