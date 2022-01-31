@@ -731,6 +731,51 @@ exports["default"] = function (file, acceptedFiles) {
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./resources/js/Icons/Logo.jsx":
+/*!*************************************!*\
+  !*** ./resources/js/Icons/Logo.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Logo = function Logo(_ref) {
+  var width = _ref.width,
+      height = _ref.height;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 53 57",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      fillRule: "evenodd",
+      clipRule: "evenodd",
+      d: "M36.3693 19.4904C33.9261 24.5722 28.7297 28.08 22.7141 28.08C14.351 28.08 7.57132 21.3004 7.57132 12.9373C7.57132 7.45808 10.4814 2.65855 14.8404 0C6.3926 1.58396 0 8.99844 0 17.906C0 27.9679 8.15675 36.1246 18.2186 36.1246C27.7467 36.1246 35.5664 28.8104 36.3693 19.4904Z",
+      fill: "white"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      fillRule: "evenodd",
+      clipRule: "evenodd",
+      d: "M43.7708 42.0109C39.3658 45.5307 33.1625 46.4385 27.7418 43.8302C20.2057 40.2041 17.036 31.1553 20.6622 23.6192C23.0379 18.6818 27.7413 15.6187 32.8219 15.113C24.5227 12.8775 15.5474 16.787 11.6851 24.8137C7.32243 33.8806 11.1359 44.7674 20.2028 49.1301C28.7885 53.2613 39.0062 50.061 43.7708 42.0109Z",
+      fill: "white"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
+
+/***/ }),
+
+>>>>>>> parent of 86e947f (merge)
 /***/ "./resources/js/Pages/Auth/Signup.jsx":
 /*!********************************************!*\
   !*** ./resources/js/Pages/Auth/Signup.jsx ***!
@@ -745,14 +790,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_drag_drop_files__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-drag-drop-files */ "./node_modules/react-drag-drop-files/dist/react-drag-drop-files.esm.js");
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
 /* harmony import */ var _Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Shared/Dropzone */ "./resources/js/Shared/Dropzone.js");
+<<<<<<< HEAD
 /* harmony import */ var _Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Shared/LoadingButton */ "./resources/js/Shared/LoadingButton.js");
 /* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
 Object(function webpackMissingModule() { var e = new Error("Cannot find module './../../Icons/Logo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+=======
+/* harmony import */ var _Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Shared/TextInput */ "./resources/js/Shared/TextInput.jsx");
+/* harmony import */ var _Icons_Logo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Icons/Logo */ "./resources/js/Icons/Logo.jsx");
+/* harmony import */ var _Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../Shared/SingleSelect */ "./resources/js/Shared/SingleSelect.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+>>>>>>> parent of 86e947f (merge)
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
@@ -769,8 +821,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
 
 
 
@@ -850,23 +900,11 @@ var Signup = function Signup() {
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     setSending(true);
-    var emptyCheck = Object.values(values).filter(function (it) {
-      return it === '';
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post(route('signup.submit'), values, {
+      onFinish: function onFinish() {
+        return setSending(false);
+      }
     });
-    console.log("G", emptyCheck);
-
-    if (emptyCheck.length > 1 || values.teacherId === '' && values.studentId === '') {
-      react_hot_toast__WEBPACK_IMPORTED_MODULE_9__["default"].error("Field can't be empty");
-    } else {
-      console.log({
-        values: values
-      });
-      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post(route('signup.submit'), values, {
-        onFinish: function onFinish() {
-          return setSending(false);
-        }
-      });
-    }
   };
 
   console.log(values);
@@ -880,40 +918,44 @@ var Signup = function Signup() {
     key: 'teacher',
     value: 'Teacher'
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
     className: "flex",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "signup-leftside",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "flex",
+<<<<<<< HEAD
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module './../../Icons/Logo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+=======
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Icons_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], {
+>>>>>>> parent of 86e947f (merge)
           width: "53",
           height: "53"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
           className: "font-inter-400 logoname",
           children: "Teacher Assistant"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "signup-leftside__block font-inter-400",
         children: "Education is our passport to the future, for tommorow belongs to the people who prepare for it today.."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "signup-rightside",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "flex row",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
           className: "signup-rightside__label font-inter-700",
           children: "Register Individual Account!"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("span", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
           className: "signup-rightside__sublabel font-inter-400",
           children: "For the purpose of tracking, your details are required."
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("form", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("form", {
           onSubmit: handleSubmit,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
             className: "font-inter-400 signup-form",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
               id: "name",
               label: "Name",
               name: "name",
@@ -922,7 +964,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Name",
               value: values.name
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
               id: "email",
               name: "email",
               label: "Email",
@@ -931,7 +973,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Email",
               value: values.email
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
               id: "password",
               name: "password",
               label: "Password",
@@ -940,14 +982,14 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Password",
               value: values.password
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_7__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_SingleSelect__WEBPACK_IMPORTED_MODULE_6__["default"], {
               id: "role",
               name: "role",
               label: "User Type",
               onChange: handleChange,
               inputClass: "textinput-input",
               optionValues: userTypes
-            }), student && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            }), student && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
               id: "studentId",
               name: "studentId",
               label: "Student Id",
@@ -956,7 +998,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Id",
               value: values.studentId
-            }), teacher && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            }), teacher && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_TextInput__WEBPACK_IMPORTED_MODULE_4__["default"], {
               id: "teacherId",
               name: "teacherId",
               label: "Teacher Id",
@@ -965,7 +1007,7 @@ var Signup = function Signup() {
               inputClass: "textinput-input",
               placeholder: "Your Id",
               value: values.teacherId
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Shared_Dropzone__WEBPACK_IMPORTED_MODULE_3__["default"], {
               label: "Photo",
               name: "photo",
               className: "w-full pb-8 pr-6 lg:w-1/2" //errors={errors?.image}
@@ -974,15 +1016,14 @@ var Signup = function Signup() {
               accept: "image/*",
               onChange: handleFileChange,
               multiple: false
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Shared_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
-                type: "submit",
-                loading: sending,
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
                 className: "btn-signup",
+                type: "submit",
                 children: "Sign Up"
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-              children: ["Already have an account?", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+              children: ["Already have an account?", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
                 href: "/login",
                 children: "Login"
               })]
@@ -1242,6 +1283,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/Shared/LoadingButton.js":
 /*!**********************************************!*\
   !*** ./resources/js/Shared/LoadingButton.js ***!
@@ -1294,6 +1336,8 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 
 /***/ }),
 
+=======
+>>>>>>> parent of 86e947f (merge)
 /***/ "./resources/js/Shared/SingleSelect.jsx":
 /*!**********************************************!*\
   !*** ./resources/js/Shared/SingleSelect.jsx ***!
@@ -1400,73 +1444,6 @@ var TextInput = function TextInput(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextInput);
-
-/***/ }),
-
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-/***/ ((module, exports) => {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2018 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames() {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				if (arg.length) {
-					var inner = classNames.apply(null, arg);
-					if (inner) {
-						classes.push(inner);
-					}
-				}
-			} else if (argType === 'object') {
-				if (arg.toString === Object.prototype.toString) {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				} else {
-					classes.push(arg.toString());
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if ( true && module.exports) {
-		classNames.default = classNames;
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return classNames;
-		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-}());
-
 
 /***/ }),
 

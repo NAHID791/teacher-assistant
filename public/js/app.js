@@ -38474,6 +38474,7 @@ var map = {
 		9,
 		"resources_js_Pages_Layout_Sidebar_jsx"
 	],
+<<<<<<< HEAD
 	"./Marks/AddMarks": [
 		"./resources/js/Pages/Marks/AddMarks.jsx",
 		9,
@@ -38554,6 +38555,8 @@ var map = {
 		9,
 		"resources_js_Pages_SubsTeacher_ViewSubTeacher_jsx"
 	],
+=======
+>>>>>>> parent of 86e947f (merge)
 	"./Test": [
 		"./resources/js/Pages/Test.jsx",
 		9,
@@ -38794,7 +38797,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
+<<<<<<< HEAD
 /******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Course_AddCourse_jsx":1,"resources_js_Pages_Course_ViewCourse_jsx":1,"resources_js_Pages_Dashboard_Dashboard_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Layout_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1,"resources_js_Pages_Marks_AddMarks_jsx":1,"resources_js_Pages_Marks_ViewMarks_jsx":1,"resources_js_Pages_Routine_AddRoutine_jsx":1,"resources_js_Pages_Routine_ViewRoutine_jsx":1,"resources_js_Pages_Student_AddStudent_jsx":1,"resources_js_Pages_Student_ViewStudent_jsx":1,"resources_js_Pages_SubsTeacher_SubstituteTeacher_jsx":1,"resources_js_Pages_SubsTeacher_ViewSubTeacher_jsx":1,"resources_js_Pages_Test_jsx":1,"resources_js_Pages_Users_ApprovedUsers_js":1,"resources_js_Pages_Users_PendingUsers_js":1,"resources_js_Pages_Users_Profile_js":1}[chunkId]) return "js/" + chunkId + ".js";
+=======
+/******/ 			if ({"resources_js_Pages_Auth_ForgotPassword_jsx":1,"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Auth_Signup_jsx":1,"resources_js_Pages_Course_AddCourse_jsx":1,"resources_js_Pages_Course_ViewCourse_jsx":1,"resources_js_Pages_Dashboard_Dashboard_jsx":1,"resources_js_Pages_Home_jsx":1,"resources_js_Pages_Layout_Footer_jsx":1,"resources_js_Pages_Layout_Layout_jsx":1,"resources_js_Pages_Layout_Navbar_jsx":1,"resources_js_Pages_Layout_Sidebar_jsx":1,"resources_js_Pages_Test_jsx":1,"resources_js_Pages_Users_ApprovedUsers_js":1,"resources_js_Pages_Users_PendingUsers_js":1,"resources_js_Pages_Users_Profile_js":1}[chunkId]) return "js/" + chunkId + ".js";
+>>>>>>> parent of 86e947f (merge)
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
