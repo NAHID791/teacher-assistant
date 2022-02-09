@@ -4,17 +4,17 @@ import { kaReducer, Table } from 'ka-table';
 import { DataType, FilteringMode, SortingMode } from 'ka-table/enums';
 import Layout from '../Layout/Layout'
 import "ka-table/style.scss";
-import axios from 'axios';
 
-const ViewCourse = () => {
-    const { courses } = usePage().props;
-    const dataArray = courses
+const ViewAssignment = () => {
+    const { assignments } = usePage().props;
+    const dataArray = assignments
     const tablePropsInit = {
         columns: [
-            { key: 'course_title', title: 'Course Name', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'course_code', title: 'Course Code', dataType: DataType.String, style: { width: '20%' } },
-            { key: 'course_credit', title: 'Course Credit', dataType: DataType.String, style: { width: '15%' } },
-            { key: 'department', title: 'Department', dataType: DataType.String, style: { width: '20%' } },
+            { key: 'student_id', title: 'Student ID', dataType: DataType.String },
+            { key: 'course_title', title: 'Course Name', dataType: DataType.String },
+            { key: 'course_code', title: 'Course Code', dataType: DataType.String },
+            { key: 'assignment_desc', title: 'Assignment Topic', dataType: DataType.String, width: '30%' },
+            { key: 'submit_date', title: 'Submit Date', dataType: DataType.String },
             { key: ':action', title: 'Action', width: '20%', style: { textAlign: 'center' } },
 
         ],
@@ -28,14 +28,6 @@ const ViewCourse = () => {
         filteringMode: FilteringMode.FilterRow,
         searchText: "",
     };
-
-    const handleAction = (id, status) => {
-        console.log('id', id);
-        // axios.delete('delete_course', { 'id': $id })
-        //     .then((res) => {
-        //         console.log('res', res);
-        //     })
-    }
 
     const ActionOption = ({ dispatch, rowKeyValue }) => {
         return (
@@ -58,17 +50,17 @@ const ViewCourse = () => {
     };
 
 
+
     const [tableProps, changeTableProps] = useState(tablePropsInit);
     const dispatch = (action) => {
         changeTableProps((prevState) => kaReducer(prevState, action));
     };
 
 
-
     return (
         <div className="main-div">
             <div className='font-inter-600 text-3xl mb-4 flex gap-4'>
-                <span>Course Details</span>
+                <span>Assignments Details</span>
             </div>
             <div className="main-card">
                 <Table
@@ -98,5 +90,5 @@ const ViewCourse = () => {
     )
 }
 
-ViewCourse.layout = (page) => <Layout>{page}</Layout>;
-export default ViewCourse;
+ViewAssignment.layout = (page) => <Layout>{page}</Layout>;
+export default ViewAssignment;

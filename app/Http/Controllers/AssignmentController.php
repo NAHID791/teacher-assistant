@@ -44,4 +44,10 @@ class AssignmentController extends Controller
         // dd($test);
         return Redirect::back();
     }
+    public function show()
+    {
+        $assignments = Assignment::all();
+        // dd($assignments);
+        return Inertia::render('Assignment/ViewAssignment', ['assignments' => $assignments]);
+    }
 }

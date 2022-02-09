@@ -73,7 +73,7 @@ const RoutineReport = () => {
     return (
         <div className="main-div">
             <div className="font-inter-600 text-3xl mb-4 flex gap-4">
-                <span>Routine Generation</span>
+                <span>Routine Generate</span>
             </div>
             {/* <form onSubmit={handleSubmit}>
                 <div className="main-card flex">

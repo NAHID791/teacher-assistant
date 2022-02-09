@@ -93,7 +93,7 @@ export default function Sidebar() {
                         {/* .........Manage Profile End.......... */}
 
                         {/* .........Manage User Start.......... */}
-                        {userInfo.role === 'admin' && <>
+                        {userInfo.role === 'admin' && userInfo.role === 'teacher' && <>
                             <ListItem button onClick={() => handleOpen("manage_user")}>
                                 <ListItemIcon>
                                     <Profile className="sidebar-svg" />

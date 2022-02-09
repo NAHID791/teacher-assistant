@@ -457,3 +457,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.delete-button {
+    border    : 1px solid;
+    width     : 50px;
+    height    : 29px;
+    background: #b25757;
+    color     : lemonchiffon;
+}
+
+.edit-button {
+    border    : 1px solid;
+    width     : 50px;
+    height    : 29px;
+    background: #d6b8b8;
+    color     : #191818;
+}
